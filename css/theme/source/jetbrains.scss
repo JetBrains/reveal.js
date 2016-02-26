@@ -1,0 +1,151 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+
+// Include jetbrains-bundle
+@import url(../jetbrains-bundle/fonts/fonts.css);
+@import url(../jetbrains-bundle/footer/footer.css);
+@import url(../jetbrains-bundle/grid/grid.css);
+@import url(../jetbrains-bundle/header/header.css);
+@import url(../jetbrains-bundle/logos/logos.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #222;
+$headingColor: #222;
+
+$mainFontSize: 28px;
+$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: normal;
+$headingFontWeight: 600;
+$linkColor: #2a76dd;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal section img {
+  border: none;
+}
+
+body.resharper-background {
+
+  background-image:       url("../../img/logo_resharper.svg"),
+                          url("../../img/slides/resharper_beam.svg"),
+                          url("../../img/slides/jetbrains_logo.svg");
+
+  background-position:    75px 60px,
+                          0 0,
+                          90% 35px;
+
+  background-size:        auto 50px,
+                          auto 540px,
+                          auto 100px;
+
+  background-repeat:      no-repeat;
+
+  padding:                50px;
+
+}
+
+body.resharper-intro-background {
+
+  background-image:       url("../../img/logo_resharper.svg"),
+                          url("../../img/slides/resharper_beam.svg"),
+                          url("../../img/slides/jetbrains_logo.svg");
+
+  background-position:    75px 60px,
+                          0 0,
+                          90% 35px;
+
+  background-size:        auto 50px,
+                          auto 540px,
+                          auto 100px;
+
+  background-repeat:      no-repeat;
+
+  padding:                50px;
+
+}
+body.resharper-ultimate-background {
+
+  background-image:       url("../../img/logo_resharper.svg"),
+                          url("../../img/slides/resharper_ultimate_beam.svg"),
+                          url("../../img/slides/jetbrains_logo.svg");
+
+  background-position:    75px 60px,
+                          -28px -15px,
+                          90% 35px;
+
+  background-size:        auto 50px,
+                          auto 540px,
+                          auto 100px;
+
+  background-repeat:      no-repeat;
+
+  padding:                50px;
+
+}
+
+body.dottrace-background {
+
+  background-image:       url("../../img/logo_dottrace.svg"),
+                          url("../../img/slides/resharper_beam.svg"),
+                          url("../../img/slides/jetbrains_logo.svg");
+
+  background-position:    75px 60px,
+                          0 0,
+                          90% 35px;
+
+  background-size:        auto 42px,
+                          auto 540px,
+                          auto 100px;
+
+  background-repeat:      no-repeat;
+
+  padding:                50px;
+
+}
+
+body.default-background {
+
+  background-image:       url("../../img/slides/jetbrains_logo.svg");
+
+  background-position:    90% 35px;
+
+  background-size:        auto 100px;
+
+  background-repeat:      no-repeat;
+
+  padding:                50px;
+}
