@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="logos.css">
+<style>
+.logos-block {
+    margin-bottom: 50px;
+}
+
+.logo {
+    display: inline-block;
+    margin-right: 40px;
+    vertical-align: top;
+    font-family: monospace;
+    text-align: center;
+}
+
+.jetbrains-logo {
+    margin-bottom: 15px;
+}
+
+.jetbrains-logo:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.logo .size-name {
+    display: block;
+}
+</style>
+<script>module = {};</script>
+<script src="config.js"></script>
+<script>
+window.config = module.exports;
+window.addEventListener('DOMContentLoaded', function () {
+    var node = document.querySelector('#test');
+    var str = [];
+    var config = window.config;
+    config.logos.forEach(function (logo) {
+        var logoId = Object.keys(logo)[0];
+
+        str.push('<div class="logos-block">');
+        str.push('<h1><code>'+ logoId +'</code></h1>');
+
+        Object.keys(config.sizes).forEach(function (sizeId) {
+            var logoMarkup = '<div class="jetbrains-logo _logo-'+ logoId +' _'+ sizeId +'"></div>';
+            str.push('<div class="logo">');
+            str.push('<div class="js-logo" data-markup="'+ encodeURIComponent(logoMarkup) +'">');
+                str.push(logoMarkup);
+            str.push('</div>');
+            str.push('<div class="size-name">'+ sizeId +'</div>');
+            str.push('</div>');
+        });
+
+        str.push('</div>');
+    });
+
+    node.innerHTML = str.join('');
+
+    Array.prototype.slice.call(document.querySelectorAll('.js-logo'), 0).forEach(function (node) {
+        node.addEventListener('click', function () {
+            var markup = decodeURIComponent(this.getAttribute('data-markup'));
+            window.prompt('Logo markup', markup);
+        })
+    })
+
+});
+</script>
+</head>
+<body>
+<div id="test"></div>
+</body>
+</html>
