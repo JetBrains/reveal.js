@@ -6,6 +6,7 @@ $(document).ready(function() {
         ['dottrace-slide', 'dottrace-background'],
         ['resharper-ultimate-intro', 'resharper-ultimate-background'],
         ['resharper-intro', 'resharper-intro-background'],
+        ['resharper-cpp-slide', 'resharper-cpp-background'],
     ];
 
     // TODO Select the right body style on load, not only on mutation

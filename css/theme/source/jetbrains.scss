@@ -96,6 +96,11 @@ body.dottrace-background {
   @include slide-background-template($productName: 'dottrace', $beamName: 'resharper_ultimate', $logoSize: auto 42px);
 }
 
+body.resharper-cpp-background {
+  @include slide-background-template($productName: 'resharper_cpp')
+  //TODO Reference actual ReSharper C++ logo
+}
+
 body.default-background {
   background-image:       url("../../img/slides/jetbrains_logo.svg");
   background-position:    90% 35px;
