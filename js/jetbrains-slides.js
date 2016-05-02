@@ -4,6 +4,7 @@ $(document).ready(function() {
     var styleMappings = [
         ['resharper-slide', 'resharper-background'],
         ['dottrace-slide', 'dottrace-background'],
+        ['dotcover-slide', 'dotcover-background'],
         ['resharper-ultimate-intro', 'resharper-ultimate-background'],
         ['resharper-intro', 'resharper-intro-background'],
         ['resharper-cpp-slide', 'resharper-cpp-background'],

@@ -101,6 +101,11 @@ body.resharper-cpp-background {
   //TODO Reference actual ReSharper C++ logo
 }
 
+body.dotcover-background {
+  @include slide-background-template($productName: 'dotcover', $beamName: 'resharper_ultimate')
+  // TODO Reference actual dotCover logo
+}
+
 body.default-background {
   background-image:       url("../../img/slides/jetbrains_logo.svg");
   background-position:    90% 35px;
