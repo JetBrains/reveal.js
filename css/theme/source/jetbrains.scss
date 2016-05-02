@@ -58,96 +58,48 @@ section.has-dark-background {
   border: none;
 }
 
-body.resharper-background {
+@mixin slide-background-template($productName, $beamName: $productName, $beamPosition: 0 0, $logoSize: auto 50px) {
 
   background: {
-    image:        url("../../img/logo_resharper.svg"),
-                  url("../../img/slides/beam_resharper.svg"),
+    image:        url("../../img/logo_#{$productName}.svg"),
+                  url("../../img/slides/beam_#{$beamName}.svg"),
                   url("../../img/slides/jetbrains_logo.svg");
 
     position:     75px 60px,
-                  0 0,
+                  $beamPosition,
                   90% 35px;
 
-    size:         auto 50px,
+    size:         $logoSize,
                   auto 540px,
                   auto 100px;
 
     repeat:       no-repeat;
   }
 
-  padding:                50px;
+  padding:        50px;
 
+}
+
+body.resharper-background {
+  @include slide-background-template($productName: 'resharper');
 }
 
 body.resharper-intro-background {
-
-  background-image:       url("../../img/logo_resharper.svg"),
-                          url("../../img/slides/beam_resharper.svg"),
-                          url("../../img/slides/jetbrains_logo.svg");
-
-  background-position:    75px 60px,
-                          0 0,
-                          90% 35px;
-
-  background-size:        auto 50px,
-                          auto 540px,
-                          auto 100px;
-
-  background-repeat:      no-repeat;
-
-  padding:                50px;
-
+  @include slide-background-template($productName: 'resharper');
 }
+
 body.resharper-ultimate-background {
-
-  background-image:       url("../../img/logo_resharper.svg"),
-                          url("../../img/slides/beam_resharper_ultimate.svg"),
-                          url("../../img/slides/jetbrains_logo.svg");
-
-  background-position:    75px 60px,
-                          -28px -15px,
-                          90% 35px;
-
-  background-size:        auto 50px,
-                          auto 540px,
-                          auto 100px;
-
-  background-repeat:      no-repeat;
-
-  padding:                50px;
-
+  @include slide-background-template($productName: 'resharper', $beamName: 'resharper_ultimate', $beamPosition: -28px -15px);
 }
 
 body.dottrace-background {
-
-  background-image:       url("../../img/logo_dottrace.svg"),
-                          url("../../img/slides/beam_resharper.svg"),
-                          url("../../img/slides/jetbrains_logo.svg");
-
-  background-position:    75px 60px,
-                          0 0,
-                          90% 35px;
-
-  background-size:        auto 42px,
-                          auto 540px,
-                          auto 100px;
-
-  background-repeat:      no-repeat;
-
-  padding:                50px;
-
+  @include slide-background-template($productName: 'dottrace', $beamName: 'resharper_ultimate', $logoSize: auto 42px);
 }
 
 body.default-background {
-
   background-image:       url("../../img/slides/jetbrains_logo.svg");
-
   background-position:    90% 35px;
-
   background-size:        auto 100px;
-
   background-repeat:      no-repeat;
-
   padding:                50px;
 }

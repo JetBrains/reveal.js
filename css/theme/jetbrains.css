@@ -295,29 +295,29 @@ body {
 
 body.resharper-background {
   background-image: url("../../img/logo_resharper.svg"), url("../../img/slides/beam_resharper.svg"), url("../../img/slides/jetbrains_logo.svg");
-  background-position: 75px 60px, 0 0, 90% 35px;
-  background-size: auto 50px, auto 540px, auto 100px;
+  background-position: 75px 60px, 0 0, 90% 35px;
+  background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
   padding: 50px; }
 
 body.resharper-intro-background {
   background-image: url("../../img/logo_resharper.svg"), url("../../img/slides/beam_resharper.svg"), url("../../img/slides/jetbrains_logo.svg");
-  background-position: 75px 60px, 0 0, 90% 35px;
-  background-size: auto 50px, auto 540px, auto 100px;
+  background-position: 75px 60px, 0 0, 90% 35px;
+  background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
   padding: 50px; }
 
 body.resharper-ultimate-background {
   background-image: url("../../img/logo_resharper.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg");
-  background-position: 75px 60px, -28px -15px, 90% 35px;
-  background-size: auto 50px, auto 540px, auto 100px;
+  background-position: 75px 60px, -28px -15px, 90% 35px;
+  background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
   padding: 50px; }
 
 body.dottrace-background {
-  background-image: url("../../img/logo_dottrace.svg"), url("../../img/slides/beam_resharper.svg"), url("../../img/slides/jetbrains_logo.svg");
-  background-position: 75px 60px, 0 0, 90% 35px;
-  background-size: auto 42px, auto 540px, auto 100px;
+  background-image: url("../../img/logo_dottrace.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg");
+  background-position: 75px 60px, 0 0, 90% 35px;
+  background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
   padding: 50px; }
 
