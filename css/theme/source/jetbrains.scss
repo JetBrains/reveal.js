@@ -111,6 +111,11 @@ body.dotmemory-background {
   // TODO Reference actual dotMemory logo
 }
 
+body.dotpeek-background {
+  @include slide-background-template($productName: 'dotpeek', $beamName: 'resharper_ultimate')
+  // TODO Reference actual dotPeek logo
+}
+
 body.default-background {
   background-image:       url("../../img/slides/jetbrains_logo.svg");
   background-position:    90% 35px;
