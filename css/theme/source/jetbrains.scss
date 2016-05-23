@@ -101,7 +101,7 @@ body.resharper-cpp-background {
 }
 
 body.dotcover-background {
-  @include slide-background-template($productName: 'dotcover', $beamName: 'resharper_ultimate')
+  @include slide-background-template($productName: 'dotcover', $beamName: 'resharper_ultimate', $logoSize: auto 42px)
 }
 
 body.dotmemory-background {
@@ -109,7 +109,7 @@ body.dotmemory-background {
 }
 
 body.dotpeek-background {
-  @include slide-background-template($productName: 'dotpeek', $beamName: 'resharper_ultimate')
+  @include slide-background-template($productName: 'dotpeek', $beamName: 'resharper_ultimate', $logoSize: auto 42px)
 }
 
 body.default-background {

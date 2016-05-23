@@ -331,7 +331,7 @@ body.resharper-cpp-background {
 body.dotcover-background {
   background-image: url("../../img/logo_dotcover.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
-  background-size: auto 50px, auto 540px, auto 100px;
+  background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
   padding: 50px; }
 
@@ -345,7 +345,7 @@ body.dotmemory-background {
 body.dotpeek-background {
   background-image: url("../../img/logo_dotpeek.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
-  background-size: auto 50px, auto 540px, auto 100px;
+  background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
   padding: 50px; }
 
