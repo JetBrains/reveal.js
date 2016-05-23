@@ -61,7 +61,7 @@ section.has-dark-background {
 @mixin slide-background-template($productName, $beamName: $productName, $beamPosition: 0 0, $logoSize: auto 50px) {
 
   background: {
-    image:        url("../../node_modules/jetbrains-logos/#{$productName}/#{$productName}-text.svg"),
+    image:        url("../../img/logo_#{$productName}.svg"),
                   url("../../img/slides/beam_#{$beamName}.svg"),
                   url("../../img/slides/jetbrains_logo.svg");
 

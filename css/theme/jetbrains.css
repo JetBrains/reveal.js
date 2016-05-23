@@ -294,56 +294,56 @@ body {
   border: none; }
 
 body.resharper-background {
-  background-image: url("../../node_modules/jetbrains-logos/resharper/resharper-text.svg"), url("../../img/slides/beam_resharper.svg"), url("../../img/slides/jetbrains_logo.svg");
+  background-image: url("../../img/logo_resharper.svg"), url("../../img/slides/beam_resharper.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
   padding: 50px; }
 
 body.resharper-intro-background {
-  background-image: url("../../node_modules/jetbrains-logos/resharper/resharper-text.svg"), url("../../img/slides/beam_resharper.svg"), url("../../img/slides/jetbrains_logo.svg");
+  background-image: url("../../img/logo_resharper.svg"), url("../../img/slides/beam_resharper.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
   padding: 50px; }
 
 body.resharper-ultimate-background {
-  background-image: url("../../node_modules/jetbrains-logos/resharper/resharper-text.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg");
+  background-image: url("../../img/logo_resharper.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, -28px -15px, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
   padding: 50px; }
 
 body.dottrace-background {
-  background-image: url("../../node_modules/jetbrains-logos/dottrace/dottrace-text.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg");
+  background-image: url("../../img/logo_dottrace.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
   padding: 50px; }
 
 body.resharper-cpp-background {
-  background-image: url("../../node_modules/jetbrains-logos/resharper_cpp/resharper_cpp-text.svg"), url("../../img/slides/beam_resharper_cpp.svg"), url("../../img/slides/jetbrains_logo.svg");
+  background-image: url("../../img/logo_resharper_cpp.svg"), url("../../img/slides/beam_resharper_cpp.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
   padding: 50px; }
 
 body.dotcover-background {
-  background-image: url("../../node_modules/jetbrains-logos/dotcover/dotcover-text.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg");
+  background-image: url("../../img/logo_dotcover.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
   padding: 50px; }
 
 body.dotmemory-background {
-  background-image: url("../../node_modules/jetbrains-logos/dotmemory/dotmemory-text.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg");
+  background-image: url("../../img/logo_dotmemory.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
   padding: 50px; }
 
 body.dotpeek-background {
-  background-image: url("../../node_modules/jetbrains-logos/dotpeek/dotpeek-text.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg");
+  background-image: url("../../img/logo_dotpeek.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
