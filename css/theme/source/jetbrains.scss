@@ -98,22 +98,18 @@ body.dottrace-background {
 
 body.resharper-cpp-background {
   @include slide-background-template($productName: 'resharper_cpp')
-  //TODO Reference actual ReSharper C++ logo
 }
 
 body.dotcover-background {
   @include slide-background-template($productName: 'dotcover', $beamName: 'resharper_ultimate')
-  // TODO Reference actual dotCover logo
 }
 
 body.dotmemory-background {
   @include slide-background-template($productName: 'dotmemory', $beamName: 'resharper_ultimate')
-  // TODO Reference actual dotMemory logo
 }
 
 body.dotpeek-background {
   @include slide-background-template($productName: 'dotpeek', $beamName: 'resharper_ultimate')
-  // TODO Reference actual dotPeek logo
 }
 
 body.default-background {
