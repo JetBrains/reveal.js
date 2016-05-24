@@ -113,6 +113,10 @@ body.dotpeek-background {
   @include slide-background-template($productName: 'dotpeek', $beamName: 'resharper_ultimate', $logoSize: auto 42px)
 }
 
+body.rider-background {
+  @include slide-background-template($productName: 'rider', $beamName: 'resharper_ultimate', $logoSize: auto 42px)
+}
+
 body.default-background {
   background-image:       url("../../img/slides/jetbrains_logo.svg");
   background-position:    90% 35px;

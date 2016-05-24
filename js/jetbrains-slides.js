@@ -9,6 +9,7 @@ $(document).ready(function() {
         ['resharper-ultimate-intro', 'resharper-ultimate-background'],
         ['resharper-intro', 'resharper-intro-background'],
         ['resharper-cpp-slide', 'resharper-cpp-background'],
+        ['rider-slide', 'rider-background'],
     ];
 
     selectBackground(styleMappings);
