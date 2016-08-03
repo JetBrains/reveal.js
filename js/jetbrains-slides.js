@@ -11,7 +11,9 @@ $(document).ready(function() {
         ['resharper-cpp-slide', 'resharper-cpp-background'],
         ['rider-slide', 'rider-background'],
         ['webstorm-slide', 'webstorm-background'],
-        ['webstorm-intro', 'webstorm-intro-background']
+        ['webstorm-intro', 'webstorm-intro-background'],
+        ['clion-slide', 'clion-background'],
+        ['clion-intro', 'clion-intro-background']
     ];
 
     selectBackground(styleMappings);

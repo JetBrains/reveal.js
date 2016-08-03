@@ -121,6 +121,10 @@ body.webstorm-background, body.webstorm-intro-background {
   @include slide-background-template($productName: 'webstorm');
 }
 
+body.clion-background, body.clion-intro-background {
+  @include slide-background-template($productName: 'clion', $beamPosition: -90px -95px, $logoSize: auto 42px)
+}
+
 body.default-background {
   background-image:       url("../../img/slides/jetbrains_logo.svg");
   background-position:    90% 35px;
