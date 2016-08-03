@@ -10,6 +10,8 @@ $(document).ready(function() {
         ['resharper-intro', 'resharper-intro-background'],
         ['resharper-cpp-slide', 'resharper-cpp-background'],
         ['rider-slide', 'rider-background'],
+        ['webstorm-slide', 'webstorm-background'],
+        ['webstorm-intro', 'webstorm-intro-background']
     ];
 
     selectBackground(styleMappings);
