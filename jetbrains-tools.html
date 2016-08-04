@@ -1,0 +1,794 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Booth presentation - JetBrains tools</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/jetbrains.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<script type="text/javascript" src="js/jetbrains-slides.js"></script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body class="classToBeRemoved">
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<!--<section class="resharper-ultimate-intro">-->
+					<!--<h1>RESHARPER ULTIMATE</h1>-->
+					<!--<div class="jetbrains-logo _logo-jetbrains-square _size-5"></div>-->
+				<!--</section>-->
+
+				<section class="resharper-intro">
+					<h2>ReSharper</h2>
+					<div class="jetbrains-logo _logo-resharper _size-5"></div>
+				</section>
+
+				<section class="resharper-slide">
+					<h2>Enjoy continuous code quality analysis</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper/code_analysis.png">
+					</p>
+				</section>
+
+				<section class="resharper-slide">
+					<h2>Improve your code with quick-fixes</h2>
+					<p>C#, VB.NET, XAML, ASP.NET, HTML, JavaScript, TypeScript, CSS, XML</p>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper/qf_general.png">
+						<!--TODO Add shortcut callout (Alt+Enter)-->
+					</p>
+				</section>
+
+				<section class="resharper-slide">
+					<h2>Use a common naming standard</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper/qf_naming.png">
+					</p>
+				</section>
+
+				<section class="resharper-slide">
+					<h2>Migrate to C# 6 when you are ready</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper/qf_csharp6.png">
+					</p>
+				</section>
+
+				<section class="resharper-slide">
+					<h2>See where LINQ can be used</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper/qf_linq.png">
+					</p>
+				</section>
+
+				<section class="resharper-slide">
+					<h2>Find and prevent possible exceptions</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper/qf_invalid_cast.png">
+					</p>
+				</section>
+
+				<section class="resharper-slide">
+					<h2>Detect unused or unreachable code</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper/qf_unreachable_code.png">
+					</p>
+				</section>
+
+				<section class="resharper-slide">
+					<h2>Detect potential threading issues</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper/qf_lock.png">
+					</p>
+				</section>
+
+				<section class="resharper-slide">
+					<h2>Track errors as they appear, solution-wide</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper/swa.png">
+					</p>
+				</section>
+
+				<section class="resharper-slide">
+					<h2>Instantly find all code issues in any scope</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper/inspection_results.png">
+					</p>
+				</section>
+
+				<section class="resharper-slide">
+					<h2>Code faster with extended completion</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper/completion.png">
+						<!--TODO Add shortcut callout (Ctrl+Space)-->
+					</p>
+				</section>
+
+				<section class="resharper-slide">
+					<h2>Code faster with extended completion</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper/completion2.png">
+					</p>
+				</section>
+
+				<section class="resharper-slide">
+					<h2>Generate boilerplate code quickly</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper/generate_general.png">
+					</p>
+				</section>
+
+				<section class="resharper-slide">
+					<h2>Generate boilerplate code quickly</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper/generate_override_members.png">
+					</p>
+				</section>
+
+				<section class="resharper-slide">
+					<h2>Refactor safely</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper/refactor_this.png">
+						<!--TODO Add shortcut callout (Ctrl+Shift+R)-->
+					</p>
+				</section>
+
+				<section class="resharper-slide">
+					<h2>Find and explore code usages</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper/find_usages.png">
+					</p>
+				</section>
+
+				<section class="resharper-slide">
+					<h2>Find and explore code usages</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper/go_to_usages.png">
+					</p>
+				</section>
+
+				<section class="resharper-slide">
+					<h2>Jump to anything quickly</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper/go_to_symbol.png">
+					</p>
+				</section>
+
+				<section class="resharper-slide">
+					<h2>Speed up with contextual navigation</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper/navigate_to.png">
+					</p>
+				</section>
+
+				<section class="resharper-slide">
+					<h2>Enjoy web development</h2>
+					<p>ASP.NET MVC, Web Forms, HTML(5), JavaScript, TypeScript, CSS</p>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper/aspnet.png">
+						<!--TODO Add shortcut callout (Alt+Enter)-->
+					</p>
+				</section>
+
+				<section class="resharper-slide">
+					<h2>Enjoy XAML development</h2>
+					<p>WPF, Silverlight, Windows Phone, Universal Windows Platform</p>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper/xaml1.png">
+						<!--TODO Add shortcut callout (Alt+Enter)-->
+					</p>
+				</section>
+
+				<section class="resharper-slide">
+					<h2>Enjoy XAML development</h2>
+					<p>WPF, Silverlight, Windows Phone, Universal Windows Platform</p>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper/xaml2.png">
+					</p>
+				</section>
+
+				<section class="resharper-slide">
+					<h2>Manage and run unit tests</h2>
+					<p>Built-in: NUnit, MSTest, xUnit, QUnit, Jasmine | MSpec, ...</p>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper/unit_test_explorer_default.png">
+					</p>
+				</section>
+
+				<section class="resharper-slide">
+					<h2>Manage and run unit tests</h2>
+					<p>Built-in: NUnit, MSTest, xUnit, QUnit, Jasmine | MSpec, ...</p>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper/unit_test_explorer_categories.png">
+					</p>
+				</section>
+
+				<section class="resharper-slide">
+					<h2>Manage and run unit tests</h2>
+					<p>Built-in: NUnit, MSTest, xUnit, QUnit, Jasmine | MSpec, ...</p>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper/unit_test_explorer_sessions.png">
+					</p>
+				</section>
+
+				<section class="resharper-slide">
+					<h2>Manage and run unit tests</h2>
+					<p>Built-in: NUnit, MSTest, xUnit, QUnit, Jasmine | MSpec, ...</p>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper/unit_tests_context.png">
+					</p>
+				</section>
+
+				<section class="resharper-slide">
+					<h2>Manage and run unit tests</h2>
+					<p>Built-in: NUnit, MSTest, xUnit, QUnit, Jasmine | MSpec, ...</p>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper/unit_test_sessions.png">
+					</p>
+				</section>
+
+				<section class="resharper-slide">
+					<h2>Extend ReSharper</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper/extensions.png">
+					</p>
+				</section>
+
+				<section class="resharper-slide">
+					<h2>Run inspections from the command line</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper/command_line.png">
+					</p>
+				</section>
+
+				<section class="resharper-slide">
+					<h2>Learn more and download a free 30-day trial</h2>
+					<h2><a href="https://www.jetbrains.com/resharper">jetbrains.com/resharper</a></h2>
+				</section>
+
+
+				<!--ReSharper C++-->
+
+				<section class="resharper-cpp-slide">
+					<h2>ReSharper C++</h2>
+					<div class="jetbrains-logo _logo-resharper-cpp _size-5"></div>
+				</section>
+
+				<section class="resharper-cpp-slide">
+					<h2>Design-time code quality analysis</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper-cpp/code_analysis.png">
+					</p>
+				</section>
+
+				<section class="resharper-cpp-slide">
+					<h2>Find code issues in project or solution</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper-cpp/inspection_results.png">
+					</p>
+				</section>
+
+				<section class="resharper-cpp-slide">
+					<h2>Repair and improve code with quick-fixes</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper-cpp/qf_redundant_qualifier.png">
+						<img src="img/screenshots/resharper-ultimate/resharper-cpp/qf_use_type.png">
+					</p>
+				</section>
+
+				<section class="resharper-cpp-slide">
+					<h2>Code faster with smart completion</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper-cpp/code_completion.png">
+					</p>
+				</section>
+
+				<section class="resharper-cpp-slide">
+					<h2>Transform code with context actions</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper-cpp/ca_generate_constructor.png">
+						<img src="img/screenshots/resharper-ultimate/resharper-cpp/ca_generate_implementation.png">
+					</p>
+				</section>
+
+				<section class="resharper-cpp-slide">
+					<h2>Transform code with context actions</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper-cpp/ca_substitute_typedef.png">
+						<img src="img/screenshots/resharper-ultimate/resharper-cpp/ca_merge_nested_if.png">
+					</p>
+				</section>
+
+				<section class="resharper-cpp-slide">
+					<h2>Refactor safely</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper-cpp/refactoring_popup.png">
+					</p>
+				</section>
+
+				<section class="resharper-cpp-slide">
+					<h2>Refactor safely</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper-cpp/refactoring_dialog.png">
+					</p>
+				</section>
+
+				<section class="resharper-cpp-slide">
+					<h2>Explore usages of any symbol</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper-cpp/find_usages.png">
+					</p>
+				</section>
+
+				<section class="resharper-cpp-slide">
+					<h2>Explore to-do comments</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper-cpp/todo_explorer.png">
+					</p>
+				</section>
+
+				<section class="resharper-cpp-slide">
+					<h2>Find everything quickly</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper-cpp/go_to_combos.png">
+					</p>
+				</section>
+
+				<section class="resharper-cpp-slide">
+					<h2>Speed up with smart navigation</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper-cpp/navigate_to.png">
+					</p>
+				</section>
+
+				<section class="resharper-cpp-slide">
+					<h2>Navigate between template specializations</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper-cpp/template_specializations.png">
+					</p>
+				</section>
+
+				<section class="resharper-cpp-slide">
+					<h2>Visually explore hierarchy of types</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper-cpp/subtypes_hierarchy.png">
+					</p>
+				</section>
+
+				<section class="resharper-cpp-slide">
+					<h2>Visually explore hierarchy of includes</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper-cpp/includes_hierarchy.png">
+					</p>
+				</section>
+
+				<section class="resharper-cpp-slide">
+					<h2>Generate boilerplate code</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper-cpp/generate_popup.png">
+					</p>
+				</section>
+
+				<section class="resharper-cpp-slide">
+					<h2>Use templates to code faster</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper-cpp/templates_surround.png">
+					</p>
+				</section>
+
+				<section class="resharper-cpp-slide">
+					<h2>Reformat code in any scope</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper-cpp/format_selection.png">
+					</p>
+				</section>
+
+				<section class="resharper-cpp-slide">
+					<h2>Test with pleasure</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/resharper-cpp/unit_testing.png">
+					</p>
+				</section>
+
+				<section class="resharper-cpp-slide">
+					<h2>Learn more and download a free 30-day trial</h2>
+					<h2><a href="https://www.jetbrains.com/resharper-cpp">jetbrains.com/resharper-cpp</a></h2>
+				</section>
+
+
+				<!--dotTrace-->
+
+				<section class="dottrace-slide">
+					<h2>dotTrace</h2>
+					<div class="jetbrains-logo _logo-dottrace _size-5"></div>
+				</section>
+
+				<section class="dottrace-slide">
+					<h2>Profile various .NET applications</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/dottrace/dottrace_home_screen.png">
+					</p>
+				</section>
+
+				<section class="dottrace-slide">
+					<h2>Profile remote applications</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/dottrace/remote_profiling.png">
+					</p>
+				</section>
+
+				<section class="dottrace-slide">
+					<h2>Profile right in Visual Studio</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/dottrace/performance_profiler_in_visual_studio.png">
+					</p>
+				</section>
+
+				<section class="dottrace-slide">
+					<h2>Dive deeper with integrated decompiler</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/dottrace/dottrace_decompiled_source.png">
+					</p>
+				</section>
+
+				<section class="dottrace-slide">
+					<h2>Explore profiling results in different views</h2>
+					<p>Call tree, threads tree, hot spots, plain list, ...</p>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/dottrace/call_tree_view.png">
+						<img src="img/screenshots/resharper-ultimate/dottrace/threads_view.png">
+					</p>
+				</section>
+
+				<section class="dottrace-slide">
+					<h2>Discover bottlenecks with Subsystems view</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/dottrace/subsystems.png">
+					</p>
+				</section>
+
+				<section class="dottrace-slide">
+					<h2>Compare profiling results</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/dottrace/snapshot_comparison.png">
+					</p>
+				</section>
+
+				<section class="dottrace-slide">
+					<h2>Integration with Visual Studio and ReSharper</h2>
+					<p>One-click profiling of current project and unit tests</p>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/dottrace/profile_all_tests.png">
+					</p>
+				</section>
+
+				<section class="dottrace-slide">
+					<h2>Learn more and download a free trial</h2>
+					<h2><a href="https://www.jetbrains.com/profiler">jetbrains.com/profiler</a></h2>
+				</section>
+
+				
+				<!--dotCover-->
+
+				<section class="dotcover-slide">
+					<h2>dotCover</h2>
+					<div class="jetbrains-logo _logo-dotcover _size-5"></div>
+				</section>
+
+				<section class="dotcover-slide">
+					<h2>Code coverage of unit tests</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/dotcover/unit_test_session_with_coverage.png">
+					</p>
+				</section>
+
+				<section class="dotcover-slide">
+					<h2>Code coverage of manual test sessions</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/dotcover/manual_test_coverage.png">
+					</p>
+				</section>
+
+				<section class="dotcover-slide">
+					<h2>Run unit tests continuously</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/dotcover/continuous_testing.png">
+					</p>
+				</section>
+
+				<section class="dotcover-slide">
+					<h2>Visualize code coverage</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/dotcover/coverage_highlighting.png">
+					</p>
+				</section>
+
+				<section class="dotcover-slide">
+					<h2>Navigate to covering tests</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/dotcover/navigate_to_covering_tests.png">
+						<!--TODO Add shortcut callout (Ctrl+Alt+K,T)-->
+					</p>
+				</section>
+
+				<section class="dotcover-slide">
+					<h2>Export coverage results</h2>
+					<p>to HTML, XML, or JSON</p>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/dotcover/coverage_report.png">
+					</p>
+				</section>
+
+				<section class="dotcover-slide">
+					<h2>Learn more and download a free 30-day trial</h2>
+					<h2><a href="https://www.jetbrains.com/dotcover">jetbrains.com/dotcover</a></h2>
+				</section>
+
+
+				<!--dotMemory-->
+
+				<section class="dotmemory-slide">
+					<h2>dotMemory</h2>
+					<div class="jetbrains-logo _logo-dotmemory _size-5"></div>
+				</section>
+
+				<section class="dotmemory-slide">
+					<h2>Unique user interface</h2>
+					<p>for easy step-by-step memory analysis</p>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/dotmemory/dotmemory_ui.png">
+					</p>
+				</section>
+
+				<section class="dotmemory-slide">
+					<h2>Pinpoint memory issues</h2>
+					<p>with automatic inspections</p>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/dotmemory/memory_inspections.png">
+					</p>
+				</section>
+
+				<section class="dotmemory-slide">
+					<h2>Analyze memory consumption in real time</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/dotmemory/real_time_memory_analysis.png">
+					</p>
+				</section>
+
+				<section class="dotmemory-slide">
+					<h2>Analyze call stacks</h2>
+					<p>with the icicle chart</p>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/dotmemory/icicle_chart.png">
+					</p>
+				</section>
+
+				<section class="dotmemory-slide">
+					<h2>Analyze dominating objects</h2>
+					<p>with the sunburst diagram</p>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/dotmemory/sunburst_diagram.png">
+					</p>
+				</section>
+
+				<section class="dotmemory-slide">
+					<h2>Learn more and download a free trial</h2>
+					<h2><a href="https://www.jetbrains.com/dotmemory">jetbrains.com/dotmemory</a></h2>
+				</section>
+
+
+				<!--dotPeek-->
+
+				<section class="dotpeek-slide">
+					<h2>dotPeek</h2>
+					<div class="jetbrains-logo _logo-dotpeek _size-5"></div>
+				</section>
+
+				<section class="dotpeek-slide">
+					<h2>Decompile and explore .NET assemblies</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/dotpeek/dotpeek_general.png">
+					</p>
+				</section>
+
+				<section class="dotpeek-slide">
+					<h2>Export assemblies into source projects</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/dotpeek/export_to_visual_studio.png">
+					</p>
+				</section>
+
+				<section class="dotpeek-slide">
+					<h2>Navigate and search in decompiled code</h2>
+					<p>like you would do in Visual Studio with ReSharper</p>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/dotpeek/find_usages_dotpeek.png">
+					</p>
+				</section>
+
+				<section class="dotpeek-slide">
+					<h2>Navigate and search in decompiled code</h2>
+					<p>like you would do in Visual Studio with ReSharper</p>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/dotpeek/go_to_everything.png">
+					</p>
+				</section>
+
+				<section class="dotpeek-slide">
+					<h2>Navigate and search in decompiled code</h2>
+					<p>like you would do in Visual Studio with ReSharper</p>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/dotpeek/dotpeek_type_dependency_diagram.png">
+					</p>
+				</section>
+
+				<section class="dotpeek-slide">
+					<h2>Generate PDF files on-the-fly</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/dotpeek/pdb_generation_dialog.png">
+					</p>
+				</section>
+
+				<section class="dotpeek-slide">
+					<h2>Generate PDF files on-the-fly</h2>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/dotpeek/pdb_generation_log.png">
+					</p>
+				</section>
+
+				<section class="dotpeek-slide">
+					<h2>Use dotPeek symbol server</h2>
+					<p>to generate PDB and source files for your debugger</p>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/dotpeek/symbol_server.png">
+					</p>
+				</section>
+
+				<section class="dotpeek-slide">
+					<h2>Learn more and download dotPeek for free</h2>
+					<h2><a href="https://www.jetbrains.com/decompiler">jetbrains.com/decompiler</a></h2>
+				</section>
+
+
+				<!--Rider-->
+
+				<section class="rider-slide">
+					<h2>Rider: New Cross-Platform .NET IDE</h2>
+					<div class="jetbrains-logo _logo-rider _size-5"></div>
+				</section>
+
+				<section class="rider-slide">
+					<h2>Write .NET code on Windows, Mac, Linux</h2>
+					<p>in an IDE similar to WebStorm, IntelliJ IDEA, other JetBrains tools</p>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/rider/welcome.png">
+					</p>
+				</section>
+
+				<section class="rider-slide">
+					<h2>Alt+Enter to fix or improve code</h2>
+					<p>Rider uses ReSharper's code analysis under the hood</p>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/rider/alt_enter.png">
+					</p>
+				</section>
+
+				<section class="rider-slide">
+					<h2>Save time when you improve code</h2>
+					<p>Many quick-fixes can be applied in a file, project, or solution</p>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/rider/quick_fix_remove_redundant_code.png">
+					</p>
+				</section>
+
+				<section class="rider-slide">
+					<h2>Navigate with Solution Explorer or breadcrumbs</h2>
+					<p>Multiple navigation features to jump around your code base</p>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/rider/navigation_breadcrumbs.png">
+					</p>
+				</section>
+
+				<section class="rider-slide">
+					<h2>Search everywhere</h2>
+					<p>Find a class, file, or a recently edited item from a single UI</p>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/rider/search_everywhere.png">
+					</p>
+				</section>
+
+				<section class="rider-slide">
+					<h2>Debug .NET or Mono applications</h2>
+					<p>Support for .NET Core (or whatever replaces it) is coming</p>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/rider/debugger.png">
+					</p>
+				</section>
+
+				<section class="rider-slide">
+					<h2>Enter distraction-free mode</h2>
+					<p>You can make Rider look like Notepad but work like a powerful IDE</p>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/rider/distraction_free_mode.png">
+					</p>
+				</section>
+
+				<section class="rider-slide">
+					<h2>Plugins are already available</h2>
+					<p>IntelliJ platform plugins and ReSharper plugins can work in Rider</p>
+					<p>
+						<img src="img/screenshots/resharper-ultimate/rider/plugins.png">
+					</p>
+				</section>
+
+				<section class="rider-slide">
+					<h2>Learn more and join Rider Early Access Program</h2>
+					<h2><a href="https://www.jetbrains.com/rider">jetbrains.com/rider</a></h2>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: false,
+				history: true,
+				center: true,
+				autoSlide: 5000,
+				loop: true,
+				showNotes: false,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
