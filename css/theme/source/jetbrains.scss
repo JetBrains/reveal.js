@@ -59,6 +59,24 @@ section.has-dark-background {
   max-height: 45vh;
 }
 
+.reveal section ul.slide-block {
+
+  & li {
+    display: inline-block;
+    padding-right: 5vh;
+    float: left;
+
+    &:nth-child(4) {
+      clear: left;
+    }
+
+    & img.slide-logo {
+      height: 17vh;
+      box-shadow: none;
+    }
+  }
+}
+
 @mixin slide-background-template($productName, $beamName: $productName, $beamPosition: 0 0, $logoSize: auto 50px) {
 
   background: {

@@ -294,6 +294,16 @@ body {
   border: none;
   max-height: 45vh; }
 
+.reveal section ul.slide-block li {
+  display: inline-block;
+  padding-right: 5vh;
+  float: left; }
+  .reveal section ul.slide-block li:nth-child(4) {
+    clear: left; }
+  .reveal section ul.slide-block li img.slide-logo {
+    height: 17vh;
+    box-shadow: none; }
+
 body.resharper-background {
   background-image: url("../../img/logo_resharper.svg"), url("../../img/slides/beam_resharper.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
