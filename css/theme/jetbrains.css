@@ -3,7 +3,6 @@
  *
  * By Hakim El Hattab, http://hakim.se
  */
-@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
 @import url(../jetbrains-bundle/fonts/fonts.css);
 @import url(../jetbrains-bundle/footer/footer.css);
 @import url(../jetbrains-bundle/grid/grid.css);
@@ -20,7 +19,7 @@ body {
   background-color: #fff; }
 
 .reveal {
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: Gotham SSm A,Gotham SSm B,Helvetica,Arial,sans-serif;
   font-size: 28px;
   font-weight: normal;
   color: #222; }
@@ -46,7 +45,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #222;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: Gotham SSm A,Gotham SSm B,Helvetica,Arial,sans-serif;
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: normal;
@@ -81,7 +80,7 @@ body {
 .reveal video,
 .reveal iframe {
   max-width: 95%;
-  max-height: 95%; }
+  max-height: 45vh; }
 
 .reveal strong,
 .reveal b {
