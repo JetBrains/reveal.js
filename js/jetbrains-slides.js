@@ -6,16 +6,22 @@ $(document).ready(function() {
         ['dotcover-slide', 'dotcover-background'],
         ['dotmemory-slide', 'dotmemory-background'],
         ['dotpeek-slide', 'dotpeek-background'],
-        ['resharper-ultimate-intro', 'resharper-ultimate-background'],
-        ['resharper-intro', 'resharper-intro-background'],
         ['resharper-cpp-slide', 'resharper-cpp-background'],
         ['rider-slide', 'rider-background'],
         ['webstorm-slide', 'webstorm-background'],
-        ['webstorm-intro', 'webstorm-intro-background'],
         ['appcode-slide', 'appcode-background'],
-        ['appcode-intro', 'appcode-intro-background'],
         ['clion-slide', 'clion-background'],
-        ['clion-intro', 'clion-intro-background']
+        ['intellij-slide', 'intellij-background'],
+        ['phpstorm-slide', 'phpstorm-background'],
+        ['pycharm-slide', 'pycharm-background'],
+        ['rubymine-slide', 'rubymine-background'],
+        ['teamcity-slide', 'teamcity-background'],
+        ['upsource-slide', 'upsource-background'],
+        ['youtrack-slide', 'youtrack-background'],
+        ['kotlin-slide', 'kotlin-background'],
+        ['datagrip-slide', 'datagrip-background'],
+        ['hub-slide', 'hub-background'],
+        ['mps-slide', 'mps-background'],
     ];
 
     selectBackground(styleMappings);

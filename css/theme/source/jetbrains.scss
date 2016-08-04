@@ -103,10 +103,6 @@ body.resharper-background {
   @include slide-background-template($productName: 'resharper');
 }
 
-body.resharper-intro-background {
-  @include slide-background-template($productName: 'resharper');
-}
-
 body.resharper-ultimate-background {
   @include slide-background-template($productName: 'resharper', $beamName: 'resharper_ultimate', $beamPosition: -28px -15px);
 }
@@ -135,14 +131,14 @@ body.rider-background {
   @include slide-background-template($productName: 'rider', $beamName: 'resharper_ultimate', $logoSize: auto 42px)
 }
 
-body.webstorm-background, body.webstorm-intro-background {
+body.webstorm-background {
   @include slide-background-template($productName: 'webstorm');
 }
-body.appcode-background, body.appcode-intro-background {
+body.appcode-background {
   @include slide-background-template($productName: 'appcode');
 }
 
-body.clion-background, body.clion-intro-background {
+body.clion-background {
   @include slide-background-template($productName: 'clion', $beamPosition: -90px -95px, $logoSize: auto 42px)
 }
 

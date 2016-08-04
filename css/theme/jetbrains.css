@@ -311,13 +311,6 @@ body.resharper-background {
   background-repeat: no-repeat;
   padding: 50px; }
 
-body.resharper-intro-background {
-  background-image: url("../../img/logo_resharper.svg"), url("../../img/slides/beam_resharper.svg"), url("../../img/slides/jetbrains_logo.svg");
-  background-position: 75px 60px, 0 0, 90% 35px;
-  background-size: auto 50px, auto 540px, auto 100px;
-  background-repeat: no-repeat;
-  padding: 50px; }
-
 body.resharper-ultimate-background {
   background-image: url("../../img/logo_resharper.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, -28px -15px, 90% 35px;
@@ -367,27 +360,26 @@ body.rider-background {
   background-repeat: no-repeat;
   padding: 50px; }
 
-body.webstorm-background, body.webstorm-intro-background {
+body.webstorm-background {
   background-image: url("../../img/logo_webstorm.svg"), url("../../img/slides/beam_webstorm.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
   padding: 50px; }
 
-body.clion-background, body.clion-intro-background {
-  background-image: url("../../img/logo_clion.svg"), url("../../img/slides/beam_clion.svg"), url("../../img/slides/jetbrains_logo.svg");
-  background-position: 75px 60px, -90px -95px, 90% 35px;
-  background-size: auto 42px, auto 540px, auto 100px;
-  background-repeat: no-repeat;
-  padding: 50px; }
-
-body.appcode-background, body.appcode-intro-background {
+body.appcode-background {
   background-image: url("../../img/logo_appcode.svg"), url("../../img/slides/beam_appcode.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
   padding: 50px; }
 
+body.clion-background {
+  background-image: url("../../img/logo_clion.svg"), url("../../img/slides/beam_clion.svg"), url("../../img/slides/jetbrains_logo.svg");
+  background-position: 75px 60px, -90px -95px, 90% 35px;
+  background-size: auto 42px, auto 540px, auto 100px;
+  background-repeat: no-repeat;
+  padding: 50px; }
 
 body.default-background {
   background-image: url("../../img/slides/jetbrains_logo.svg");
