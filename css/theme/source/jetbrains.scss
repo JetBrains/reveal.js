@@ -138,6 +138,9 @@ body.rider-background {
 body.webstorm-background, body.webstorm-intro-background {
   @include slide-background-template($productName: 'webstorm');
 }
+body.appcode-background, body.appcode-intro-background {
+  @include slide-background-template($productName: 'appcode');
+}
 
 body.clion-background, body.clion-intro-background {
   @include slide-background-template($productName: 'clion', $beamPosition: -90px -95px, $logoSize: auto 42px)

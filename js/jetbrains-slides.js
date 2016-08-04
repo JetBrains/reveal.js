@@ -12,6 +12,8 @@ $(document).ready(function() {
         ['rider-slide', 'rider-background'],
         ['webstorm-slide', 'webstorm-background'],
         ['webstorm-intro', 'webstorm-intro-background'],
+        ['appcode-slide', 'appcode-background'],
+        ['appcode-intro', 'appcode-intro-background'],
         ['clion-slide', 'clion-background'],
         ['clion-intro', 'clion-intro-background']
     ];

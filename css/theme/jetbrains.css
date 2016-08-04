@@ -381,6 +381,14 @@ body.clion-background, body.clion-intro-background {
   background-repeat: no-repeat;
   padding: 50px; }
 
+body.appcode-background, body.appcode-intro-background {
+  background-image: url("../../img/logo_appcode.svg"), url("../../img/slides/beam_appcode.svg"), url("../../img/slides/jetbrains_logo.svg");
+  background-position: 75px 60px, 0 0, 90% 35px;
+  background-size: auto 50px, auto 540px, auto 100px;
+  background-repeat: no-repeat;
+  padding: 50px; }
+
+
 body.default-background {
   background-image: url("../../img/slides/jetbrains_logo.svg");
   background-position: 90% 35px;
