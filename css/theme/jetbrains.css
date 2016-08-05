@@ -3,6 +3,7 @@
  *
  * By Hakim El Hattab, http://hakim.se
  */
+@import url(../../lib/font/gotham/gotham.css);
 @import url(../jetbrains-bundle/fonts/fonts.css);
 @import url(../jetbrains-bundle/footer/footer.css);
 @import url(../jetbrains-bundle/grid/grid.css);
@@ -80,7 +81,7 @@ body {
 .reveal video,
 .reveal iframe {
   max-width: 95%;
-  max-height: 45vh; }
+  max-height: 95%; }
 
 .reveal strong,
 .reveal b {
@@ -379,6 +380,7 @@ body.clion-background {
   background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
   padding: 50px; }
+
 
 body.intellij-background {
   background-image: url("../../img/logo_intellij_idea.svg"), url("../../img/slides/beam_intellij_idea.svg"), url("../../img/slides/jetbrains_logo.svg");
