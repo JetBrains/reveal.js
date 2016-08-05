@@ -367,7 +367,7 @@ body.rider-background {
 
 body.webstorm-background {
   background-image: url("../../img/logo_webstorm.svg"), url("../../img/slides/beam_webstorm.svg"), url("../../img/slides/jetbrains_logo.svg");
-  background-position: 75px 60px, 0 0, 90% 35px;
+  background-position: 75px 60px, -70px -60px, 90% 35px;
   background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
   padding: 50px; }
@@ -388,21 +388,21 @@ body.clion-background {
 
 body.intellij-background {
   background-image: url("../../img/logo_intellij_idea.svg"), url("../../img/slides/beam_intellij_idea.svg"), url("../../img/slides/jetbrains_logo.svg");
-  background-position: 75px 60px, 0 0, 90% 35px;
+  background-position: 75px 60px, -170px -30px, 90% 35px;
   background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
   padding: 50px; }
 
 body.phpstorm-background {
   background-image: url("../../img/logo_phpstorm.svg"), url("../../img/slides/beam_phpstorm.svg"), url("../../img/slides/jetbrains_logo.svg");
-  background-position: 75px 60px, 0 0, 90% 35px;
+  background-position: 75px 60px, -250px -50px, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
   padding: 50px; }
 
 body.pycharm-background {
   background-image: url("../../img/logo_pycharm.svg"), url("../../img/slides/beam_pycharm.svg"), url("../../img/slides/jetbrains_logo.svg");
-  background-position: 75px 60px, 0 0, 90% 35px;
+  background-position: 75px 60px, -130px -30px, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
   padding: 50px; }
@@ -416,7 +416,7 @@ body.rubymine-background {
 
 body.teamcity-background {
   background-image: url("../../img/logo_teamcity.svg"), url("../../img/slides/beam_teamcity.svg"), url("../../img/slides/jetbrains_logo.svg");
-  background-position: 75px 60px, 0 0, 90% 35px;
+  background-position: 75px 60px, -70px -30px, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
   padding: 50px; }
@@ -430,7 +430,7 @@ body.upsource-background {
 
 body.youtrack-background {
   background-image: url("../../img/logo_youtrack.svg"), url("../../img/slides/beam_youtrack.svg"), url("../../img/slides/jetbrains_logo.svg");
-  background-position: 75px 60px, 0 0, 90% 35px;
+  background-position: 75px 60px, -70px 0px, 90% 35px;
   background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
   padding: 50px; }
@@ -452,7 +452,7 @@ body.datagrip-background {
 
 body.hub-background {
   background-image: url("../../img/logo_hub.svg"), url("../../img/slides/beam_hub.svg"), url("../../img/slides/jetbrains_logo.svg");
-  background-position: 75px 60px, 0 0, 90% 35px;
+  background-position: 75px 60px, -70px 0px, 90% 35px;
   background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
   padding: 50px; }

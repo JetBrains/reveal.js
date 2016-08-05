@@ -137,7 +137,7 @@ body.rider-background {
 }
 
 body.webstorm-background {
-  @include slide-background-template($productName: 'webstorm', $logoSize: auto 42px);
+  @include slide-background-template($productName: 'webstorm', $beamPosition: -70px -60px, $logoSize: auto 42px);
 }
 body.appcode-background {
   @include slide-background-template($productName: 'appcode');
@@ -148,15 +148,15 @@ body.clion-background {
 }
 
 body.intellij-background {
-  @include slide-background-template($productName: 'intellij_idea', $logoSize: auto 42px);
+  @include slide-background-template($productName: 'intellij_idea', $beamPosition: -170px -30px, $logoSize: auto 42px);
 }
 
 body.phpstorm-background {
-  @include slide-background-template($productName: 'phpstorm');
+  @include slide-background-template($productName: 'phpstorm', $beamPosition: -250px -50px);
 }
 
 body.pycharm-background {
-  @include slide-background-template($productName: 'pycharm');
+  @include slide-background-template($productName: 'pycharm', $beamPosition: -130px -30px);
 }
 
 body.rubymine-background {
@@ -164,7 +164,7 @@ body.rubymine-background {
 }
 
 body.teamcity-background {
-  @include slide-background-template($productName: 'teamcity');
+  @include slide-background-template($productName: 'teamcity', $beamPosition: -70px -30px);
 }
 
 body.upsource-background {
@@ -172,7 +172,7 @@ body.upsource-background {
 }
 
 body.youtrack-background {
-  @include slide-background-template($productName: 'youtrack', $logoSize: auto 42px);
+  @include slide-background-template($productName: 'youtrack', $beamPosition: -70px 0px, $logoSize: auto 42px);
 }
 
 body.kotlin-background {
@@ -185,7 +185,7 @@ body.datagrip-background {
 }
 
 body.hub-background {
-  @include slide-background-template($productName: 'hub', $logoSize: auto 42px);
+  @include slide-background-template($productName: 'hub', $beamPosition: -70px 0px, $logoSize: auto 42px);
 }
 
 body.mps-background {
