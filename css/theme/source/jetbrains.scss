@@ -11,6 +11,9 @@
 // ---------------------------------------------
 
 
+// Include theme-specific fonts
+@import url(../../lib/font/gotham/gotham.css);
+
 // Include jetbrains-bundle
 @import url(../jetbrains-bundle/fonts/fonts.css);
 @import url(../jetbrains-bundle/footer/footer.css);
