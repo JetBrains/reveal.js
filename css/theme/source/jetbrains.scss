@@ -124,8 +124,12 @@ section.has-dark-background {
     repeat:       no-repeat;
   }
 
-  padding:        50px;
+  padding:        0
 
+}
+
+body.blank-background {
+  background: none !important;
 }
 
 body.resharper-background {
@@ -245,7 +249,7 @@ body.default-background {
   background-position:    90% 35px;
   background-size:        auto 100px;
   background-repeat:      no-repeat;
-  padding:                50px;
+  padding:                0;
 }
 
 .high-image-inside {
