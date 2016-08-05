@@ -59,6 +59,11 @@ section.has-dark-background {
   max-height: 45vh;
 }
 
+.reveal video,
+.reveal iframe {
+  max-width: 95%;
+  max-height: 95%; }
+
 .reveal section ul.slide-block {
 
   & li {

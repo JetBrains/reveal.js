@@ -294,6 +294,11 @@ body {
   border: none;
   max-height: 45vh; }
 
+.reveal video,
+.reveal iframe {
+  max-width: 95%;
+  max-height: 95%; }
+
 .reveal section ul.slide-block li {
   display: inline-block;
   padding-right: 5vh;
@@ -380,7 +385,6 @@ body.clion-background {
   background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
   padding: 50px; }
-
 
 body.intellij-background {
   background-image: url("../../img/logo_intellij_idea.svg"), url("../../img/slides/beam_intellij_idea.svg"), url("../../img/slides/jetbrains_logo.svg");
