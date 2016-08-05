@@ -26,19 +26,47 @@ $(document).ready(function() {
 
     selectBackground(styleMappings);
 
-    // select the target node
-    var target = document.querySelector('section');
+    var initialConfig = $.extend({}, Reveal.getConfig());
 
-    // create an observer instance
-    var observer = new MutationObserver(function(mutations) {
+    // Video slide handler
+    Reveal.addEventListener('slidechanged', function (event) {
         selectBackground(styleMappings);
+
+        var video = event.currentSlide.querySelector('video');
+        var hasVideo = video != null;
+        var viewport = {
+            width: $(window).width(),
+            height: $(window).height()
+        };
+        var config = {
+            width: initialConfig.width,
+            height: initialConfig.height,
+            minScale: initialConfig.minScale,
+            maxScale: initialConfig.maxScale,
+            margin: initialConfig.margin
+        };
+
+        if (hasVideo) {
+            config = {
+                width: viewport.width,
+                height: viewport.height,
+                minScale: 1,
+                maxScale: 1,
+                margin: 0
+            };
+
+            $(video).css({
+                width: viewport.width,
+                height: viewport.height
+            });
+
+            $('body').addClass('blank-background');
+        } else {
+            $('body').removeClass('blank-background');
+        }
+
+        Reveal.configure(config);
     });
-
-    // configuration of the observer:
-    var config = { attributes: true, childList: false, characterData: false };
-
-    // pass in the target node, as well as the observer options
-    observer.observe(target, config);
 
 });
 
