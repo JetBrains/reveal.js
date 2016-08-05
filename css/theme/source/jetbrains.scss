@@ -11,9 +11,6 @@
 // ---------------------------------------------
 
 
-// Include theme-specific fonts
-@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
-
 // Include jetbrains-bundle
 @import url(../jetbrains-bundle/fonts/fonts.css);
 @import url(../jetbrains-bundle/footer/footer.css);
@@ -29,8 +26,8 @@ $mainColor: #222;
 $headingColor: #222;
 
 $mainFontSize: 28px;
-$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
-$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$mainFont: 'Gotham SSm A', 'Gotham SSm B', Helvetica, Arial, sans-serif;
+$headingFont: $mainFont;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: normal;
@@ -132,7 +129,7 @@ body.rider-background {
 }
 
 body.webstorm-background {
-  @include slide-background-template($productName: 'webstorm');
+  @include slide-background-template($productName: 'webstorm', $logoSize: auto 42px);
 }
 body.appcode-background {
   @include slide-background-template($productName: 'appcode');
@@ -140,6 +137,51 @@ body.appcode-background {
 
 body.clion-background {
   @include slide-background-template($productName: 'clion', $beamPosition: -90px -95px, $logoSize: auto 42px)
+}
+
+body.intellij-background {
+  @include slide-background-template($productName: 'intellij_idea', $logoSize: auto 42px);
+}
+
+body.phpstorm-background {
+  @include slide-background-template($productName: 'phpstorm');
+}
+
+body.pycharm-background {
+  @include slide-background-template($productName: 'pycharm');
+}
+
+body.rubymine-background {
+  @include slide-background-template($productName: 'rubymine');
+}
+
+body.teamcity-background {
+  @include slide-background-template($productName: 'teamcity');
+}
+
+body.upsource-background {
+  @include slide-background-template($productName: 'upsource');
+}
+
+body.youtrack-background {
+  @include slide-background-template($productName: 'youtrack', $logoSize: auto 42px);
+}
+
+body.kotlin-background {
+  @include slide-background-template($productName: 'kotlin');
+  /*TODO Add Kotlin beam and logo SVGs as soon as they are available (DSGN-2805)*/
+}
+
+body.datagrip-background {
+  @include slide-background-template($productName: 'datagrip');
+}
+
+body.hub-background {
+  @include slide-background-template($productName: 'hub', $logoSize: auto 42px);
+}
+
+body.mps-background {
+  @include slide-background-template($productName: 'mps');
 }
 
 body.default-background {

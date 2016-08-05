@@ -19,7 +19,7 @@ body {
   background-color: #fff; }
 
 .reveal {
-  font-family: Gotham SSm A,Gotham SSm B,Helvetica,Arial,sans-serif;
+  font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
   font-size: 28px;
   font-weight: normal;
   color: #222; }
@@ -45,7 +45,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #222;
-  font-family: Gotham SSm A,Gotham SSm B,Helvetica,Arial,sans-serif;
+  font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: normal;
@@ -362,7 +362,7 @@ body.rider-background {
 body.webstorm-background {
   background-image: url("../../img/logo_webstorm.svg"), url("../../img/slides/beam_webstorm.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
-  background-size: auto 50px, auto 540px, auto 100px;
+  background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
   padding: 50px; }
 
@@ -377,6 +377,84 @@ body.clion-background {
   background-image: url("../../img/logo_clion.svg"), url("../../img/slides/beam_clion.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, -90px -95px, 90% 35px;
   background-size: auto 42px, auto 540px, auto 100px;
+  background-repeat: no-repeat;
+  padding: 50px; }
+
+body.intellij-background {
+  background-image: url("../../img/logo_intellij_idea.svg"), url("../../img/slides/beam_intellij_idea.svg"), url("../../img/slides/jetbrains_logo.svg");
+  background-position: 75px 60px, 0 0, 90% 35px;
+  background-size: auto 42px, auto 540px, auto 100px;
+  background-repeat: no-repeat;
+  padding: 50px; }
+
+body.phpstorm-background {
+  background-image: url("../../img/logo_phpstorm.svg"), url("../../img/slides/beam_phpstorm.svg"), url("../../img/slides/jetbrains_logo.svg");
+  background-position: 75px 60px, 0 0, 90% 35px;
+  background-size: auto 50px, auto 540px, auto 100px;
+  background-repeat: no-repeat;
+  padding: 50px; }
+
+body.pycharm-background {
+  background-image: url("../../img/logo_pycharm.svg"), url("../../img/slides/beam_pycharm.svg"), url("../../img/slides/jetbrains_logo.svg");
+  background-position: 75px 60px, 0 0, 90% 35px;
+  background-size: auto 50px, auto 540px, auto 100px;
+  background-repeat: no-repeat;
+  padding: 50px; }
+
+body.rubymine-background {
+  background-image: url("../../img/logo_rubymine.svg"), url("../../img/slides/beam_rubymine.svg"), url("../../img/slides/jetbrains_logo.svg");
+  background-position: 75px 60px, 0 0, 90% 35px;
+  background-size: auto 50px, auto 540px, auto 100px;
+  background-repeat: no-repeat;
+  padding: 50px; }
+
+body.teamcity-background {
+  background-image: url("../../img/logo_teamcity.svg"), url("../../img/slides/beam_teamcity.svg"), url("../../img/slides/jetbrains_logo.svg");
+  background-position: 75px 60px, 0 0, 90% 35px;
+  background-size: auto 50px, auto 540px, auto 100px;
+  background-repeat: no-repeat;
+  padding: 50px; }
+
+body.upsource-background {
+  background-image: url("../../img/logo_upsource.svg"), url("../../img/slides/beam_upsource.svg"), url("../../img/slides/jetbrains_logo.svg");
+  background-position: 75px 60px, 0 0, 90% 35px;
+  background-size: auto 50px, auto 540px, auto 100px;
+  background-repeat: no-repeat;
+  padding: 50px; }
+
+body.youtrack-background {
+  background-image: url("../../img/logo_youtrack.svg"), url("../../img/slides/beam_youtrack.svg"), url("../../img/slides/jetbrains_logo.svg");
+  background-position: 75px 60px, 0 0, 90% 35px;
+  background-size: auto 42px, auto 540px, auto 100px;
+  background-repeat: no-repeat;
+  padding: 50px; }
+
+body.kotlin-background {
+  background-image: url("../../img/logo_kotlin.svg"), url("../../img/slides/beam_kotlin.svg"), url("../../img/slides/jetbrains_logo.svg");
+  background-position: 75px 60px, 0 0, 90% 35px;
+  background-size: auto 50px, auto 540px, auto 100px;
+  background-repeat: no-repeat;
+  padding: 50px;
+  /*TODO Add Kotlin beam and logo SVGs as soon as they are available (DSGN-2805)*/ }
+
+body.datagrip-background {
+  background-image: url("../../img/logo_datagrip.svg"), url("../../img/slides/beam_datagrip.svg"), url("../../img/slides/jetbrains_logo.svg");
+  background-position: 75px 60px, 0 0, 90% 35px;
+  background-size: auto 50px, auto 540px, auto 100px;
+  background-repeat: no-repeat;
+  padding: 50px; }
+
+body.hub-background {
+  background-image: url("../../img/logo_hub.svg"), url("../../img/slides/beam_hub.svg"), url("../../img/slides/jetbrains_logo.svg");
+  background-position: 75px 60px, 0 0, 90% 35px;
+  background-size: auto 42px, auto 540px, auto 100px;
+  background-repeat: no-repeat;
+  padding: 50px; }
+
+body.mps-background {
+  background-image: url("../../img/logo_mps.svg"), url("../../img/slides/beam_mps.svg"), url("../../img/slides/jetbrains_logo.svg");
+  background-position: 75px 60px, 0 0, 90% 35px;
+  background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
   padding: 50px; }
 
