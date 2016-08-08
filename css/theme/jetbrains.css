@@ -438,10 +438,9 @@ body.youtrack-background {
 body.kotlin-background {
   background-image: url("../../img/logo_kotlin.svg"), url("../../img/slides/beam_kotlin.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
-  background-size: auto 50px, auto 540px, auto 100px;
+  background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 50px;
-  /*TODO Add Kotlin beam and logo SVGs as soon as they are available (DSGN-2805)*/ }
+  padding: 50px; }
 
 body.datagrip-background {
   background-image: url("../../img/logo_datagrip.svg"), url("../../img/slides/beam_datagrip.svg"), url("../../img/slides/jetbrains_logo.svg");

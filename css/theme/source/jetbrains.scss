@@ -176,8 +176,7 @@ body.youtrack-background {
 }
 
 body.kotlin-background {
-  @include slide-background-template($productName: 'kotlin');
-  /*TODO Add Kotlin beam and logo SVGs as soon as they are available (DSGN-2805)*/
+  @include slide-background-template($productName: 'kotlin', $logoSize: auto 42px);
 }
 
 body.datagrip-background {
