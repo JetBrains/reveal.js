@@ -297,7 +297,7 @@ body {
 .reveal video,
 .reveal iframe {
   max-width: 95%;
-  max-height: 95%; }
+  max-height: 45vh; }
 
 .reveal section ul.slide-block li {
   display: inline-block;
