@@ -28,13 +28,13 @@ $backgroundColor: #fff;
 $mainColor: #222;
 $headingColor: #222;
 
-$mainFontSize: 28px;
+$mainFontSize: 24px;
 $mainFont: 'Gotham SSm A', 'Gotham SSm B', Helvetica, Arial, sans-serif;
 $headingFont: $mainFont;
 $headingTextShadow: none;
-$headingLetterSpacing: normal;
+$headingLetterSpacing: -3px;
 $headingTextTransform: normal;
-$headingFontWeight: 600;
+$headingFontWeight: 500;
 $linkColor: #2a76dd;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
@@ -54,9 +54,19 @@ section.has-dark-background {
 @import "../template/theme";
 // ---------------------------------------------
 
+.reveal section {
+  top: 0 !important;
+
+}
+
 .reveal section img {
   border: none;
   max-height: 45vh;
+  box-shadow: 0 0 20px rgba(0,0,0,0.25);
+}
+
+.reveal h2 {
+  margin-top: 1.2em;
 }
 
 .reveal video,

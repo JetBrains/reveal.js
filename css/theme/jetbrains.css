@@ -21,7 +21,7 @@ body {
 
 .reveal {
   font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: normal;
   color: #222; }
 
@@ -47,9 +47,9 @@ body {
   margin: 0 0 20px 0;
   color: #222;
   font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.2;
-  letter-spacing: normal;
+  letter-spacing: -3px;
   text-transform: normal;
   text-shadow: none;
   word-wrap: break-word; }
@@ -290,9 +290,16 @@ body {
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
 
+.reveal section {
+  top: 0 !important; }
+
 .reveal section img {
   border: none;
-  max-height: 45vh; }
+  max-height: 45vh;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); }
+
+.reveal h2 {
+  margin-top: 1.2em; }
 
 .reveal video,
 .reveal iframe {
