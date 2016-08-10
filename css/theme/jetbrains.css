@@ -295,8 +295,7 @@ body {
 
 .reveal section img {
   border: none;
-  max-height: 45vh;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); }
+  max-height: 45vh; }
 
 .reveal h2 {
   margin-top: 1.2em; }
