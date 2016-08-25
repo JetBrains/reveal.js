@@ -19,19 +19,18 @@ $(document).ready(function () {
 
 function selectBackground() {
   var currentSection = $('section.present');
-
-  var products = getAllProducts();
+  var matchingProductFound = false;
 
   for (var product in products) {
 
     if ($(currentSection).attr('data-product') == products[product]) {
-
       $('body').removeClass().addClass(products[product].concat('-background'));
-
+      matchingProductFound = true;
       break;
     }
+  }
 
-    // avoid doing this on every iteration
+  if(matchingProductFound == false) {
     $('body').removeClass().addClass('default-background');
   }
 }
