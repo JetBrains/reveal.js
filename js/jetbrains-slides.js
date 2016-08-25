@@ -1,37 +1,13 @@
 $(document).ready(function () {
 
-  var styleMappings = [
-    ['resharper-slide', 'resharper-background'],
-    ['dottrace-slide', 'dottrace-background'],
-    ['dotcover-slide', 'dotcover-background'],
-    ['dotmemory-slide', 'dotmemory-background'],
-    ['dotpeek-slide', 'dotpeek-background'],
-    ['resharper-cpp-slide', 'resharper-cpp-background'],
-    ['rider-slide', 'rider-background'],
-    ['webstorm-slide', 'webstorm-background'],
-    ['appcode-slide', 'appcode-background'],
-    ['clion-slide', 'clion-background'],
-    ['intellij-slide', 'intellij-background'],
-    ['phpstorm-slide', 'phpstorm-background'],
-    ['pycharm-slide', 'pycharm-background'],
-    ['rubymine-slide', 'rubymine-background'],
-    ['teamcity-slide', 'teamcity-background'],
-    ['upsource-slide', 'upsource-background'],
-    ['youtrack-slide', 'youtrack-background'],
-    ['kotlin-slide', 'kotlin-background'],
-    ['datagrip-slide', 'datagrip-background'],
-    ['hub-slide', 'hub-background'],
-    ['mps-slide', 'mps-background'],
-  ];
-
-  selectBackground(styleMappings);
+  selectBackground();
 
   // select the target node
   var target = document.querySelector('section');
 
   // create an observer instance
   var observer = new MutationObserver(function (mutations) {
-    selectBackground(styleMappings);
+    selectBackground();
   });
 
   // configuration of the observer:
@@ -41,25 +17,21 @@ $(document).ready(function () {
   observer.observe(target, config);
 });
 
-function selectBackground(styleMappings) {
+function selectBackground() {
   var currentSection = $('section.present');
 
-  var matchingStyles = [];
+  var products = getAllProducts();
 
-  for (var i = 0; i < styleMappings.length; i++) {
+  for (var product in products) {
 
-    var oneOfValidSectionStyles = styleMappings[i][0];
+    if ($(currentSection).attr('data-product') == products[product]) {
 
-    if ($(currentSection).hasClass(oneOfValidSectionStyles)) {
-      matchingStyles.push(oneOfValidSectionStyles);
-
-      $('body').removeClass().addClass(styleMappings[i][1]);
+      $('body').removeClass().addClass(products[product].concat('-background'));
 
       break;
     }
-  }
 
-  if (matchingStyles.length === 0) {
+    // avoid doing this on every iteration
     $('body').removeClass().addClass('default-background');
   }
 }
