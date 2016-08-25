@@ -1,6 +1,21 @@
-var conferencesByTypes = {
-  wwdc: ['appcode'],
-  dotnet: ['resharper', 'resharper-cpp', 'dottrace', 'dotcover', 'dotmemory', 'dotpeek']
+var products = getAllProducts();
+
+var conferenceType = {
+
+    cpp: [
+        products.appcode,
+        products.clion,
+        products.resharperCpp
+    ],
+
+    dotnet: [
+        products.resharper,
+        products.resharperCpp,
+        products.dottrace,
+        products.dotcover,
+        products.dotmemory,
+        products.dotpeek
+    ]
 };
 
-var activeProducts = conferencesByTypes.wwdc;
+var activeProducts = conferenceType.cpp;
