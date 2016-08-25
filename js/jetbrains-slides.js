@@ -21,10 +21,10 @@ function selectBackground() {
   var currentSection = $('section.present');
   var matchingProductFound = false;
 
-  for (var product in products) {
+  for (var product in allProducts) {
 
-    if ($(currentSection).attr('data-product') == products[product]) {
-      $('body').removeClass().addClass(products[product].concat('-background'));
+    if ($(currentSection).attr('data-product') == allProducts[product]) {
+      $('body').removeClass().addClass(allProducts[product].concat('-background'));
       matchingProductFound = true;
       break;
     }
@@ -36,7 +36,7 @@ function selectBackground() {
 }
 
 function handleActiveProducts() {
-  if (!activeProducts) {
+  if (!currentPlaylist) {
     return;
   }
 
@@ -48,7 +48,7 @@ function handleActiveProducts() {
     var slideProduct = $slide.attr('data-product');
     products.push(slideProduct);
 
-    if (activeProducts.indexOf(slideProduct) == -1) {
+    if (currentPlaylist.indexOf(slideProduct) == -1) {
       slidesToRemove.push($slide);
     }
   });
