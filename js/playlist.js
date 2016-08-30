@@ -15,7 +15,18 @@ var conferenceType = {
         allProducts.dotcover,
         allProducts.dotmemory,
         allProducts.dotpeek
+    ],
+
+    java: [
+        allProducts.intellijIdea,
+        allProducts.teamcity,
+        allProducts.upsource,
+        allProducts.youtrack,
+        allProducts.webstorm
     ]
 };
 
-var currentPlaylist = conferenceType.cpp;
+// to switch on a playlist for a specific conference type,
+// assign it to the currentPlaylist variable, i.e.:
+// var currentPlaylist = conferenceType.dotnet;
+var currentPlaylist = undefined;
