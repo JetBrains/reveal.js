@@ -2,19 +2,10 @@ $(document).ready(function () {
 
   selectBackground();
 
-  // select the target node
-  var target = document.querySelector('section');
-
-  // create an observer instance
-  var observer = new MutationObserver(function (mutations) {
+  Reveal.addEventListener('slidechanged', function () {
     selectBackground();
   });
 
-  // configuration of the observer:
-  var config = {attributes: true, childList: false, characterData: false};
-
-  // pass in the target node, as well as the observer options
-  observer.observe(target, config);
 });
 
 function selectBackground() {
