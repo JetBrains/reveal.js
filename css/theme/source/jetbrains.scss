@@ -56,12 +56,12 @@ section.has-dark-background {
 
 .reveal section {
   top: 0 !important;
+  max-height: 90vh;
 
 }
 
 .reveal section img {
   border: none;
-  max-height: 45vh;
 }
 
 .reveal h2 {
@@ -207,3 +207,25 @@ body.default-background {
   background-repeat:      no-repeat;
   padding:                50px;
 }
+
+.wide-image-inside {
+  display: flex !important;
+  height: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-bottom: 20px !important;
+}
+
+.wide-image-inside .image-col {
+  position: relative;
+  flex: 1;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: 0;
+    transform: translateX(-50%);
+  }
+}
+
