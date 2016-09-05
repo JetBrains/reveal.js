@@ -2,7 +2,7 @@
 
 This repository contains a collection of HTML-based slides about JetBrains tools that is used to play back at expo booths whenever JetBrains makes a booth appearance at a sponsored conference.
 
-It is based on [reveal.js](https://github.com/hakimel/reveal.js/), a HTML-based presentation framework. For detailed info about reveal.js, see [the framework's own README](https://github.com/hakimel/reveal.js/blob/master/README.md).
+It is based on [reveal.js](https://github.com/hakimel/reveal.js/), a HTML-based presentation framework. For detailed info about reveal.js, see [the framework's own README](https://github.com/hakimel/reveal.js/blob/191dbe68d5aab45bb93e3d839dbc025c3f5b6f3c/README.md).
 
 ## How to set up presentation playback at a conference
 
