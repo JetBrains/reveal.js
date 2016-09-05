@@ -56,12 +56,12 @@ section.has-dark-background {
 
 .reveal section {
   top: 0 !important;
-  max-height: 90vh;
 
 }
 
 .reveal section img {
   border: none;
+  max-height: 45vh;
 }
 
 .reveal h2 {
@@ -208,7 +208,7 @@ body.default-background {
   padding:                50px;
 }
 
-.wide-image-inside {
+.high-image-inside {
   display: flex !important;
   height: 100%;
   flex-direction: column;
@@ -216,7 +216,7 @@ body.default-background {
   padding-bottom: 20px !important;
 }
 
-.wide-image-inside .image-col {
+.high-image-inside .image-col {
   position: relative;
   flex: 1;
 
@@ -224,6 +224,7 @@ body.default-background {
     position: absolute;
     top: 0;
     left: 50%;
+    max-height: 100%;
     margin: 0;
     transform: translateX(-50%);
   }
