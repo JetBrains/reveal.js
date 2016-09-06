@@ -156,8 +156,9 @@ This is what concludes the set of slides about any product.
 
 Example:
 ```
-<section data-product="resharper-cpp">
-    <h2>Learn more<br/>and download<br/>a free 30-day trial</h2>
-    <h2><a href="https://www.jetbrains.com/resharper-cpp">jetbrains.com/resharper-cpp</a></h2>
+<section data-product="dotcover">
+	<h2>Learn more and download a free 30-day trial</h2>
+	<p>jetbrains.com/dotcover</p>
+	<div class="jetbrains-logo _logo-dotcover _size-5"></div>
 </section>
 ```
