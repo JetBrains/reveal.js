@@ -312,8 +312,8 @@ body {
   .reveal section ul.slide-block li:nth-child(3n+1) {
     clear: left; }
   .reveal section ul.slide-block li img.slide-logo {
-    height: 17vh;
-    width: 17vh;
+    height: 16vh;
+    width: 16vh;
     box-shadow: none; }
   .reveal section ul.slide-block li img.slide-logo-customers {
     height: 4vh;
