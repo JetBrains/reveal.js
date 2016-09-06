@@ -73,6 +73,14 @@ section.has-dark-background {
   max-width: 95%;
   max-height: 45vh; }
 
+@mixin logo-template($height: 17vh, $width: 17vh) {
+
+  height: $height;
+  width: $width;
+  box-shadow: none;
+
+}
+
 .reveal section ul.slide-block {
 
   & li {
@@ -80,13 +88,20 @@ section.has-dark-background {
     padding-right: 5vh;
     float: left;
 
-    &:nth-child(4) {
+    &:nth-child(3n+1) {
       clear: left;
     }
 
     & img.slide-logo {
-      height: 17vh;
-      box-shadow: none;
+      @include logo-template();
+    }
+
+    & img.slide-logo-customers {
+      @include logo-template($height: 4vh, $width: 12vh);
+    }
+
+    & img.slide-logo-customers-round {
+      @include logo-template($height: 5vh, $width: 6vh);
     }
   }
 }

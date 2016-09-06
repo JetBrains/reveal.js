@@ -309,10 +309,19 @@ body {
   display: inline-block;
   padding-right: 5vh;
   float: left; }
-  .reveal section ul.slide-block li:nth-child(4) {
+  .reveal section ul.slide-block li:nth-child(3n+1) {
     clear: left; }
   .reveal section ul.slide-block li img.slide-logo {
     height: 17vh;
+    width: 17vh;
+    box-shadow: none; }
+  .reveal section ul.slide-block li img.slide-logo-customers {
+    height: 4vh;
+    width: 12vh;
+    box-shadow: none; }
+  .reveal section ul.slide-block li img.slide-logo-customers-round {
+    height: 5vh;
+    width: 6vh;
     box-shadow: none; }
 
 body.resharper-background {
