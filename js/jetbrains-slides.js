@@ -22,13 +22,7 @@ function selectBackground() {
   }
 
   if(matchingProductFound == false) {
-    if($(currentSection).hasClass('full-screen'))
-    {
-      $('body').removeClass().addClass('full-screen-background');
-    }
-    else {
-      $('body').removeClass().addClass('default-background');
-    }
+    $('body').removeClass().addClass('default-background');
   }
 }
 

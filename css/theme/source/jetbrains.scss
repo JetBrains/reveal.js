@@ -215,14 +215,13 @@ body.mps-background {
   @include slide-background-template($productName: 'mps');
 }
 
-body.full-screen-background {
+body.general-background {
   padding: 0;
 
   background: {
     image: url("../../img/slides/beam_general.svg");
     position: 100% 80%;
     color: black;
-
     repeat: no-repeat;
   }
 

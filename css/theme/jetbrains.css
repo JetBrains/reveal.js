@@ -478,19 +478,19 @@ body.mps-background {
   background-repeat: no-repeat;
   padding: 50px; }
 
-body.full-screen-background {
+body.general-background {
   padding: 0;
   background-image: url("../../img/slides/beam_general.svg");
   background-position: 100% 80%;
   background-color: black;
   background-repeat: no-repeat; }
-  body.full-screen-background section {
+  body.general-background section {
     text-align: left; }
-  body.full-screen-background h1 {
+  body.general-background h1 {
     color: white;
     padding-top: 1.5em;
     font-weight: 600; }
-  body.full-screen-background div.jetbrains-logo {
+  body.general-background div.jetbrains-logo {
     padding-right: 1.5em; }
 
 body.default-background {

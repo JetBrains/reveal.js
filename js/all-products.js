@@ -20,6 +20,7 @@ function getAllProducts() {
         kotlin: 'kotlin',
         datagrip: 'datagrip',
         hub: 'hub',
-        mps: 'mps'
+        mps: 'mps',
+        general: 'general'
     };
 }
