@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    selectBackground();
+
     var initialConfig = $.extend({}, Reveal.getConfig());
 
     function initStuff(event) {
