@@ -1,16 +1,8 @@
 $(document).ready(function () {
-
-  selectBackground();
-
-  Reveal.addEventListener('slidechanged', function () {
-    selectBackground();
-    selectBackground(styleMappings);
-
     var initialConfig = $.extend({}, Reveal.getConfig());
 
-    // Video slide handler
-    Reveal.addEventListener('slidechanged', function (event) {
-        selectBackground(styleMappings);
+    function initStuff(event) {
+        selectBackground();
 
         var video = event.currentSlide.querySelector('video');
         var hasVideo = video != null;
@@ -39,58 +31,60 @@ $(document).ready(function () {
                 width: viewport.width,
                 height: viewport.height
             });
-  });
-            $('body').addClass('blank-background');
+
+            $('body').addClass('fullscreen-mode');
         } else {
-            $('body').removeClass('blank-background');
+            $('body').removeClass('fullscreen-mode');
         }
 
         Reveal.configure(config);
-    });
+    }
 
+    Reveal.addEventListener('ready', initStuff);
+    Reveal.addEventListener('slidechanged', initStuff);
 });
 
 function selectBackground() {
-  var currentSection = $('section.present');
-  var matchingProductFound = false;
+    var currentSection = $('section.present');
+    var matchingProductFound = false;
 
-  for (var product in allProducts) {
+    for (var product in allProducts) {
 
-    if ($(currentSection).attr('data-product') == allProducts[product]) {
-      $('body').removeClass().addClass(allProducts[product].concat('-background'));
-      matchingProductFound = true;
-      break;
+        if ($(currentSection).attr('data-product') == allProducts[product]) {
+            $('body').removeClass().addClass(allProducts[product].concat('-background'));
+            matchingProductFound = true;
+            break;
+        }
     }
-  }
 
-  if(matchingProductFound == false) {
-    $('body').removeClass().addClass('default-background');
-  }
+    if (matchingProductFound == false) {
+        $('body').removeClass().addClass('default-background');
+    }
 }
 
 function handleActiveProducts() {
-  if (!currentPlaylist) {
-    return;
-  }
-
-  var slidesToRemove = [];
-  var products = [];
-
-  $('.slides section').each(function () {
-    var $slide = $(this);
-    var slideProduct = $slide.attr('data-product');
-    products.push(slideProduct);
-
-    if (currentPlaylist.indexOf(slideProduct) == -1) {
-      slidesToRemove.push($slide);
+    if (!currentPlaylist) {
+        return;
     }
-  });
 
-  products = $.unique(products);
+    var slidesToRemove = [];
+    var products = [];
 
-  $(slidesToRemove).each(function () {
-    $(this).remove();
-  });
+    $('.slides section').each(function () {
+        var $slide = $(this);
+        var slideProduct = $slide.attr('data-product');
+        products.push(slideProduct);
 
-  console.log('Available products: %s', products.join(', '));
+        if (currentPlaylist.indexOf(slideProduct) == -1) {
+            slidesToRemove.push($slide);
+        }
+    });
+
+    products = $.unique(products);
+
+    $(slidesToRemove).each(function () {
+        $(this).remove();
+    });
+
+    console.log('Available products: %s', products.join(', '));
 }

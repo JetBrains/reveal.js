@@ -324,159 +324,168 @@ body {
     width: 6vh;
     box-shadow: none; }
 
+body.blank-background {
+  background: none !important; }
+
 body.resharper-background {
   background-image: url("../../img/logo_resharper.svg"), url("../../img/slides/beam_resharper.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 50px; }
+  padding: 0; }
+  body.resharper-background.fullscreen-mode {
+    background-image: url("../../img/logo_resharper.svg"), url("../../img/slides/beam_resharper.svg"), url("../../img/slides/jetbrains_logo.svg"), linear-gradient(to bottom, #E8ECF1 0%, #E8ECF1 100%);
+    background-position: 75px 60px, 0 0, 90% 35px, 0 0;
+    background-size: auto 50px, auto 540px, auto 100px, 100% 130px;
+    background-repeat: no-repeat;
+    padding: 0; }
 
 body.resharper-ultimate-background {
   background-image: url("../../img/logo_resharper.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, -28px -15px, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 50px; }
+  padding: 0; }
 
 body.dottrace-background {
   background-image: url("../../img/logo_dottrace.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 50px; }
+  padding: 0; }
 
 body.resharper-cpp-background {
   background-image: url("../../img/logo_resharper_cpp.svg"), url("../../img/slides/beam_resharper_cpp.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 50px; }
+  padding: 0; }
 
 body.dotcover-background {
   background-image: url("../../img/logo_dotcover.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 50px; }
+  padding: 0; }
 
 body.dotmemory-background {
   background-image: url("../../img/logo_dotmemory.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 50px; }
+  padding: 0; }
 
 body.dotpeek-background {
   background-image: url("../../img/logo_dotpeek.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 50px; }
+  padding: 0; }
 
 body.rider-background {
   background-image: url("../../img/logo_rider.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 50px; }
+  padding: 0; }
 
 body.webstorm-background {
   background-image: url("../../img/logo_webstorm.svg"), url("../../img/slides/beam_webstorm.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, -70px -60px, 90% 35px;
   background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 50px; }
+  padding: 0; }
 
 body.appcode-background {
   background-image: url("../../img/logo_appcode.svg"), url("../../img/slides/beam_appcode.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 50px; }
+  padding: 0; }
 
 body.clion-background {
   background-image: url("../../img/logo_clion.svg"), url("../../img/slides/beam_clion.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, -90px -95px, 90% 35px;
   background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 50px; }
+  padding: 0; }
 
 body.intellij-background {
   background-image: url("../../img/logo_intellij_idea.svg"), url("../../img/slides/beam_intellij_idea.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, -170px -30px, 90% 35px;
   background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 50px; }
+  padding: 0; }
 
 body.phpstorm-background {
   background-image: url("../../img/logo_phpstorm.svg"), url("../../img/slides/beam_phpstorm.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, -250px -50px, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 50px; }
+  padding: 0; }
 
 body.pycharm-background {
   background-image: url("../../img/logo_pycharm.svg"), url("../../img/slides/beam_pycharm.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, -130px -30px, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 50px; }
+  padding: 0; }
 
 body.rubymine-background {
   background-image: url("../../img/logo_rubymine.svg"), url("../../img/slides/beam_rubymine.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 50px; }
+  padding: 0; }
 
 body.teamcity-background {
   background-image: url("../../img/logo_teamcity.svg"), url("../../img/slides/beam_teamcity.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, -70px -30px, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 50px; }
+  padding: 0; }
 
 body.upsource-background {
   background-image: url("../../img/logo_upsource.svg"), url("../../img/slides/beam_upsource.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 50px; }
+  padding: 0; }
 
 body.youtrack-background {
   background-image: url("../../img/logo_youtrack.svg"), url("../../img/slides/beam_youtrack.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, -70px 0px, 90% 35px;
   background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 50px; }
+  padding: 0; }
 
 body.kotlin-background {
   background-image: url("../../img/logo_kotlin.svg"), url("../../img/slides/beam_kotlin.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 50px; }
+  padding: 0; }
 
 body.datagrip-background {
   background-image: url("../../img/logo_datagrip.svg"), url("../../img/slides/beam_datagrip.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 50px; }
+  padding: 0; }
 
 body.hub-background {
   background-image: url("../../img/logo_hub.svg"), url("../../img/slides/beam_hub.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, -70px 0px, 90% 35px;
   background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 50px; }
+  padding: 0; }
 
 body.mps-background {
   background-image: url("../../img/logo_mps.svg"), url("../../img/slides/beam_mps.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 50px; }
+  padding: 0; }
 
 body.general-background {
   padding: 0;
@@ -498,7 +507,7 @@ body.default-background {
   background-position: 90% 35px;
   background-size: auto 100px;
   background-repeat: no-repeat;
-  padding: 50px; }
+  padding: 0; }
 
 .high-image-inside {
   display: flex !important;
@@ -517,3 +526,6 @@ body.default-background {
     max-height: 100%;
     margin: 0;
     transform: translateX(-50%); }
+
+.fullscreen-mode .reveal section {
+  padding-top: 150px; }

@@ -44,6 +44,8 @@ $heading2Size: 1.6em;
 $heading3Size: 1.3em;
 $heading4Size: 1.0em;
 
+$fullscreenHeaderHeight: 130px;
+
 section.has-dark-background {
 	&, h1, h2, h3, h4, h5, h6 {
 		color: #fff;
@@ -128,12 +130,49 @@ section.has-dark-background {
 
 }
 
+@mixin slide-background-template-fullscreen($productName, $beamName: $productName, $beamPosition: 0 0, $logoSize: auto 50px) {
+
+  background: {
+    image:        url("../../img/logo_#{$productName}.svg"),
+                  url("../../img/slides/beam_#{$beamName}.svg"),
+                  url("../../img/slides/jetbrains_logo.svg"),
+                  linear-gradient(to bottom,  #E8ECF1 0%, #E8ECF1 100%);
+
+    position:     75px 60px,
+                  $beamPosition,
+                  90% 35px,
+                  0 0;
+
+    size:         $logoSize,
+                  auto 540px,
+                  auto 100px,
+                  100% $fullscreenHeaderHeight;
+
+    repeat:       no-repeat;
+  }
+
+  padding:        0
+
+}
+
+.reveal {
+  //background: {
+  //  image: linear-gradient(to bottom, #fff 0, #fff 100%);
+  //  position: 0 $fullscreenHeaderHeight;
+  //  repeat: no-repeat;
+  //};
+}
+
 body.blank-background {
   background: none !important;
 }
 
 body.resharper-background {
   @include slide-background-template($productName: 'resharper');
+
+  &.fullscreen-mode {
+    @include slide-background-template-fullscreen($productName: 'resharper');
+  }
 }
 
 body.resharper-ultimate-background {
@@ -274,3 +313,8 @@ body.default-background {
   }
 }
 
+.fullscreen-mode {
+  .reveal section {
+    padding-top: $fullscreenHeaderHeight + 20px;
+  }
+}
