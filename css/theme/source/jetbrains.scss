@@ -126,7 +126,7 @@ section.has-dark-background {
     repeat:       no-repeat;
   }
 
-  padding:        0
+  padding:        50px
 
 }
 
@@ -153,14 +153,6 @@ section.has-dark-background {
 
   padding:        0
 
-}
-
-.reveal {
-  //background: {
-  //  image: linear-gradient(to bottom, #fff 0, #fff 100%);
-  //  position: 0 $fullscreenHeaderHeight;
-  //  repeat: no-repeat;
-  //};
 }
 
 body.blank-background {
@@ -314,6 +306,14 @@ body.default-background {
 }
 
 .fullscreen-mode {
+  .reveal {
+    background: {
+      image: linear-gradient(to bottom, #fff 0, #fff 100%);
+      position: 0 $fullscreenHeaderHeight;
+      repeat: no-repeat;
+    };
+  }
+
   .reveal section {
     padding-top: $fullscreenHeaderHeight + 20px;
   }
