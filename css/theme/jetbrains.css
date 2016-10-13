@@ -21,7 +21,7 @@ body {
 
 .reveal {
   font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: normal;
   color: #222; }
 
@@ -47,9 +47,9 @@ body {
   margin: 0 0 20px 0;
   color: #222;
   font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.2;
-  letter-spacing: normal;
+  letter-spacing: -3px;
   text-transform: normal;
   text-shadow: none;
   word-wrap: break-word; }
@@ -290,18 +290,38 @@ body {
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
 
+.reveal section {
+  top: 0 !important; }
+
 .reveal section img {
   border: none;
+  max-height: 45vh; }
+
+.reveal h2 {
+  margin-top: 1.2em; }
+
+.reveal video,
+.reveal iframe {
+  max-width: 95%;
   max-height: 45vh; }
 
 .reveal section ul.slide-block li {
   display: inline-block;
   padding-right: 5vh;
   float: left; }
-  .reveal section ul.slide-block li:nth-child(4) {
+  .reveal section ul.slide-block li:nth-child(3n+1) {
     clear: left; }
   .reveal section ul.slide-block li img.slide-logo {
-    height: 17vh;
+    height: 16vh;
+    width: 16vh;
+    box-shadow: none; }
+  .reveal section ul.slide-block li img.slide-logo-customers {
+    height: 4vh;
+    width: 12vh;
+    box-shadow: none; }
+  .reveal section ul.slide-block li img.slide-logo-customers-round {
+    height: 5vh;
+    width: 6vh;
     box-shadow: none; }
 
 body.blank-background {
@@ -312,155 +332,301 @@ body.resharper-background {
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 0; }
+  padding: 50px; }
+  body.resharper-background.fullscreen-mode {
+    background-image: url("../../img/logo_resharper.svg"), url("../../img/slides/beam_resharper.svg"), url("../../img/slides/jetbrains_logo.svg"), linear-gradient(to bottom, #E8ECF1 0%, #E8ECF1 100%);
+    background-position: 75px 60px, 0 0, 90% 35px, 0 0;
+    background-size: auto 50px, auto 540px, auto 100px, 100% 130px;
+    background-repeat: no-repeat;
+    padding: 0; }
 
 body.resharper-ultimate-background {
   background-image: url("../../img/logo_resharper.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, -28px -15px, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 0; }
+  padding: 50px; }
+  body.resharper-ultimate-background.fullscreen-mode {
+    background-image: url("../../img/logo_resharper.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg"), linear-gradient(to bottom, #E8ECF1 0%, #E8ECF1 100%);
+    background-position: 75px 60px, -28px -15px, 90% 35px, 0 0;
+    background-size: auto 50px, auto 540px, auto 100px, 100% 130px;
+    background-repeat: no-repeat;
+    padding: 0; }
 
 body.dottrace-background {
   background-image: url("../../img/logo_dottrace.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 0; }
+  padding: 50px; }
+  body.dottrace-background.fullscreen-mode {
+    background-image: url("../../img/logo_dottrace.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg"), linear-gradient(to bottom, #E8ECF1 0%, #E8ECF1 100%);
+    background-position: 75px 60px, 0 0, 90% 35px, 0 0;
+    background-size: auto 42px, auto 540px, auto 100px, 100% 130px;
+    background-repeat: no-repeat;
+    padding: 0; }
 
 body.resharper-cpp-background {
   background-image: url("../../img/logo_resharper_cpp.svg"), url("../../img/slides/beam_resharper_cpp.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 0; }
+  padding: 50px; }
+  body.resharper-cpp-background.fullscreen-mode {
+    background-image: url("../../img/logo_resharper_cpp.svg"), url("../../img/slides/beam_resharper_cpp.svg"), url("../../img/slides/jetbrains_logo.svg"), linear-gradient(to bottom, #E8ECF1 0%, #E8ECF1 100%);
+    background-position: 75px 60px, 0 0, 90% 35px, 0 0;
+    background-size: auto 50px, auto 540px, auto 100px, 100% 130px;
+    background-repeat: no-repeat;
+    padding: 0; }
 
 body.dotcover-background {
   background-image: url("../../img/logo_dotcover.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 0; }
+  padding: 50px; }
+  body.dotcover-background.fullscreen-mode {
+    background-image: url("../../img/logo_dotcover.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg"), linear-gradient(to bottom, #E8ECF1 0%, #E8ECF1 100%);
+    background-position: 75px 60px, 0 0, 90% 35px, 0 0;
+    background-size: auto 42px, auto 540px, auto 100px, 100% 130px;
+    background-repeat: no-repeat;
+    padding: 0; }
 
 body.dotmemory-background {
   background-image: url("../../img/logo_dotmemory.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 0; }
+  padding: 50px; }
+  body.dotmemory-background.fullscreen-mode {
+    background-image: url("../../img/logo_dotmemory.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg"), linear-gradient(to bottom, #E8ECF1 0%, #E8ECF1 100%);
+    background-position: 75px 60px, 0 0, 90% 35px, 0 0;
+    background-size: auto 50px, auto 540px, auto 100px, 100% 130px;
+    background-repeat: no-repeat;
+    padding: 0; }
 
 body.dotpeek-background {
   background-image: url("../../img/logo_dotpeek.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 0; }
+  padding: 50px; }
+  body.dotpeek-background.fullscreen-mode {
+    background-image: url("../../img/logo_dotpeek.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg"), linear-gradient(to bottom, #E8ECF1 0%, #E8ECF1 100%);
+    background-position: 75px 60px, 0 0, 90% 35px, 0 0;
+    background-size: auto 42px, auto 540px, auto 100px, 100% 130px;
+    background-repeat: no-repeat;
+    padding: 0; }
 
 body.rider-background {
   background-image: url("../../img/logo_rider.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 0; }
+  padding: 50px; }
+  body.rider-background.fullscreen-mode {
+    background-image: url("../../img/logo_rider.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg"), linear-gradient(to bottom, #E8ECF1 0%, #E8ECF1 100%);
+    background-position: 75px 60px, 0 0, 90% 35px, 0 0;
+    background-size: auto 42px, auto 540px, auto 100px, 100% 130px;
+    background-repeat: no-repeat;
+    padding: 0; }
 
 body.webstorm-background {
   background-image: url("../../img/logo_webstorm.svg"), url("../../img/slides/beam_webstorm.svg"), url("../../img/slides/jetbrains_logo.svg");
-  background-position: 75px 60px, 0 0, 90% 35px;
+  background-position: 75px 60px, -70px -60px, 90% 35px;
   background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 0; }
+  padding: 50px; }
+  body.webstorm-background.fullscreen-mode {
+    background-image: url("../../img/logo_webstorm.svg"), url("../../img/slides/beam_webstorm.svg"), url("../../img/slides/jetbrains_logo.svg"), linear-gradient(to bottom, #E8ECF1 0%, #E8ECF1 100%);
+    background-position: 75px 60px, -70px -60px, 90% 35px, 0 0;
+    background-size: auto 42px, auto 540px, auto 100px, 100% 130px;
+    background-repeat: no-repeat;
+    padding: 0; }
 
 body.appcode-background {
   background-image: url("../../img/logo_appcode.svg"), url("../../img/slides/beam_appcode.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 0; }
+  padding: 50px; }
+  body.appcode-background.fullscreen-mode {
+    background-image: url("../../img/logo_appcode.svg"), url("../../img/slides/beam_appcode.svg"), url("../../img/slides/jetbrains_logo.svg"), linear-gradient(to bottom, #E8ECF1 0%, #E8ECF1 100%);
+    background-position: 75px 60px, 0 0, 90% 35px, 0 0;
+    background-size: auto 50px, auto 540px, auto 100px, 100% 130px;
+    background-repeat: no-repeat;
+    padding: 0; }
 
 body.clion-background {
   background-image: url("../../img/logo_clion.svg"), url("../../img/slides/beam_clion.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, -90px -95px, 90% 35px;
   background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 0; }
+  padding: 50px; }
+  body.clion-background.fullscreen-mode {
+    background-image: url("../../img/logo_clion.svg"), url("../../img/slides/beam_clion.svg"), url("../../img/slides/jetbrains_logo.svg"), linear-gradient(to bottom, #E8ECF1 0%, #E8ECF1 100%);
+    background-position: 75px 60px, -90px -95px, 90% 35px, 0 0;
+    background-size: auto 42px, auto 540px, auto 100px, 100% 130px;
+    background-repeat: no-repeat;
+    padding: 0; }
 
 body.intellij-background {
   background-image: url("../../img/logo_intellij_idea.svg"), url("../../img/slides/beam_intellij_idea.svg"), url("../../img/slides/jetbrains_logo.svg");
-  background-position: 75px 60px, 0 0, 90% 35px;
+  background-position: 75px 60px, -170px -30px, 90% 35px;
   background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 0; }
+  padding: 50px; }
+  body.intellij-background.fullscreen-mode {
+    background-image: url("../../img/logo_intellij_idea.svg"), url("../../img/slides/beam_intellij_idea.svg"), url("../../img/slides/jetbrains_logo.svg"), linear-gradient(to bottom, #E8ECF1 0%, #E8ECF1 100%);
+    background-position: 75px 60px, -170px -30px, 90% 35px, 0 0;
+    background-size: auto 42px, auto 540px, auto 100px, 100% 130px;
+    background-repeat: no-repeat;
+    padding: 0; }
 
 body.phpstorm-background {
   background-image: url("../../img/logo_phpstorm.svg"), url("../../img/slides/beam_phpstorm.svg"), url("../../img/slides/jetbrains_logo.svg");
-  background-position: 75px 60px, 0 0, 90% 35px;
+  background-position: 75px 60px, -250px -50px, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 0; }
+  padding: 50px; }
+  body.phpstorm-background.fullscreen-mode {
+    background-image: url("../../img/logo_phpstorm.svg"), url("../../img/slides/beam_phpstorm.svg"), url("../../img/slides/jetbrains_logo.svg"), linear-gradient(to bottom, #E8ECF1 0%, #E8ECF1 100%);
+    background-position: 75px 60px, -250px -50px, 90% 35px, 0 0;
+    background-size: auto 50px, auto 540px, auto 100px, 100% 130px;
+    background-repeat: no-repeat;
+    padding: 0; }
 
 body.pycharm-background {
   background-image: url("../../img/logo_pycharm.svg"), url("../../img/slides/beam_pycharm.svg"), url("../../img/slides/jetbrains_logo.svg");
-  background-position: 75px 60px, 0 0, 90% 35px;
+  background-position: 75px 60px, -130px -30px, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 0; }
+  padding: 50px; }
+  body.pycharm-background.fullscreen-mode {
+    background-image: url("../../img/logo_pycharm.svg"), url("../../img/slides/beam_pycharm.svg"), url("../../img/slides/jetbrains_logo.svg"), linear-gradient(to bottom, #E8ECF1 0%, #E8ECF1 100%);
+    background-position: 75px 60px, -130px -30px, 90% 35px, 0 0;
+    background-size: auto 50px, auto 540px, auto 100px, 100% 130px;
+    background-repeat: no-repeat;
+    padding: 0; }
 
 body.rubymine-background {
   background-image: url("../../img/logo_rubymine.svg"), url("../../img/slides/beam_rubymine.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 0; }
+  padding: 50px; }
+  body.rubymine-background.fullscreen-mode {
+    background-image: url("../../img/logo_rubymine.svg"), url("../../img/slides/beam_rubymine.svg"), url("../../img/slides/jetbrains_logo.svg"), linear-gradient(to bottom, #E8ECF1 0%, #E8ECF1 100%);
+    background-position: 75px 60px, 0 0, 90% 35px, 0 0;
+    background-size: auto 50px, auto 540px, auto 100px, 100% 130px;
+    background-repeat: no-repeat;
+    padding: 0; }
 
 body.teamcity-background {
   background-image: url("../../img/logo_teamcity.svg"), url("../../img/slides/beam_teamcity.svg"), url("../../img/slides/jetbrains_logo.svg");
-  background-position: 75px 60px, 0 0, 90% 35px;
+  background-position: 75px 60px, -70px -30px, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 0; }
+  padding: 50px; }
+  body.teamcity-background.fullscreen-mode {
+    background-image: url("../../img/logo_teamcity.svg"), url("../../img/slides/beam_teamcity.svg"), url("../../img/slides/jetbrains_logo.svg"), linear-gradient(to bottom, #E8ECF1 0%, #E8ECF1 100%);
+    background-position: 75px 60px, -70px -30px, 90% 35px, 0 0;
+    background-size: auto 50px, auto 540px, auto 100px, 100% 130px;
+    background-repeat: no-repeat;
+    padding: 0; }
 
 body.upsource-background {
   background-image: url("../../img/logo_upsource.svg"), url("../../img/slides/beam_upsource.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 0; }
+  padding: 50px; }
+  body.upsource-background.fullscreen-mode {
+    background-image: url("../../img/logo_upsource.svg"), url("../../img/slides/beam_upsource.svg"), url("../../img/slides/jetbrains_logo.svg"), linear-gradient(to bottom, #E8ECF1 0%, #E8ECF1 100%);
+    background-position: 75px 60px, 0 0, 90% 35px, 0 0;
+    background-size: auto 50px, auto 540px, auto 100px, 100% 130px;
+    background-repeat: no-repeat;
+    padding: 0; }
 
 body.youtrack-background {
   background-image: url("../../img/logo_youtrack.svg"), url("../../img/slides/beam_youtrack.svg"), url("../../img/slides/jetbrains_logo.svg");
-  background-position: 75px 60px, 0 0, 90% 35px;
+  background-position: 75px 60px, -70px 0px, 90% 35px;
   background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 0; }
+  padding: 50px; }
+  body.youtrack-background.fullscreen-mode {
+    background-image: url("../../img/logo_youtrack.svg"), url("../../img/slides/beam_youtrack.svg"), url("../../img/slides/jetbrains_logo.svg"), linear-gradient(to bottom, #E8ECF1 0%, #E8ECF1 100%);
+    background-position: 75px 60px, -70px 0px, 90% 35px, 0 0;
+    background-size: auto 42px, auto 540px, auto 100px, 100% 130px;
+    background-repeat: no-repeat;
+    padding: 0; }
 
 body.kotlin-background {
   background-image: url("../../img/logo_kotlin.svg"), url("../../img/slides/beam_kotlin.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
-  background-size: auto 50px, auto 540px, auto 100px;
+  background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 0;
-  /*TODO Add Kotlin beam and logo SVGs as soon as they are available (DSGN-2805)*/ }
+  padding: 50px; }
+  body.kotlin-background.fullscreen-mode {
+    background-image: url("../../img/logo_kotlin.svg"), url("../../img/slides/beam_kotlin.svg"), url("../../img/slides/jetbrains_logo.svg"), linear-gradient(to bottom, #E8ECF1 0%, #E8ECF1 100%);
+    background-position: 75px 60px, 0 0, 90% 35px, 0 0;
+    background-size: auto 42px, auto 540px, auto 100px, 100% 130px;
+    background-repeat: no-repeat;
+    padding: 0; }
 
 body.datagrip-background {
   background-image: url("../../img/logo_datagrip.svg"), url("../../img/slides/beam_datagrip.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 0; }
+  padding: 50px; }
+  body.datagrip-background.fullscreen-mode {
+    background-image: url("../../img/logo_datagrip.svg"), url("../../img/slides/beam_datagrip.svg"), url("../../img/slides/jetbrains_logo.svg"), linear-gradient(to bottom, #E8ECF1 0%, #E8ECF1 100%);
+    background-position: 75px 60px, 0 0, 90% 35px, 0 0;
+    background-size: auto 50px, auto 540px, auto 100px, 100% 130px;
+    background-repeat: no-repeat;
+    padding: 0; }
 
 body.hub-background {
   background-image: url("../../img/logo_hub.svg"), url("../../img/slides/beam_hub.svg"), url("../../img/slides/jetbrains_logo.svg");
-  background-position: 75px 60px, 0 0, 90% 35px;
+  background-position: 75px 60px, -70px 0px, 90% 35px;
   background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 0; }
+  padding: 50px; }
+  body.hub-background.fullscreen-mode {
+    background-image: url("../../img/logo_hub.svg"), url("../../img/slides/beam_hub.svg"), url("../../img/slides/jetbrains_logo.svg"), linear-gradient(to bottom, #E8ECF1 0%, #E8ECF1 100%);
+    background-position: 75px 60px, -70px 0px, 90% 35px, 0 0;
+    background-size: auto 42px, auto 540px, auto 100px, 100% 130px;
+    background-repeat: no-repeat;
+    padding: 0; }
 
 body.mps-background {
   background-image: url("../../img/logo_mps.svg"), url("../../img/slides/beam_mps.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
   background-repeat: no-repeat;
-  padding: 0; }
+  padding: 50px; }
+  body.mps-background.fullscreen-mode {
+    background-image: url("../../img/logo_mps.svg"), url("../../img/slides/beam_mps.svg"), url("../../img/slides/jetbrains_logo.svg"), linear-gradient(to bottom, #E8ECF1 0%, #E8ECF1 100%);
+    background-position: 75px 60px, 0 0, 90% 35px, 0 0;
+    background-size: auto 50px, auto 540px, auto 100px, 100% 130px;
+    background-repeat: no-repeat;
+    padding: 0; }
+
+body.general-background {
+  padding: 0;
+  background-image: url("../../img/slides/beam_general.svg");
+  background-position: 100% 80%;
+  background-color: black;
+  background-repeat: no-repeat; }
+  body.general-background section {
+    text-align: left; }
+  body.general-background h1 {
+    color: white;
+    padding-top: 1.5em;
+    font-weight: 600; }
+  body.general-background div.jetbrains-logo {
+    padding-right: 1.5em; }
 
 body.default-background {
   background-image: url("../../img/slides/jetbrains_logo.svg");
@@ -468,3 +634,29 @@ body.default-background {
   background-size: auto 100px;
   background-repeat: no-repeat;
   padding: 0; }
+
+.high-image-inside {
+  display: flex !important;
+  height: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-bottom: 20px !important; }
+
+.high-image-inside .image-col {
+  position: relative;
+  flex: 1; }
+  .high-image-inside .image-col img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    max-height: 100%;
+    margin: 0;
+    transform: translateX(-50%); }
+
+.fullscreen-mode .reveal {
+  background-image: linear-gradient(to bottom, #fff 0, #fff 100%);
+  background-position: 0 130px;
+  background-repeat: no-repeat; }
+
+.fullscreen-mode .reveal section {
+  padding-top: 150px; }
