@@ -30,6 +30,12 @@ var conferenceType = {
         allProducts.teamcity,
         allProducts.upsource,
         allProducts.youtrack
+    ],
+
+    database: [
+        allProducts.datagrip,
+        allProducts.resharper,
+        allProducts.rider
     ]
 };
 
