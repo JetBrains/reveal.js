@@ -130,30 +130,6 @@ section.has-dark-background {
 
 }
 
-@mixin slide-background-template-fullscreen($productName, $beamName: $productName, $beamPosition: 0 0, $logoSize: auto 50px) {
-
-  background: {
-    image:        url("../../img/logo_#{$productName}.svg"),
-                  url("../../img/slides/beam_#{$beamName}.svg"),
-                  url("../../img/slides/jetbrains_logo.svg"),
-                  linear-gradient(to bottom,  #E8ECF1 0%, #E8ECF1 100%);
-
-    position:     75px 60px,
-                  $beamPosition,
-                  90% 35px,
-                  0 0;
-
-    size:         $logoSize,
-                  auto 540px,
-                  auto 100px,
-                  100% $fullscreenHeaderHeight;
-
-    repeat:       no-repeat;
-  }
-
-  padding:        0
-
-}
 
 body.blank-background {
   background: none !important;
@@ -161,155 +137,89 @@ body.blank-background {
 
 body.resharper-background {
   @include slide-background-template($productName: 'resharper');
-  &.fullscreen-mode {
-    @include slide-background-template-fullscreen($productName: 'resharper');
-  }
 }
 
 body.resharper-ultimate-background {
   @include slide-background-template($productName: 'resharper', $beamName: 'resharper_ultimate', $beamPosition: -28px -15px);
-  &.fullscreen-mode {
-    @include slide-background-template-fullscreen($productName: 'resharper', $beamName: 'resharper_ultimate', $beamPosition: -28px -15px);
-  }
 }
 
 body.dottrace-background {
   @include slide-background-template($productName: 'dottrace', $beamName: 'resharper_ultimate', $logoSize: auto 42px);
-  &.fullscreen-mode {
-    @include slide-background-template-fullscreen($productName: 'dottrace', $beamName: 'resharper_ultimate', $logoSize: auto 42px);
-  }
 }
 
 body.resharper-cpp-background {
   @include slide-background-template($productName: 'resharper_cpp');
-  &.fullscreen-mode {
-    @include slide-background-template-fullscreen($productName: 'resharper_cpp');
-  }
 }
 
 body.dotcover-background {
   @include slide-background-template($productName: 'dotcover', $beamName: 'resharper_ultimate', $logoSize: auto 42px);
-  &.fullscreen-mode {
-    @include slide-background-template-fullscreen($productName: 'dotcover', $beamName: 'resharper_ultimate', $logoSize: auto 42px);
-  }
 }
 
 body.dotmemory-background {
   @include slide-background-template($productName: 'dotmemory', $beamName: 'resharper_ultimate');
-  &.fullscreen-mode {
-    @include slide-background-template-fullscreen($productName: 'dotmemory', $beamName: 'resharper_ultimate');
-  }
 }
 
 body.dotpeek-background {
   @include slide-background-template($productName: 'dotpeek', $beamName: 'resharper_ultimate', $logoSize: auto 42px);
-  &.fullscreen-mode {
-    @include slide-background-template-fullscreen($productName: 'dotpeek', $beamName: 'resharper_ultimate', $logoSize: auto 42px);
-  }
 }
 
 body.rider-background {
   @include slide-background-template($productName: 'rider', $beamName: 'resharper_ultimate', $logoSize: auto 42px);
-  &.fullscreen-mode {
-    @include slide-background-template-fullscreen($productName: 'rider', $beamName: 'resharper_ultimate', $logoSize: auto 42px);
-  }
 }
 
 body.webstorm-background {
   @include slide-background-template($productName: 'webstorm', $beamPosition: -70px -60px, $logoSize: auto 42px);
-  &.fullscreen-mode {
-    @include slide-background-template-fullscreen($productName: 'webstorm', $beamPosition: -70px -60px, $logoSize: auto 42px);
-  }
 }
 body.appcode-background {
   @include slide-background-template($productName: 'appcode');
-  &.fullscreen-mode {
-    @include slide-background-template-fullscreen($productName: 'appcode');
-  }
 }
 
 body.clion-background {
   @include slide-background-template($productName: 'clion', $beamPosition: -90px -95px, $logoSize: auto 42px);
-  &.fullscreen-mode {
-    @include slide-background-template-fullscreen($productName: 'clion', $beamPosition: -90px -95px, $logoSize: auto 42px);
-  }
 }
 
 body.intellij-background {
   @include slide-background-template($productName: 'intellij_idea', $beamPosition: -170px -30px, $logoSize: auto 42px);
-  &.fullscreen-mode {
-    @include slide-background-template-fullscreen($productName: 'intellij_idea', $beamPosition: -170px -30px, $logoSize: auto 42px);
-  }
 }
 
 body.phpstorm-background {
   @include slide-background-template($productName: 'phpstorm', $beamPosition: -250px -50px);
-  &.fullscreen-mode {
-    @include slide-background-template-fullscreen($productName: 'phpstorm', $beamPosition: -250px -50px);
-  }
 }
 
 body.pycharm-background {
   @include slide-background-template($productName: 'pycharm', $beamPosition: -130px -30px);
-  &.fullscreen-mode {
-    @include slide-background-template-fullscreen($productName: 'pycharm', $beamPosition: -130px -30px);
-  }
 }
 
 body.rubymine-background {
   @include slide-background-template($productName: 'rubymine');
-  &.fullscreen-mode {
-    @include slide-background-template-fullscreen($productName: 'rubymine');
-  }
 }
 
 body.teamcity-background {
   @include slide-background-template($productName: 'teamcity', $beamPosition: -70px -30px);
-  &.fullscreen-mode {
-    @include slide-background-template-fullscreen($productName: 'teamcity', $beamPosition: -70px -30px);
-  }
 }
 
 body.upsource-background {
   @include slide-background-template($productName: 'upsource');
-  &.fullscreen-mode {
-    @include slide-background-template-fullscreen($productName: 'upsource');
-  }
 }
 
 body.youtrack-background {
   @include slide-background-template($productName: 'youtrack', $beamPosition: -70px 0px, $logoSize: auto 42px);
-  &.fullscreen-mode {
-    @include slide-background-template-fullscreen($productName: 'youtrack', $beamPosition: -70px 0px, $logoSize: auto 42px);
-  }
 }
 
 body.kotlin-background {
   @include slide-background-template($productName: 'kotlin', $logoSize: auto 42px);
-  &.fullscreen-mode {
-    @include slide-background-template-fullscreen($productName: 'kotlin', $logoSize: auto 42px);
-  }
 }
 
 body.datagrip-background {
   @include slide-background-template($productName: 'datagrip');
-  &.fullscreen-mode {
-    @include slide-background-template-fullscreen($productName: 'datagrip');
-  }
 }
 
 body.hub-background {
   @include slide-background-template($productName: 'hub', $beamPosition: -70px 0px, $logoSize: auto 42px);
-  &.fullscreen-mode {
-    @include slide-background-template-fullscreen($productName: 'hub', $beamPosition: -70px 0px, $logoSize: auto 42px);
-  }
 }
 
 body.mps-background {
   @include slide-background-template($productName: 'mps');
-  &.fullscreen-mode {
-    @include slide-background-template-fullscreen($productName: 'mps');
-  }
 }
 
 body.general-background {
@@ -367,7 +277,10 @@ body.default-background {
   }
 }
 
-.fullscreen-mode {
+body.fullscreen-mode {
+  padding: 0 !important;
+  background-color: #E8ECF1;
+
   .reveal {
     background: {
       image: linear-gradient(to bottom, #fff 0, #fff 100%);
