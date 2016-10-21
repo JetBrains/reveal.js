@@ -102,6 +102,10 @@ section.has-dark-background {
       @include logo-template($height: 4vh, $width: 12vh);
     }
 
+    & img.slide-logo-small {
+      @include logo-template($height: 8vh, $width: 8vh);
+    }
+
     & img.slide-logo-customers-round {
       @include logo-template($height: 5vh, $width: 6vh);
     }
