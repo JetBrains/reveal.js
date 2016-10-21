@@ -6,7 +6,7 @@ $(document).ready(function () {
     function initStuff(event) {
         selectBackground();
 
-        var video = event.currentSlide.querySelector('video');
+        var video = event.currentSlide.querySelector('video.stretch');
         var hasVideo = video != null;
         var viewport = {
             width: $(window).width(),
