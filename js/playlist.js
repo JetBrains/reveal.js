@@ -33,10 +33,10 @@ var conferenceType = {
     ],
 
     database: [
-        allProducts.datagrip
-        // allProducts.resharper
-        // allProducts.rider
-        // allProducts.youtrack
+        allProducts.datagrip,
+        allProducts.resharper,
+        allProducts.rider,
+        allProducts.youtrack
     ]
 };
 
