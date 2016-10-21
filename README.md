@@ -133,6 +133,15 @@ Example:
 </section>
 ```
 
+If you want your video to occupy as much screen estate as possible, use `class="stretch"` on the video: the video will be displayed as large as possible while still keeping a product-specific slide header visible. You might want to remove a slide title for even better stretching.
+
+Example:
+```
+<section data-product="teamcity">
+    <video class="stretch" data-autoplay src="img/screenshots/teamcity/video_easy_setup.mp4" />
+</section>
+```
+
 ### GIF slide
 
 GIFs are just another alternative to static images and videos, and you insert GIFs like you would insert a regular static image.
