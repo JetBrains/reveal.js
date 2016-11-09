@@ -43,4 +43,4 @@ var conferenceType = {
 // to switch on a playlist for a specific conference type,
 // assign it to the currentPlaylist variable, i.e.:
 // var currentPlaylist = conferenceType.dotnet;
-var currentPlaylist = conferenceType.database;
+var currentPlaylist = conferenceType.team;
