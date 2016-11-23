@@ -295,5 +295,9 @@ body.fullscreen-mode {
 
   .reveal section {
     padding-top: $fullscreenHeaderHeight + 20px;
+
+    h2 {
+      margin-top: 0;
+    };
   }
 }

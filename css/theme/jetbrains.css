@@ -534,3 +534,5 @@ body.fullscreen-mode {
     background-repeat: no-repeat; }
   body.fullscreen-mode .reveal section {
     padding-top: 150px; }
+    body.fullscreen-mode .reveal section h2 {
+      margin-top: 0; }
