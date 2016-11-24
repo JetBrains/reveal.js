@@ -37,10 +37,17 @@ var conferenceType = {
         allProducts.resharper,
         allProducts.rider,
         allProducts.youtrack
+    ],
+
+    web: [
+        allProducts.teamcity,
+        allProducts.upsource,
+        allProducts.youtrack,
+        allProducts.webstorm
     ]
 };
 
 // to switch on a playlist for a specific conference type,
 // assign it to the currentPlaylist variable, i.e.:
 // var currentPlaylist = conferenceType.dotnet;
-var currentPlaylist = conferenceType.team;
+var currentPlaylist = conferenceType.web;
