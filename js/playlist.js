@@ -44,11 +44,16 @@ var conferenceType = {
         allProducts.teamcity,
         allProducts.upsource,
         allProducts.youtrack,
-        allProducts.webstorm
+        allProducts.webstorm,
+        allProducts.rubymine
+    ],
+
+    ruby: [
+        allProducts.rubymine
     ]
 };
 
 // to switch on a playlist for a specific conference type,
 // assign it to the currentPlaylist variable, i.e.:
 // var currentPlaylist = conferenceType.dotnet;
-var currentPlaylist = conferenceType.dotnet;
+var currentPlaylist = conferenceType.ruby;
