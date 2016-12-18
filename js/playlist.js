@@ -46,11 +46,9 @@ var conferenceType = {
         allProducts.youtrack,
         allProducts.webstorm,
         allProducts.rubymine
-    ],
-
-    ruby: [
-        allProducts.rubymine
     ]
+
+
 };
 
 // to switch on a playlist for a specific conference type,
