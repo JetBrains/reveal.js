@@ -46,8 +46,11 @@ var conferenceType = {
         allProducts.youtrack,
         allProducts.webstorm,
         allProducts.rubymine
-    ]
+    ],
 
+    ruby: [
+        allProducts.rubymine
+    ]
 
 };
 
