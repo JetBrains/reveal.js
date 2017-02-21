@@ -46,6 +46,18 @@ var conferenceType = {
         allProducts.youtrack,
         allProducts.webstorm,
         allProducts.rubymine
+    ],
+
+    mobile: [
+        allProducts.appcode,
+        allProducts.kotlin,
+        allProducts.intellijIdea,
+        allProducts.webstorm,
+        allProducts.clion
+    ],
+
+    ios: [
+        allProducts.appcode
     ]
 
 };
