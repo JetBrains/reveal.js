@@ -52,8 +52,7 @@ var conferenceType = {
         allProducts.appcode,
         allProducts.kotlin,
         allProducts.intellijIdea,
-        allProducts.webstorm,
-        allProducts.clion
+        allProducts.webstorm
     ],
 
     ios: [
