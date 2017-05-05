@@ -27,6 +27,14 @@ var conferenceType = {
         allProducts.webstorm
     ],
 
+    go: [
+        allProducts.gogland,
+        allProducts.teamcity,
+        allProducts.upsource,
+        allProducts.youtrack,
+        allProducts.webstorm
+    ],
+
     team: [
         allProducts.teamcity,
         allProducts.upsource,
