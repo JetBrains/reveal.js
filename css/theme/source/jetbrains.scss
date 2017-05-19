@@ -226,6 +226,10 @@ body.mps-background {
   @include slide-background-template($productName: 'mps');
 }
 
+body.gogland-background {
+  @include slide-background-template($productName: 'gogland', $beamPosition: -20px -40px);
+}
+
 body.general-background {
   padding: 0;
 

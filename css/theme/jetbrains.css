@@ -485,6 +485,13 @@ body.mps-background {
   background-repeat: no-repeat;
   padding: 50px; }
 
+body.gogland-background {
+  background-image: url("../../img/logo_gogland.svg"), url("../../img/slides/beam_gogland.svg"), url("../../img/slides/jetbrains_logo.svg");
+  background-position: 75px 60px, -20px -40px, 90% 35px;
+  background-size: auto 50px, auto 540px, auto 100px;
+  background-repeat: no-repeat;
+  padding: 50px; }
+
 body.general-background {
   padding: 0;
   background-image: url("../../img/slides/beam_general.svg");
