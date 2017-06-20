@@ -83,14 +83,13 @@ section.has-dark-background {
 
 }
 
-.reveal section ul.slide-block {
-
+@mixin slide-block-template($itemsPerRow: 3) {
   & li {
     display: inline-block;
     padding-right: 5vh;
     float: left;
 
-    &:nth-child(3n+1) {
+    &:nth-child(#{$itemsPerRow}n+1) {
       clear: left;
     }
 
@@ -110,6 +109,14 @@ section.has-dark-background {
       @include logo-template($height: 5vh, $width: 6vh);
     }
   }
+}
+
+.reveal section ul.slide-block {
+  @include slide-block-template()
+}
+
+.reveal section ul.slide-block-4 {
+  @include slide-block-template($itemsPerRow: 4)
 }
 
 @mixin slide-background-template($productName, $beamName: $productName, $beamPosition: 0 0, $logoSize: auto 50px) {

@@ -328,6 +328,29 @@ body {
     width: 6vh;
     box-shadow: none; }
 
+.reveal section ul.slide-block-4 li {
+  display: inline-block;
+  padding-right: 5vh;
+  float: left; }
+  .reveal section ul.slide-block-4 li:nth-child(4n+1) {
+    clear: left; }
+  .reveal section ul.slide-block-4 li img.slide-logo {
+    height: 16vh;
+    width: 16vh;
+    box-shadow: none; }
+  .reveal section ul.slide-block-4 li img.slide-logo-customers {
+    height: 4vh;
+    width: 12vh;
+    box-shadow: none; }
+  .reveal section ul.slide-block-4 li img.slide-logo-small {
+    height: 8vh;
+    width: 8vh;
+    box-shadow: none; }
+  .reveal section ul.slide-block-4 li img.slide-logo-customers-round {
+    height: 5vh;
+    width: 6vh;
+    box-shadow: none; }
+
 body.blank-background {
   background: none !important; }
 
