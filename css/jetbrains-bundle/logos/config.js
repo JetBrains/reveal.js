@@ -9,6 +9,7 @@ module.exports = {
     {'dotmemory': 'dotmemory/dotmemory.svg'},
     {'dotpeek': 'dotpeek/dotpeek.svg'},
     {'dottrace': 'dottrace/dottrace.svg'},
+    {'gogland': 'gogland/gogland.svg'},
     {'hub': 'hub/hub.svg'},
     {'intellij-idea': 'intellij-idea/intellij-idea.svg'},
     {'kotlin': 'kotlin/kotlin.svg'},

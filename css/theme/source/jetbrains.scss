@@ -168,7 +168,7 @@ body.dotpeek-background {
 }
 
 body.rider-background {
-  @include slide-background-template($productName: 'rider', $beamName: 'resharper_ultimate', $logoSize: auto 42px);
+  @include slide-background-template($productName: 'rider', $beamPosition: -90px -85px, $logoSize: auto 42px);
 }
 
 body.webstorm-background {

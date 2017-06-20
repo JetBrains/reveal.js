@@ -55,37 +55,30 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(228);
-
-
-/***/ },
-
-/***/ 228:
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(229);
-
+	__webpack_require__(101);
+	__webpack_require__(124);
+	__webpack_require__(125);
 
 /***/ },
 
-/***/ 229:
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * @name Utility Classes
-	 * @collection core
-	 * @example-file ./examples.html
-	 */
-
-	__webpack_require__(230);
-
-
-/***/ },
-
-/***/ 230:
+/***/ 101:
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
+
+/***/ },
+
+/***/ 124:
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "logos/text/config.js";
+
+/***/ },
+
+/***/ 125:
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "logos/text/example.html";
 
 /***/ }
 

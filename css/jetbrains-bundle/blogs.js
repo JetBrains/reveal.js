@@ -54,7 +54,33 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(2);
+	var $ = __webpack_require__(1);
+	var SubscribeForm = __webpack_require__(2);
+	var PollingBanner = __webpack_require__(21);
+	var GifPlayer = __webpack_require__(25);
+	__webpack_require__(31);
+
+	window.ui = window.ui || {};
+
+	window.ui.pollingBanner = function (mountNode) {
+	  $(document).ready(function () {
+	    new PollingBanner(mountNode);
+	  });
+	};
+
+	window.ui.subscribeForm = function (mountNode) {
+	  $(document).ready(function () {
+	    new SubscribeForm(mountNode);
+	  });
+	};
+
+	window.ui.gifPlayer = function (mountNode) {
+	  $(document).ready(function () {
+	    $('[data-gif-src]').each(function () {
+	      new GifPlayer(this);
+	    });
+	  });
+	};
 
 
 /***/ },
@@ -12895,6 +12921,577 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return new nunjucks.Template(src, env);
 
 	};
+
+/***/ },
+/* 21 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $ = __webpack_require__(1);
+	var template = __webpack_require__(22);
+	var cookie = __webpack_require__(23);
+
+	var cookieName = 'jb-2016-06-14-polling-banner';
+
+	function PollingBanner(mountNode) {
+	  if (!this.isShouldBeShown()) {
+	    return this;
+	  }
+
+	  var that = this;
+	  var $mountNode = this.$mountNode = $(mountNode);
+	  var markup = template.render();
+
+	  $mountNode.html(markup);
+
+	  $mountNode.find('.js-target-site-button, .js-close-button').on('click', function() {
+	    that.setShouldNotBeShown();
+	    that.hide();
+	  });
+	}
+
+	PollingBanner.prototype.isShouldBeShown = function() {
+	  return cookie.get(cookieName) !== "1";
+	};
+
+	PollingBanner.prototype.setShouldNotBeShown = function() {
+	  cookie.set(cookieName, "1", {
+	    maxAge: 60 * 60 * 24 * 365
+	  })
+	};
+
+	PollingBanner.prototype.hide = function () {
+	  this.$mountNode.hide();
+	};
+
+	module.exports = PollingBanner;
+
+
+/***/ },
+/* 22 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var nunjucks = __webpack_require__(19);
+	var env;
+	if (!nunjucks.currentEnv){
+		env = nunjucks.currentEnv = new nunjucks.Environment([], { autoescape: true });
+	} else {
+		env = nunjucks.currentEnv;
+	}
+	var dependencies = nunjucks.webpackDependencies || (nunjucks.webpackDependencies = {});
+
+
+
+
+	var shim = __webpack_require__(20);
+
+
+	(function() {(nunjucks.nunjucksPrecompiled = nunjucks.nunjucksPrecompiled || {})["blogs/polling-banner/polling-banner.twig"] = (function() {
+	function root(env, context, frame, runtime, cb) {
+	var lineno = null;
+	var colno = null;
+	var output = "";
+	try {
+	var parentTemplate = null;
+	output += "<div style=\"position: fixed; width: 540px; height: 176px; bottom: 0; right: 0;\">\n  <img src=\"https://blog.jetbrains.com/wp-content/uploads/2016/06/polling-banner.png\" width=\"540\" height=\"176\"/>\n  <a href=\"http://surveys.jetbrains.com/s3/Software-developers-poll\"\n     target=\"_blank\"\n     style=\"position: absolute; top: 127px; left: 26px; width: 137px; height: 34px;\"\n    class=\"js-target-site-button\">\n  </a>\n  <span class=\"js-close-button\" style=\"position: absolute; top: 127px; left: 175px; width: 98px; height: 34px; cursor: pointer\">\n  </span>\n</div>";
+	if(parentTemplate) {
+	parentTemplate.rootRenderFunc(env, context, frame, runtime, cb);
+	} else {
+	cb(null, output);
+	}
+	;
+	} catch (e) {
+	  cb(runtime.handleError(e, lineno, colno));
+	}
+	}
+	return {
+	root: root
+	};
+
+	})();
+	})();
+
+
+
+	module.exports = shim(nunjucks, env, nunjucks.nunjucksPrecompiled["blogs/polling-banner/polling-banner.twig"] , dependencies)
+
+/***/ },
+/* 23 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var cookieUtils = __webpack_require__(24);
+
+	/**
+	 * @typedef {Object} CookieProperties
+	 *
+	 * @property {String} path Cookie path
+	 * @property {Date} expires Absolute expiration date for the cookie
+	 * @property {Number} maxAge Relative max age of the cookie from when the client receives it (seconds)
+	 * @property {String} domain Domain for the cookie
+	 * @property {Boolean} secure
+	 * @property {Boolean} httpOnly
+	 */
+
+	var cookie = {};
+
+	/**
+	 * @param {String} name
+	 * @returns {String|null}
+	 */
+	cookie.get = function (name) {
+	  var cookies = cookieUtils.parse(document.cookie);
+	  return cookies.hasOwnProperty(name) ? cookies[name] : null;
+	};
+
+	/**
+	 * @returns {Object<String, String>}
+	 */
+	cookie.getAll = function () {
+	  return cookieUtils.parse(document.cookie);
+	};
+
+	/**
+	 * @param {String} name
+	 * @param {String|Number|Boolean} value
+	 * @param {CookieProperties} [options]
+	 */
+	cookie.set = function (name, value, options) {
+	  if (typeof value === 'undefined')
+	    throw new Error('Cookie value is undefined');
+
+	  var options = options || {};
+
+	  // options.path=/ if not presented
+	  if (!options.path) {
+	    options.path = '/';
+	  }
+
+	  var serialized = cookieUtils.serialize(name, value.toString(), options);
+	  document.cookie = serialized;
+	};
+
+	/**
+	 * @param {String} name
+	 * @param {CookieProperties} [options]
+	 */
+	cookie.remove = function (name, options) {
+	  var options = options || {};
+
+	  // options.path=/ if not presented
+	  if (!options.path) {
+	    options.path = '/';
+	  }
+
+	  options.expires = new Date(0);
+
+	  document.cookie = cookieUtils.serialize(name, '', options);
+	};
+
+	module.exports = cookie;
+
+
+/***/ },
+/* 24 */
+/***/ function(module, exports) {
+
+	/*!
+	 * cookie
+	 * Copyright(c) 2012-2014 Roman Shtylman
+	 * Copyright(c) 2015 Douglas Christopher Wilson
+	 * MIT Licensed
+	 */
+
+	/**
+	 * Module exports.
+	 * @public
+	 */
+
+	exports.parse = parse;
+	exports.serialize = serialize;
+
+	/**
+	 * Module variables.
+	 * @private
+	 */
+
+	var decode = decodeURIComponent;
+	var encode = encodeURIComponent;
+	var pairSplitRegExp = /; */;
+
+	/**
+	 * RegExp to match field-content in RFC 7230 sec 3.2
+	 *
+	 * field-content = field-vchar [ 1*( SP / HTAB ) field-vchar ]
+	 * field-vchar   = VCHAR / obs-text
+	 * obs-text      = %x80-FF
+	 */
+
+	var fieldContentRegExp = /^[\u0009\u0020-\u007e\u0080-\u00ff]+$/;
+
+	/**
+	 * Parse a cookie header.
+	 *
+	 * Parse the given cookie header string into an object
+	 * The object has the various cookies as keys(names) => values
+	 *
+	 * @param {string} str
+	 * @param {object} [options]
+	 * @return {object}
+	 * @public
+	 */
+
+	function parse(str, options) {
+	  if (typeof str !== 'string') {
+	    throw new TypeError('argument str must be a string');
+	  }
+
+	  var obj = {}
+	  var opt = options || {};
+	  var pairs = str.split(pairSplitRegExp);
+	  var dec = opt.decode || decode;
+
+	  pairs.forEach(function(pair) {
+	    var eq_idx = pair.indexOf('=')
+
+	    // skip things that don't look like key=value
+	    if (eq_idx < 0) {
+	      return;
+	    }
+
+	    var key = pair.substr(0, eq_idx).trim()
+	    var val = pair.substr(++eq_idx, pair.length).trim();
+
+	    // quoted values
+	    if ('"' == val[0]) {
+	      val = val.slice(1, -1);
+	    }
+
+	    // only assign once
+	    if (undefined == obj[key]) {
+	      obj[key] = tryDecode(val, dec);
+	    }
+	  });
+
+	  return obj;
+	}
+
+	/**
+	 * Serialize data into a cookie header.
+	 *
+	 * Serialize the a name value pair into a cookie string suitable for
+	 * http headers. An optional options object specified cookie parameters.
+	 *
+	 * serialize('foo', 'bar', { httpOnly: true })
+	 *   => "foo=bar; httpOnly"
+	 *
+	 * @param {string} name
+	 * @param {string} val
+	 * @param {object} [options]
+	 * @return {string}
+	 * @public
+	 */
+
+	function serialize(name, val, options) {
+	  var opt = options || {};
+	  var enc = opt.encode || encode;
+
+	  if (!fieldContentRegExp.test(name)) {
+	    throw new TypeError('argument name is invalid');
+	  }
+
+	  var value = enc(val);
+
+	  if (value && !fieldContentRegExp.test(value)) {
+	    throw new TypeError('argument val is invalid');
+	  }
+
+	  var pairs = [name + '=' + value];
+
+	  if (null != opt.maxAge) {
+	    var maxAge = opt.maxAge - 0;
+	    if (isNaN(maxAge)) throw new Error('maxAge should be a Number');
+	    pairs.push('Max-Age=' + Math.floor(maxAge));
+	  }
+
+	  if (opt.domain) {
+	    if (!fieldContentRegExp.test(opt.domain)) {
+	      throw new TypeError('option domain is invalid');
+	    }
+
+	    pairs.push('Domain=' + opt.domain);
+	  }
+
+	  if (opt.path) {
+	    if (!fieldContentRegExp.test(opt.path)) {
+	      throw new TypeError('option path is invalid');
+	    }
+
+	    pairs.push('Path=' + opt.path);
+	  }
+
+	  if (opt.expires) pairs.push('Expires=' + opt.expires.toUTCString());
+	  if (opt.httpOnly) pairs.push('HttpOnly');
+	  if (opt.secure) pairs.push('Secure');
+	  if (opt.firstPartyOnly) pairs.push('First-Party-Only');
+
+	  return pairs.join('; ');
+	}
+
+	/**
+	 * Try decoding a string using a decoding function.
+	 *
+	 * @param {string} str
+	 * @param {function} decode
+	 * @private
+	 */
+
+	function tryDecode(str, decode) {
+	  try {
+	    return decode(str);
+	  } catch (e) {
+	    return str;
+	  }
+	}
+
+
+/***/ },
+/* 25 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(26);
+
+	module.exports = __webpack_require__(30);
+
+
+/***/ },
+/* 26 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * @name Gif player
+	 * @category components
+	 * @example-file ./examples.html
+	 */
+
+	var $ = __webpack_require__(1);
+
+	/**
+	 * List of attributes strings.
+	 * @const
+	 * @enum {String}
+	 */
+	var ATTRIBUTES = {
+	  src: 'src',
+	  gifSrc: 'data-gif-src',
+	  gifPlaceholder: 'data-gif-placeholder'
+	};
+
+	/**
+	 * List of class-names values.
+	 * @const
+	 * @enum {String}
+	 */
+	var CLASSES = {
+	  player: 'gif-player',
+	  playerShowMod: '_show-gif',
+	  playerActiveMod: '_active',
+	  image: 'gif-player__image',
+	  imageActiveMod: '_active',
+	  imageLoadingMod: '_loading'
+	};
+
+	// Empty array for storing instances
+	GifPlayer.instances = [];
+
+	/**
+	 * Class representing GifPlayer.
+	 * @param {String|HTMLElement} element Selector or node of the image tag
+	 *
+	 * @constructor
+	 * @property {jQuery} $player
+	 * @property {jQuery} $image
+	 * @property {Function} clickHandler
+	 */
+	function GifPlayer (element) {
+	  if (!(this instanceof GifPlayer))
+	    { return new GifPlayer(element); }
+
+	  // Search for the element
+	  var $element = $(element, 'body');
+
+	  if ($element === 0) { throw new Error('Mount node for component not found.'); }
+	  else if ($element.length > 1) { throw new Error('Component can be attached only to 1 node. ' + $element.length + ' nodes given.'); }
+
+	  // Get gif source
+	  var gifSrc = $element.attr(ATTRIBUTES.gifSrc);
+	  if (!gifSrc) { throw new Error('Can\'t init Gif-player, please provide ' + ATTRIBUTES.gifSrc + ' attribute for ' + element + '.'); }
+
+	  // Store image node
+	  this.$image = $element;
+
+	  // Init and store player wrapper
+	  this.$player = this._initPlayerWrapper();
+
+	  // Init and store click handler to be able to remove it on destroy
+	  this.clickHandler = this._initClickHandler();
+
+	  // Listen for clicks and call toggle play function
+	  this.$player.on('click', this.clickHandler);
+
+	  // Store this instance
+	  GifPlayer._addInstance(this);
+	}
+
+	/**
+	 * Add instance of GifPlayer to instances array.
+	 * @param {GifPlayer} instance
+	 * @static
+	 * @private
+	 */
+	GifPlayer._addInstance = function (instance) {
+	  GifPlayer.instances.push(instance);
+	};
+
+	/**
+	 * Remove instance of GifPlayer from instances array.
+	 * @param {GifPlayer} instance
+	 * @static
+	 */
+	GifPlayer._removeInstance = function (instance) {
+	  var index = GifPlayer.instances.indexOf(instance);
+
+	  if (index > -1) {
+	    GifPlayer.instances.splice(index, 1);
+	  }
+	};
+
+	/**
+	 * Destroy all instances of GifPlayer.
+	 * @static
+	 */
+	GifPlayer.destroyAll = function () {
+	  GifPlayer.instances.forEach(function (instance) {
+	    instance.destroy();
+	  });
+
+	  GifPlayer.instances = [];
+	};
+
+	/**
+	 * Wrap an original image with a player node.
+	 * @private
+	 * @return {jQuery}
+	 */
+	GifPlayer.prototype._initPlayerWrapper = function () {
+	  var $image = this.$image;
+	  var $player = $('<div/>');
+
+	  // Adding class-names
+	  $player
+	    .addClass(CLASSES.player)
+	    .addClass(CLASSES.playerShowMod);
+
+	  // Wrap image with player node
+	  $image.wrap($player);
+
+	  return $image.parent();
+	};
+
+	/**
+	 * Init click handler with saved links for the player and for the image node.
+	 * @private
+	 * @return {Function}
+	 */
+	GifPlayer.prototype._initClickHandler = function () {
+	  var gifPlayer = this;
+	  var $image = this.$image;
+
+	  return function () {
+	    var isActive = $image.hasClass(CLASSES.imageActiveMod);
+
+	    if (!isActive) {
+	      gifPlayer.play();
+	    }
+	    else {
+	      gifPlayer.stop();
+	    }
+	  }
+	};
+
+	/**
+	 * Start playing the gif.
+	 */
+	GifPlayer.prototype.play = function () {
+	  var $player = this.$player;
+	  var $image = this.$image;
+
+	  var gifSrc = $image.attr(ATTRIBUTES.gifSrc);
+	  var placeholder = $image.attr(ATTRIBUTES.src);
+
+	  // Set active player class
+	  $player.addClass(CLASSES.playerActiveMod);
+
+	  // Set image active and loading modifiers
+	  $image
+	    .addClass(CLASSES.imageActiveMod)
+	    .addClass(CLASSES.imageLoadingMod);
+
+	  // Store placeholder source in data-attribute
+	  $image.attr(ATTRIBUTES.gifPlaceholder, placeholder);
+
+	  // Load gif into image
+	  $image.attr(ATTRIBUTES.src, gifSrc);
+
+	  // Remove loading modifier if gif is loaded
+	  $image.load(function () {
+	    $image.removeClass(CLASSES.imageLoadingMod);
+	  })
+	};
+
+	/**
+	 * Stop playing the gif.
+	 */
+	GifPlayer.prototype.stop = function () {
+	  var $player = this.$player;
+	  var $image = this.$image;
+	  var placeholder = $image.attr(ATTRIBUTES.gifPlaceholder);
+
+	  // Remove player active modifier
+	  $player.removeClass(CLASSES.playerActiveMod);
+
+	  // Remove image active modifier
+	  $image.removeClass(CLASSES.imageActiveMod);
+
+	  // Replace gif source with the placeholder
+	  $image.attr(ATTRIBUTES.src, placeholder);
+	};
+
+	/**
+	 * Destroy function that removes click event handler from player node.
+	 */
+	GifPlayer.prototype.destroy = function () {
+	  this.stop();
+	  this.$player.off('click', this.clickHandler);
+
+	  GifPlayer._removeInstance(this);
+	};
+
+	module.exports = GifPlayer;
+
+
+/***/ },
+/* 31 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
 
 /***/ }
 /******/ ])

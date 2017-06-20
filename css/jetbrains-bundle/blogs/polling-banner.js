@@ -54,7 +54,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(2);
+	module.exports = __webpack_require__(21);
 
 
 /***/ },
@@ -9895,271 +9895,23 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 2 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $ = __webpack_require__(1);
-
-	__webpack_require__(3);
-	__webpack_require__(12);
-
-	__webpack_require__(17);
-	var template = __webpack_require__(18);
-
-	var options = {
-	  phpstorm: {
-	    urlPattern: new RegExp('blog.jetbrains.com/phpstorm'),
-	    id: '2564',
-	    subscribeSignFieldName: 'phpStormBlog',
-	    subscriptionTopicWelcomeEmail: 'PhpStorm Blog'
-	  },
-	  youtrack: {
-	    urlPattern: new RegExp('blog.jetbrains.com/youtrack'),
-	    id: '2312',
-	    subscribeSignFieldName: 'youTrackBlog',
-	    subscriptionTopicWelcomeEmail: 'YouTrack Blog'
-	  },
-	  idea: {
-	    urlPattern: new RegExp('blog.jetbrains.com/idea'),
-	    id: '2317',
-	    subscribeSignFieldName: 'iDEABlog',
-	    subscriptionTopicWelcomeEmail: 'IntelliJ IDEA Blog'
-	  },
-	  kotlin: {
-	    urlPattern: new RegExp('blog.jetbrains.com/kotlin'),
-	    id: '2515',
-	    subscribeSignFieldName: 'kotlinBlog',
-	    subscriptionTopicWelcomeEmail: 'Kotlin Blog'
-	  },
-	  pycharm: {
-	    urlPattern: new RegExp('blog.jetbrains.com/pycharm'),
-	    id: '2554',
-	    subscribeSignFieldName: 'pyCharmBlog',
-	    subscriptionTopicWelcomeEmail: 'PyCharm Blog'
-	  },
-	  upsource: {
-	    urlPattern: new RegExp('blog.jetbrains.com/upsource'),
-	    id: '2557',
-	    subscribeSignFieldName: 'upsourceBlog',
-	    subscriptionTopicWelcomeEmail: 'Upsource Blog'
-	  },
-	  hub: {
-	    urlPattern: new RegExp('blog.jetbrains.com/hub'),
-	    id: '2558',
-	    subscribeSignFieldName: 'hubBlog',
-	    subscriptionTopicWelcomeEmail: 'Hub Blog'
-	  },
-	  mps: {
-	    urlPattern: new RegExp('blog.jetbrains.com/mps'),
-	    id: '2532',
-	    subscribeSignFieldName: 'mPSBlog',
-	    subscriptionTopicWelcomeEmail: 'MPS Blog'
-	  },
-	  rubymine: {
-	    urlPattern: new RegExp('blog.jetbrains.com/ruby'),
-	    id: '2593',
-	    subscribeSignFieldName: 'rubyMineBlog',
-	    subscriptionTopicWelcomeEmail: 'RubyMine Blog'
-	  }
-	};
-
-	function SubscribeForm(mountNode) {
-	  this.$mountNode = $(mountNode);
-
-	  var currentUrl = window.location.href;
-	  //var currentUrl = 'http://blog.jetbrains.com/youtrack';
-
-	  for (var productId in options) {
-	    var productOptions = options[productId];
-	    var isMatch = productOptions.urlPattern.test(currentUrl);
-	    if (isMatch) {
-	      this.options = productOptions;
-	      this.init();
-	      break;
-	    }
-	  }
-	}
-
-	SubscribeForm.prototype.init = function () {
-	  var form = $(template.render(this.options));
-	  this.$mountNode.html(form);
-
-	  this.$form = $(form).find('.js-subscribe-form');
-	  this.$form.on('submit', this.onSubmit.bind(this));
-	};
-
-	SubscribeForm.prototype.onSubmit = function (e) {
-	  e.preventDefault();
-	  var $form = this.$form;
-	  var data = $form.serialize();
-	  var $afterSubmit = $('[data-form-id="' + this.options.id + '"]');
-
-	  $.ajax({
-	    type: 'POST',
-	    url: 'https://app-lon02.marketo.com/index.php/leadCapture/save',
-	    data: data,
-	    complete: function () {
-	      $form.hide();
-	      $afterSubmit.show();
-	    }
-	  });
-	};
-
-	module.exports = SubscribeForm;
-
-
-/***/ },
-/* 3 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(4);
-
-
-/***/ },
-/* 4 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * @name Input with icon
-	 * @collection forms
-	 * @example-file ./examples.html
-	 */
-
-	/**
-	 * Dependencies
-	 */
-	__webpack_require__(5);
-
-	__webpack_require__(9);
-
-
-/***/ },
-/* 5 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
+/* 2 */,
+/* 3 */,
+/* 4 */,
+/* 5 */,
 /* 6 */,
 /* 7 */,
 /* 8 */,
-/* 9 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(10);
-
-/***/ },
-/* 10 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * @name Input
-	 * @collection forms
-	 * @example-file ./examples.html
-	*/
-
-	/**
-	 * Dependencies
-	 */
-	__webpack_require__(11);
-
-
-/***/ },
-/* 11 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 12 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(13);
-
-/***/ },
-/* 13 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * @name Checkbox
-	 * @collection forms
-	 * @example-file ./examples.html
-	 */
-
-	__webpack_require__(14);
-
-
-/***/ },
-/* 14 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
+/* 9 */,
+/* 10 */,
+/* 11 */,
+/* 12 */,
+/* 13 */,
+/* 14 */,
 /* 15 */,
 /* 16 */,
-/* 17 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 18 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var nunjucks = __webpack_require__(19);
-	var env;
-	if (!nunjucks.currentEnv){
-		env = nunjucks.currentEnv = new nunjucks.Environment([], { autoescape: true });
-	} else {
-		env = nunjucks.currentEnv;
-	}
-	var dependencies = nunjucks.webpackDependencies || (nunjucks.webpackDependencies = {});
-
-
-
-
-	var shim = __webpack_require__(20);
-
-
-	(function() {(nunjucks.nunjucksPrecompiled = nunjucks.nunjucksPrecompiled || {})["blogs/subscribe-form/subscribe-form.twig"] = (function() {
-	function root(env, context, frame, runtime, cb) {
-	var lineno = null;
-	var colno = null;
-	var output = "";
-	try {
-	var parentTemplate = null;
-	output += "<div class=\"subscribe-form__wrap\">\n\n  <form class=\"subscribe-form js-subscribe-form\">\n    <input type=\"hidden\" name=\"subId\" value=\"62\"/>\n    <input type=\"hidden\" name=\"formid\" value=\"";
-	output += runtime.suppressValue(runtime.contextOrFrameLookup(context, frame, "id"), env.opts.autoescape);
-	output += "\"/>\n    <input type=\"hidden\" name=\"";
-	output += runtime.suppressValue(runtime.contextOrFrameLookup(context, frame, "subscribeSignFieldName"), env.opts.autoescape);
-	output += "\" value=\"yes\">\n    <input type=\"hidden\" name=\"subscriptionTopicWelcomeEmail\" value=\"";
-	output += runtime.suppressValue(runtime.contextOrFrameLookup(context, frame, "subscriptionTopicWelcomeEmail"), env.opts.autoescape);
-	output += "\">\n\n    <div class=\"subscribe-form__field\">\n      <label class=\"subscribe-form__label\" for=\"subscribe-form__email\">Subscribe to blog updates</label>\n\n      <div class=\"input-with-button\">\n        <input type=\"email\"\n               required\n               value=\"\"\n               placeholder=\"Your email\"\n               name=\"Email\"\n               id=\"subscribe-form__email\"\n               class=\"input input-with-button__input subscribe-form__email-field\">\n\n        <div class=\"input-with-button__button-wrap\">\n          <button class=\"input-with-button__button _submit\">Subscribe</button>\n        </div>\n      </div>\n\n    </div>\n\n    <div class=\"subscribe-form__field\">\n      I've read and accept <a href=\"https://www.jetbrains.com/company/privacy.html\" target=\"_blank\">Privacy Policy</a>.\n    </div>\n\n  </form>\n\n  <div class=\"subscribe-form__after-submit\" data-form-id=\"";
-	output += runtime.suppressValue(runtime.contextOrFrameLookup(context, frame, "id"), env.opts.autoescape);
-	output += "\">\n    Thanks, we've got you!\n  </div>\n</div>\n";
-	if(parentTemplate) {
-	parentTemplate.rootRenderFunc(env, context, frame, runtime, cb);
-	} else {
-	cb(null, output);
-	}
-	;
-	} catch (e) {
-	  cb(runtime.handleError(e, lineno, colno));
-	}
-	}
-	return {
-	root: root
-	};
-
-	})();
-	})();
-
-
-
-	module.exports = shim(nunjucks, env, nunjucks.nunjucksPrecompiled["blogs/subscribe-form/subscribe-form.twig"] , dependencies)
-
-/***/ },
+/* 17 */,
+/* 18 */,
 /* 19 */
 /***/ function(module, exports) {
 
@@ -12895,6 +12647,337 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return new nunjucks.Template(src, env);
 
 	};
+
+/***/ },
+/* 21 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $ = __webpack_require__(1);
+	var template = __webpack_require__(22);
+	var cookie = __webpack_require__(23);
+
+	var cookieName = 'jb-2016-06-14-polling-banner';
+
+	function PollingBanner(mountNode) {
+	  if (!this.isShouldBeShown()) {
+	    return this;
+	  }
+
+	  var that = this;
+	  var $mountNode = this.$mountNode = $(mountNode);
+	  var markup = template.render();
+
+	  $mountNode.html(markup);
+
+	  $mountNode.find('.js-target-site-button, .js-close-button').on('click', function() {
+	    that.setShouldNotBeShown();
+	    that.hide();
+	  });
+	}
+
+	PollingBanner.prototype.isShouldBeShown = function() {
+	  return cookie.get(cookieName) !== "1";
+	};
+
+	PollingBanner.prototype.setShouldNotBeShown = function() {
+	  cookie.set(cookieName, "1", {
+	    maxAge: 60 * 60 * 24 * 365
+	  })
+	};
+
+	PollingBanner.prototype.hide = function () {
+	  this.$mountNode.hide();
+	};
+
+	module.exports = PollingBanner;
+
+
+/***/ },
+/* 22 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var nunjucks = __webpack_require__(19);
+	var env;
+	if (!nunjucks.currentEnv){
+		env = nunjucks.currentEnv = new nunjucks.Environment([], { autoescape: true });
+	} else {
+		env = nunjucks.currentEnv;
+	}
+	var dependencies = nunjucks.webpackDependencies || (nunjucks.webpackDependencies = {});
+
+
+
+
+	var shim = __webpack_require__(20);
+
+
+	(function() {(nunjucks.nunjucksPrecompiled = nunjucks.nunjucksPrecompiled || {})["blogs/polling-banner/polling-banner.twig"] = (function() {
+	function root(env, context, frame, runtime, cb) {
+	var lineno = null;
+	var colno = null;
+	var output = "";
+	try {
+	var parentTemplate = null;
+	output += "<div style=\"position: fixed; width: 540px; height: 176px; bottom: 0; right: 0;\">\n  <img src=\"https://blog.jetbrains.com/wp-content/uploads/2016/06/polling-banner.png\" width=\"540\" height=\"176\"/>\n  <a href=\"http://surveys.jetbrains.com/s3/Software-developers-poll\"\n     target=\"_blank\"\n     style=\"position: absolute; top: 127px; left: 26px; width: 137px; height: 34px;\"\n    class=\"js-target-site-button\">\n  </a>\n  <span class=\"js-close-button\" style=\"position: absolute; top: 127px; left: 175px; width: 98px; height: 34px; cursor: pointer\">\n  </span>\n</div>";
+	if(parentTemplate) {
+	parentTemplate.rootRenderFunc(env, context, frame, runtime, cb);
+	} else {
+	cb(null, output);
+	}
+	;
+	} catch (e) {
+	  cb(runtime.handleError(e, lineno, colno));
+	}
+	}
+	return {
+	root: root
+	};
+
+	})();
+	})();
+
+
+
+	module.exports = shim(nunjucks, env, nunjucks.nunjucksPrecompiled["blogs/polling-banner/polling-banner.twig"] , dependencies)
+
+/***/ },
+/* 23 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var cookieUtils = __webpack_require__(24);
+
+	/**
+	 * @typedef {Object} CookieProperties
+	 *
+	 * @property {String} path Cookie path
+	 * @property {Date} expires Absolute expiration date for the cookie
+	 * @property {Number} maxAge Relative max age of the cookie from when the client receives it (seconds)
+	 * @property {String} domain Domain for the cookie
+	 * @property {Boolean} secure
+	 * @property {Boolean} httpOnly
+	 */
+
+	var cookie = {};
+
+	/**
+	 * @param {String} name
+	 * @returns {String|null}
+	 */
+	cookie.get = function (name) {
+	  var cookies = cookieUtils.parse(document.cookie);
+	  return cookies.hasOwnProperty(name) ? cookies[name] : null;
+	};
+
+	/**
+	 * @returns {Object<String, String>}
+	 */
+	cookie.getAll = function () {
+	  return cookieUtils.parse(document.cookie);
+	};
+
+	/**
+	 * @param {String} name
+	 * @param {String|Number|Boolean} value
+	 * @param {CookieProperties} [options]
+	 */
+	cookie.set = function (name, value, options) {
+	  if (typeof value === 'undefined')
+	    throw new Error('Cookie value is undefined');
+
+	  var options = options || {};
+
+	  // options.path=/ if not presented
+	  if (!options.path) {
+	    options.path = '/';
+	  }
+
+	  var serialized = cookieUtils.serialize(name, value.toString(), options);
+	  document.cookie = serialized;
+	};
+
+	/**
+	 * @param {String} name
+	 * @param {CookieProperties} [options]
+	 */
+	cookie.remove = function (name, options) {
+	  var options = options || {};
+
+	  // options.path=/ if not presented
+	  if (!options.path) {
+	    options.path = '/';
+	  }
+
+	  options.expires = new Date(0);
+
+	  document.cookie = cookieUtils.serialize(name, '', options);
+	};
+
+	module.exports = cookie;
+
+
+/***/ },
+/* 24 */
+/***/ function(module, exports) {
+
+	/*!
+	 * cookie
+	 * Copyright(c) 2012-2014 Roman Shtylman
+	 * Copyright(c) 2015 Douglas Christopher Wilson
+	 * MIT Licensed
+	 */
+
+	/**
+	 * Module exports.
+	 * @public
+	 */
+
+	exports.parse = parse;
+	exports.serialize = serialize;
+
+	/**
+	 * Module variables.
+	 * @private
+	 */
+
+	var decode = decodeURIComponent;
+	var encode = encodeURIComponent;
+	var pairSplitRegExp = /; */;
+
+	/**
+	 * RegExp to match field-content in RFC 7230 sec 3.2
+	 *
+	 * field-content = field-vchar [ 1*( SP / HTAB ) field-vchar ]
+	 * field-vchar   = VCHAR / obs-text
+	 * obs-text      = %x80-FF
+	 */
+
+	var fieldContentRegExp = /^[\u0009\u0020-\u007e\u0080-\u00ff]+$/;
+
+	/**
+	 * Parse a cookie header.
+	 *
+	 * Parse the given cookie header string into an object
+	 * The object has the various cookies as keys(names) => values
+	 *
+	 * @param {string} str
+	 * @param {object} [options]
+	 * @return {object}
+	 * @public
+	 */
+
+	function parse(str, options) {
+	  if (typeof str !== 'string') {
+	    throw new TypeError('argument str must be a string');
+	  }
+
+	  var obj = {}
+	  var opt = options || {};
+	  var pairs = str.split(pairSplitRegExp);
+	  var dec = opt.decode || decode;
+
+	  pairs.forEach(function(pair) {
+	    var eq_idx = pair.indexOf('=')
+
+	    // skip things that don't look like key=value
+	    if (eq_idx < 0) {
+	      return;
+	    }
+
+	    var key = pair.substr(0, eq_idx).trim()
+	    var val = pair.substr(++eq_idx, pair.length).trim();
+
+	    // quoted values
+	    if ('"' == val[0]) {
+	      val = val.slice(1, -1);
+	    }
+
+	    // only assign once
+	    if (undefined == obj[key]) {
+	      obj[key] = tryDecode(val, dec);
+	    }
+	  });
+
+	  return obj;
+	}
+
+	/**
+	 * Serialize data into a cookie header.
+	 *
+	 * Serialize the a name value pair into a cookie string suitable for
+	 * http headers. An optional options object specified cookie parameters.
+	 *
+	 * serialize('foo', 'bar', { httpOnly: true })
+	 *   => "foo=bar; httpOnly"
+	 *
+	 * @param {string} name
+	 * @param {string} val
+	 * @param {object} [options]
+	 * @return {string}
+	 * @public
+	 */
+
+	function serialize(name, val, options) {
+	  var opt = options || {};
+	  var enc = opt.encode || encode;
+
+	  if (!fieldContentRegExp.test(name)) {
+	    throw new TypeError('argument name is invalid');
+	  }
+
+	  var value = enc(val);
+
+	  if (value && !fieldContentRegExp.test(value)) {
+	    throw new TypeError('argument val is invalid');
+	  }
+
+	  var pairs = [name + '=' + value];
+
+	  if (null != opt.maxAge) {
+	    var maxAge = opt.maxAge - 0;
+	    if (isNaN(maxAge)) throw new Error('maxAge should be a Number');
+	    pairs.push('Max-Age=' + Math.floor(maxAge));
+	  }
+
+	  if (opt.domain) {
+	    if (!fieldContentRegExp.test(opt.domain)) {
+	      throw new TypeError('option domain is invalid');
+	    }
+
+	    pairs.push('Domain=' + opt.domain);
+	  }
+
+	  if (opt.path) {
+	    if (!fieldContentRegExp.test(opt.path)) {
+	      throw new TypeError('option path is invalid');
+	    }
+
+	    pairs.push('Path=' + opt.path);
+	  }
+
+	  if (opt.expires) pairs.push('Expires=' + opt.expires.toUTCString());
+	  if (opt.httpOnly) pairs.push('HttpOnly');
+	  if (opt.secure) pairs.push('Secure');
+	  if (opt.firstPartyOnly) pairs.push('First-Party-Only');
+
+	  return pairs.join('; ');
+	}
+
+	/**
+	 * Try decoding a string using a decoding function.
+	 *
+	 * @param {string} str
+	 * @param {function} decode
+	 * @private
+	 */
+
+	function tryDecode(str, decode) {
+	  try {
+	    return decode(str);
+	  } catch (e) {
+	    return str;
+	  }
+	}
+
 
 /***/ }
 /******/ ])

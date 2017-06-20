@@ -55,34 +55,41 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(228);
-
+	__webpack_require__(64);
 
 /***/ },
 
-/***/ 228:
+/***/ 64:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(229);
-
+	module.exports = __webpack_require__(65);
 
 /***/ },
 
-/***/ 229:
+/***/ 65:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
-	 * @name Utility Classes
-	 * @collection core
+	 * @name Grid
+	 * @collection layout
+	 * @description A responsive flexbox grid.
+	 * <h3>Simple Syntax</h3>
+	 * All you need to remember is <code>.g-row > .g-col > content</code>. <br />
+	 * Content wrapper is <code>.g-container</code> (max-width is the variable <code>$container-max-width </code>) <br />
+	 * <h3>Responsive</h3>
+	 * Responsive modifiers enable specifying different column sizes, alignment
+	 * and distribution at sm (small), md (medium), lg (large), xlg (extra large) viewport widths.
+	 * <h3>Auto Width</h3>
+	 * Remove any number of auto sizing columns to a row.
 	 * @example-file ./examples.html
-	 */
+	*/
 
-	__webpack_require__(230);
+	__webpack_require__(66);
 
 
 /***/ },
 
-/***/ 230:
+/***/ 66:
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
