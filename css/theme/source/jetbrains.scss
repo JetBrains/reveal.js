@@ -234,7 +234,7 @@ body.mps-background {
 }
 
 body.gogland-background {
-  @include slide-background-template($productName: 'gogland', $beamPosition: -20px -40px);
+  @include slide-background-template($productName: 'gogland', $beamPosition: -20px -40px, $logoSize: auto 42px);
 }
 
 body.general-background {
