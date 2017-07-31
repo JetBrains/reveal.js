@@ -1,1 +1,1485 @@
-.button._transparent:hover{color:#0887d7}.button._transparent:active,.button._transparent:focus{color:#0573b8}.button{height:50px;padding:0 35px;border-radius:50px;line-height:50px;display:inline-block;box-sizing:border-box;border:0;outline:none;cursor:pointer;white-space:nowrap;text-decoration:none;text-transform:uppercase;letter-spacing:.5px;font-family:inherit;font-size:12px;font-weight:700;transition:background-color .2s;color:#fff;background-color:#18a3fa}@media screen and (max-width:640px){.button{height:40px;padding:0 20px;line-height:40px}}.button:hover{text-decoration:none;color:#fff;background-color:#0887d7}.button:active,.button:focus{color:#fff;background-color:#0573b8}.button._transparent{height:50px;padding:0 35px;border-radius:50px;line-height:50px;display:inline-block;box-sizing:border-box;border:0;outline:none;cursor:pointer;white-space:nowrap;text-transform:uppercase;letter-spacing:.5px;font-family:inherit;font-size:12px;font-weight:700;transition:background-color .2s;text-decoration:none;color:#18a3fa;background:none}@media screen and (max-width:640px){.button._transparent{height:40px;padding:0 20px;line-height:40px}}.button._dark{height:50px;padding:0 35px;border-radius:50px;line-height:50px;display:inline-block;box-sizing:border-box;border:0;outline:none;cursor:pointer;white-space:nowrap;text-decoration:none;text-transform:uppercase;letter-spacing:.5px;font-family:inherit;font-size:12px;font-weight:700;transition:background-color .2s;color:#fff;background-color:#161616}@media screen and (max-width:640px){.button._dark{height:40px;padding:0 20px;line-height:40px}}.button._dark:hover{background-color:#5a5a5a}.button._dark:active,.button._dark:focus{background-color:#454545}.button._gray{height:50px;padding:0 35px;border-radius:50px;line-height:50px;display:inline-block;box-sizing:border-box;border:0;outline:none;cursor:pointer;white-space:nowrap;text-decoration:none;text-transform:uppercase;letter-spacing:.5px;font-family:inherit;font-size:12px;font-weight:700;transition:background-color .2s;color:#fff;background-color:#636465}@media screen and (max-width:640px){.button._gray{height:40px;padding:0 20px;line-height:40px}}.button._gray:hover{background-color:#e6e6e6}.button._gray:active,.button._gray:focus{background-color:#d9d9d9}.button._light{height:50px;padding:0 35px;border-radius:50px;line-height:50px;display:inline-block;box-sizing:border-box;border:0;outline:none;cursor:pointer;white-space:nowrap;text-decoration:none;text-transform:uppercase;letter-spacing:.5px;font-family:inherit;font-size:12px;font-weight:700;transition:background-color .2s;color:#161616;background-color:#fff}@media screen and (max-width:640px){.button._light{height:40px;padding:0 20px;line-height:40px}}.button._light:hover{background-color:#e6e6e6}.button._light:active,.button._light:focus{background-color:#d9d9d9}.button._icon-video{padding-left:55px;background-image:url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2221%22%20height%3D%2221.06%22%20viewBox%3D%220%200%2021%2021.06%22%3E%0A%20%20%3Cpath%20d%3D%22M10.500%2C0.005%20L10.500%2C0.005%20C4.701%2C0.005%20-0.000%2C4.718%20-0.000%2C10.532%20L-0.000%2C10.532%20C-0.000%2C16.345%204.701%2C21.057%2010.500%2C21.057%20L10.500%2C21.057%20C16.299%2C21.057%2021.000%2C16.345%2021.000%2C10.532%20L21.000%2C10.532%20C21.000%2C4.718%2016.299%2C0.005%2010.500%2C0.005%20ZM8.235%2C15.100%20L8.235%2C5.962%20L13.932%2C10.532%20L8.235%2C15.100%20Z%22%20fill%3D%22%23fff%22%2F%3E%0A%3C%2Fsvg%3E%0A);background-repeat:no-repeat;background-position:15px 50%}.button._margin-bottom{margin-bottom:25px}.button._margin-top{margin-top:25px}.button._secondary{height:50px;padding:0 35px;border-radius:50px;line-height:50px;display:inline-block;box-sizing:border-box;border:0;outline:none;cursor:pointer;white-space:nowrap;text-decoration:none;text-transform:uppercase;letter-spacing:.5px;font-family:inherit;font-size:12px;font-weight:700;transition:background-color .2s;border-width:1px;border-style:solid;color:#18a3fa;background-color:transparent;transition:color .2s,border-color .2s}@media screen and (max-width:640px){.button._secondary{height:40px;padding:0 20px;line-height:40px}}.button._secondary:hover{border-color:#0887d7!important;color:#0887d7;background-color:transparent}.button._secondary:active,.button._secondary:focus{border-color:#0573b8!important;color:#0573b8;background-color:transparent}.button._secondary._dark{height:50px;padding:0 35px;border-radius:50px;line-height:50px;display:inline-block;box-sizing:border-box;border:0;outline:none;cursor:pointer;white-space:nowrap;text-decoration:none;text-transform:uppercase;letter-spacing:.5px;font-family:inherit;font-size:12px;font-weight:700;transition:background-color .2s;color:#18a3fa;background-color:transparent;transition:color .2s,border-color .2s;border:1px solid #636465}@media screen and (max-width:640px){.button._secondary._dark{height:40px;padding:0 20px;line-height:40px}}.button._secondary._dark:hover{border-color:#0887d7!important;color:#0887d7;background-color:transparent}.button._secondary._dark:active,.button._secondary._dark:focus{border-color:#0573b8!important;color:#0573b8;background-color:transparent}.button._secondary._light{height:50px;padding:0 35px;border-radius:50px;line-height:50px;display:inline-block;box-sizing:border-box;border:0;outline:none;cursor:pointer;white-space:nowrap;text-decoration:none;text-transform:uppercase;letter-spacing:.5px;font-family:inherit;font-size:12px;font-weight:700;transition:background-color .2s;color:#18a3fa;background-color:transparent;transition:color .2s,border-color .2s;border:1px solid #cccbcb}@media screen and (max-width:640px){.button._secondary._light{height:40px;padding:0 20px;line-height:40px}}.button._secondary._light:hover{border-color:#0887d7!important;color:#0887d7;background-color:transparent}.button._secondary._light:active,.button._secondary._light:focus{border-color:#0573b8!important;color:#0573b8;background-color:transparent}.button._secondary._icon-video{padding-left:55px;background-image:url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2221%22%20height%3D%2221.06%22%20viewBox%3D%220%200%2021%2021.06%22%3E%0A%20%20%3Cpath%20d%3D%22M10.500%2C0.005%20L10.500%2C0.005%20C4.701%2C0.005%20-0.000%2C4.718%20-0.000%2C10.532%20L-0.000%2C10.532%20C-0.000%2C16.345%204.701%2C21.057%2010.500%2C21.057%20L10.500%2C21.057%20C16.299%2C21.057%2021.000%2C16.345%2021.000%2C10.532%20L21.000%2C10.532%20C21.000%2C4.718%2016.299%2C0.005%2010.500%2C0.005%20ZM8.235%2C15.100%20L8.235%2C5.962%20L13.932%2C10.532%20L8.235%2C15.100%20Z%22%20fill%3D%22%2318a3fa%22%2F%3E%0A%3C%2Fsvg%3E%0A);background-repeat:no-repeat;background-position:15px 50%}.button._size-1{height:50px;padding:0 35px;border-radius:50px;line-height:50px}@media screen and (max-width:640px){.button._size-1{height:40px;padding:0 20px;line-height:40px}}.button._size-2{height:40px;padding:0 20px;border-radius:40px;line-height:40px}.button._size-2._icon-video{padding-left:40px;background-position:10px 50%}@media screen and (max-width:640px){.button._size-2{height:32px;padding:0 15px;line-height:32px}}.button-group{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;margin-right:-15px;margin-left:-15px}@media screen and (max-width:640px){.button-group{-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-ms-flex-align:center;-ms-grid-row-align:center;align-items:center;margin-right:-10px;margin-left:-10px}.button-group>.button,.button-group>.button-with-note{margin-right:10px;margin-bottom:10px;margin-left:10px}}.button-group._align-left{-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start}.button-group._align-right{-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end}.button-group>.button,.button-group>.button-with-note{margin-left:15px;margin-right:15px}.button-group__text{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-ms-flex-align:center;align-items:center;font-size:15px;font-style:italic}.button-with-note{display:inline-block;text-align:center}.button-with-note__note{display:block;margin-top:10px;margin-bottom:10px;font-size:12px;line-height:15px}.button-with-note__note._color-dark{color:dimgray}.button-with-note__note._color-light{color:#fff}
+/**
+ * Dependencies
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Core config file
+ * @version 1.0
+ * @description Config on core styles
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Breakpoints
+ * @collection core
+ * @example-file ./examples.html
+ */
+/**
+ * Dependencies
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Utils
+ * @collection core
+ * @description Base utils on core
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Core config file
+ * @version 1.0
+ * @description Config on core styles
+ */
+/**
+ * Dependencies
+ */
+/**
+ * Make retina media query
+ * Returns the @content (This mixin is helper)
+ * @returns {String}
+ */
+/**
+ * Make print media query
+ * Returns the @content (This mixin is helper)
+ * @returns {String}
+ */
+/**
+ * Dependencies
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Utils
+ * @collection core
+ * @description Base utils on core
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Core config file
+ * @version 1.0
+ * @description Config on core styles
+ */
+/**
+ * Dependencies
+ */
+/**
+ * Make retina media query
+ * Returns the @content (This mixin is helper)
+ * @returns {String}
+ */
+/**
+ * Make print media query
+ * Returns the @content (This mixin is helper)
+ * @returns {String}
+ */
+/**
+ * Create media query UP or DOWN
+ * @param {String|Number} $key
+ * @param {String|Number} $value
+ * @param {String} $direction
+ * @private
+ * @returns {String}
+ */
+/**
+ * Create media query between two values
+ * @param {String|Number} $value1
+ * @param {String|Number} $value2
+ * @private
+ * @returns {String}
+ */
+/**
+ * Validate and get media breakpoint
+ * @param {String|Number} $key
+ * @param {Map} $breakpoints-with-default
+ * @private
+ * @returns {String}
+ */
+/**
+ * Create media breakpoint or simple styles without a breakpoint
+ * @param {String|Number} $key
+ * @param {Map} $breakpoints-with-default
+ * @param {String} $direction down|up
+ * @returns {String}
+ */
+/**
+ * Create all breakpoints.
+ * .CLASS_NAME-sm, .CLASS_NAME-md etc.
+ * @param {String} $selector
+ * @param {Map} $breakpoints-with-default
+ * @param {String} $direction down|up
+ * @returns {String}
+ */
+/**
+ * Create DOWN media breakpoints
+ * @example @media screen and (max-width: BREAK_SIZE) { ... }
+ * @param {String|Number} $breakpoint
+ * @param {Map} $breakpoints-with-default
+ * @returns {String}
+ */
+/**
+ * Create UP media breakpoints
+ * @example @media screen and (min-width: BREAK_SIZE) { ... }
+ * @param {String|Number} $breakpoint
+ * @param {Map} $breakpoints-with-default
+ * @returns {String}
+ */
+/**
+ * Create media breakpoints between UP and Down
+ * @example @media screen and (min-width: BREAK_SIZE_1) and (max-width: BREAK_SIZE_2) { ... }
+ * @param {String|Number} $breakpoint-up
+ * @param {String|Number} $breakpoint-down
+ * @param {Map} $breakpoints-with-default
+ * @returns {String}
+ */
+/**
+ * Dependencies
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Core config file
+ * @version 1.0
+ * @description Config on core styles
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Breakpoints
+ * @collection core
+ * @example-file ./examples.html
+ */
+/**
+ * Dependencies
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Utils
+ * @collection core
+ * @description Base utils on core
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Core config file
+ * @version 1.0
+ * @description Config on core styles
+ */
+/**
+ * Dependencies
+ */
+/**
+ * Make retina media query
+ * Returns the @content (This mixin is helper)
+ * @returns {String}
+ */
+/**
+ * Make print media query
+ * Returns the @content (This mixin is helper)
+ * @returns {String}
+ */
+/**
+ * Dependencies
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Utils
+ * @collection core
+ * @description Base utils on core
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Core config file
+ * @version 1.0
+ * @description Config on core styles
+ */
+/**
+ * Dependencies
+ */
+/**
+ * Make retina media query
+ * Returns the @content (This mixin is helper)
+ * @returns {String}
+ */
+/**
+ * Make print media query
+ * Returns the @content (This mixin is helper)
+ * @returns {String}
+ */
+/**
+ * Create media query UP or DOWN
+ * @param {String|Number} $key
+ * @param {String|Number} $value
+ * @param {String} $direction
+ * @private
+ * @returns {String}
+ */
+/**
+ * Create media query between two values
+ * @param {String|Number} $value1
+ * @param {String|Number} $value2
+ * @private
+ * @returns {String}
+ */
+/**
+ * Validate and get media breakpoint
+ * @param {String|Number} $key
+ * @param {Map} $breakpoints-with-default
+ * @private
+ * @returns {String}
+ */
+/**
+ * Create media breakpoint or simple styles without a breakpoint
+ * @param {String|Number} $key
+ * @param {Map} $breakpoints-with-default
+ * @param {String} $direction down|up
+ * @returns {String}
+ */
+/**
+ * Create all breakpoints.
+ * .CLASS_NAME-sm, .CLASS_NAME-md etc.
+ * @param {String} $selector
+ * @param {Map} $breakpoints-with-default
+ * @param {String} $direction down|up
+ * @returns {String}
+ */
+/**
+ * Create DOWN media breakpoints
+ * @example @media screen and (max-width: BREAK_SIZE) { ... }
+ * @param {String|Number} $breakpoint
+ * @param {Map} $breakpoints-with-default
+ * @returns {String}
+ */
+/**
+ * Create UP media breakpoints
+ * @example @media screen and (min-width: BREAK_SIZE) { ... }
+ * @param {String|Number} $breakpoint
+ * @param {Map} $breakpoints-with-default
+ * @returns {String}
+ */
+/**
+ * Create media breakpoints between UP and Down
+ * @example @media screen and (min-width: BREAK_SIZE_1) and (max-width: BREAK_SIZE_2) { ... }
+ * @param {String|Number} $breakpoint-up
+ * @param {String|Number} $breakpoint-down
+ * @param {Map} $breakpoints-with-default
+ * @returns {String}
+ */
+/**
+ * @name Breakpoints
+ * @collection core
+ * @example-file ./examples.html
+ */
+/**
+ * Dependencies
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Utils
+ * @collection core
+ * @description Base utils on core
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Core config file
+ * @version 1.0
+ * @description Config on core styles
+ */
+/**
+ * Dependencies
+ */
+/**
+ * Make retina media query
+ * Returns the @content (This mixin is helper)
+ * @returns {String}
+ */
+/**
+ * Make print media query
+ * Returns the @content (This mixin is helper)
+ * @returns {String}
+ */
+/**
+ * Dependencies
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Utils
+ * @collection core
+ * @description Base utils on core
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Core config file
+ * @version 1.0
+ * @description Config on core styles
+ */
+/**
+ * Dependencies
+ */
+/**
+ * Make retina media query
+ * Returns the @content (This mixin is helper)
+ * @returns {String}
+ */
+/**
+ * Make print media query
+ * Returns the @content (This mixin is helper)
+ * @returns {String}
+ */
+/**
+ * Create media query UP or DOWN
+ * @param {String|Number} $key
+ * @param {String|Number} $value
+ * @param {String} $direction
+ * @private
+ * @returns {String}
+ */
+/**
+ * Create media query between two values
+ * @param {String|Number} $value1
+ * @param {String|Number} $value2
+ * @private
+ * @returns {String}
+ */
+/**
+ * Validate and get media breakpoint
+ * @param {String|Number} $key
+ * @param {Map} $breakpoints-with-default
+ * @private
+ * @returns {String}
+ */
+/**
+ * Create media breakpoint or simple styles without a breakpoint
+ * @param {String|Number} $key
+ * @param {Map} $breakpoints-with-default
+ * @param {String} $direction down|up
+ * @returns {String}
+ */
+/**
+ * Create all breakpoints.
+ * .CLASS_NAME-sm, .CLASS_NAME-md etc.
+ * @param {String} $selector
+ * @param {Map} $breakpoints-with-default
+ * @param {String} $direction down|up
+ * @returns {String}
+ */
+/**
+ * Create DOWN media breakpoints
+ * @example @media screen and (max-width: BREAK_SIZE) { ... }
+ * @param {String|Number} $breakpoint
+ * @param {Map} $breakpoints-with-default
+ * @returns {String}
+ */
+/**
+ * Create UP media breakpoints
+ * @example @media screen and (min-width: BREAK_SIZE) { ... }
+ * @param {String|Number} $breakpoint
+ * @param {Map} $breakpoints-with-default
+ * @returns {String}
+ */
+/**
+ * Create media breakpoints between UP and Down
+ * @example @media screen and (min-width: BREAK_SIZE_1) and (max-width: BREAK_SIZE_2) { ... }
+ * @param {String|Number} $breakpoint-up
+ * @param {String|Number} $breakpoint-down
+ * @param {Map} $breakpoints-with-default
+ * @returns {String}
+ */
+/**
+ * Dependencies
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Core config file
+ * @version 1.0
+ * @description Config on core styles
+ */
+/**
+ * Dependencies
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Utils
+ * @collection core
+ * @description Base utils on core
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Core config file
+ * @version 1.0
+ * @description Config on core styles
+ */
+/**
+ * Dependencies
+ */
+/**
+ * Make retina media query
+ * Returns the @content (This mixin is helper)
+ * @returns {String}
+ */
+/**
+ * Make print media query
+ * Returns the @content (This mixin is helper)
+ * @returns {String}
+ */
+/**
+ * @name Breakpoints
+ * @collection core
+ * @example-file ./examples.html
+ */
+/**
+ * Dependencies
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Utils
+ * @collection core
+ * @description Base utils on core
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Core config file
+ * @version 1.0
+ * @description Config on core styles
+ */
+/**
+ * Dependencies
+ */
+/**
+ * Make retina media query
+ * Returns the @content (This mixin is helper)
+ * @returns {String}
+ */
+/**
+ * Make print media query
+ * Returns the @content (This mixin is helper)
+ * @returns {String}
+ */
+/**
+ * Dependencies
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Utils
+ * @collection core
+ * @description Base utils on core
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Core config file
+ * @version 1.0
+ * @description Config on core styles
+ */
+/**
+ * Dependencies
+ */
+/**
+ * Make retina media query
+ * Returns the @content (This mixin is helper)
+ * @returns {String}
+ */
+/**
+ * Make print media query
+ * Returns the @content (This mixin is helper)
+ * @returns {String}
+ */
+/**
+ * Create media query UP or DOWN
+ * @param {String|Number} $key
+ * @param {String|Number} $value
+ * @param {String} $direction
+ * @private
+ * @returns {String}
+ */
+/**
+ * Create media query between two values
+ * @param {String|Number} $value1
+ * @param {String|Number} $value2
+ * @private
+ * @returns {String}
+ */
+/**
+ * Validate and get media breakpoint
+ * @param {String|Number} $key
+ * @param {Map} $breakpoints-with-default
+ * @private
+ * @returns {String}
+ */
+/**
+ * Create media breakpoint or simple styles without a breakpoint
+ * @param {String|Number} $key
+ * @param {Map} $breakpoints-with-default
+ * @param {String} $direction down|up
+ * @returns {String}
+ */
+/**
+ * Create all breakpoints.
+ * .CLASS_NAME-sm, .CLASS_NAME-md etc.
+ * @param {String} $selector
+ * @param {Map} $breakpoints-with-default
+ * @param {String} $direction down|up
+ * @returns {String}
+ */
+/**
+ * Create DOWN media breakpoints
+ * @example @media screen and (max-width: BREAK_SIZE) { ... }
+ * @param {String|Number} $breakpoint
+ * @param {Map} $breakpoints-with-default
+ * @returns {String}
+ */
+/**
+ * Create UP media breakpoints
+ * @example @media screen and (min-width: BREAK_SIZE) { ... }
+ * @param {String|Number} $breakpoint
+ * @param {Map} $breakpoints-with-default
+ * @returns {String}
+ */
+/**
+ * Create media breakpoints between UP and Down
+ * @example @media screen and (min-width: BREAK_SIZE_1) and (max-width: BREAK_SIZE_2) { ... }
+ * @param {String|Number} $breakpoint-up
+ * @param {String|Number} $breakpoint-down
+ * @param {Map} $breakpoints-with-default
+ * @returns {String}
+ */
+/**
+ * @name Breakpoints
+ * @collection core
+ * @example-file ./examples.html
+ */
+/**
+ * Dependencies
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Utils
+ * @collection core
+ * @description Base utils on core
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Core config file
+ * @version 1.0
+ * @description Config on core styles
+ */
+/**
+ * Dependencies
+ */
+/**
+ * Make retina media query
+ * Returns the @content (This mixin is helper)
+ * @returns {String}
+ */
+/**
+ * Make print media query
+ * Returns the @content (This mixin is helper)
+ * @returns {String}
+ */
+/**
+ * Dependencies
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Utils
+ * @collection core
+ * @description Base utils on core
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Core config file
+ * @version 1.0
+ * @description Config on core styles
+ */
+/**
+ * Dependencies
+ */
+/**
+ * Make retina media query
+ * Returns the @content (This mixin is helper)
+ * @returns {String}
+ */
+/**
+ * Make print media query
+ * Returns the @content (This mixin is helper)
+ * @returns {String}
+ */
+/**
+ * Create media query UP or DOWN
+ * @param {String|Number} $key
+ * @param {String|Number} $value
+ * @param {String} $direction
+ * @private
+ * @returns {String}
+ */
+/**
+ * Create media query between two values
+ * @param {String|Number} $value1
+ * @param {String|Number} $value2
+ * @private
+ * @returns {String}
+ */
+/**
+ * Validate and get media breakpoint
+ * @param {String|Number} $key
+ * @param {Map} $breakpoints-with-default
+ * @private
+ * @returns {String}
+ */
+/**
+ * Create media breakpoint or simple styles without a breakpoint
+ * @param {String|Number} $key
+ * @param {Map} $breakpoints-with-default
+ * @param {String} $direction down|up
+ * @returns {String}
+ */
+/**
+ * Create all breakpoints.
+ * .CLASS_NAME-sm, .CLASS_NAME-md etc.
+ * @param {String} $selector
+ * @param {Map} $breakpoints-with-default
+ * @param {String} $direction down|up
+ * @returns {String}
+ */
+/**
+ * Create DOWN media breakpoints
+ * @example @media screen and (max-width: BREAK_SIZE) { ... }
+ * @param {String|Number} $breakpoint
+ * @param {Map} $breakpoints-with-default
+ * @returns {String}
+ */
+/**
+ * Create UP media breakpoints
+ * @example @media screen and (min-width: BREAK_SIZE) { ... }
+ * @param {String|Number} $breakpoint
+ * @param {Map} $breakpoints-with-default
+ * @returns {String}
+ */
+/**
+ * Create media breakpoints between UP and Down
+ * @example @media screen and (min-width: BREAK_SIZE_1) and (max-width: BREAK_SIZE_2) { ... }
+ * @param {String|Number} $breakpoint-up
+ * @param {String|Number} $breakpoint-down
+ * @param {Map} $breakpoints-with-default
+ * @returns {String}
+ */
+/**
+ * Dependencies
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Core config file
+ * @version 1.0
+ * @description Config on core styles
+ */
+/**
+ * Dependencies
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Utils
+ * @collection core
+ * @description Base utils on core
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Core config file
+ * @version 1.0
+ * @description Config on core styles
+ */
+/**
+ * Dependencies
+ */
+/**
+ * Make retina media query
+ * Returns the @content (This mixin is helper)
+ * @returns {String}
+ */
+/**
+ * Make print media query
+ * Returns the @content (This mixin is helper)
+ * @returns {String}
+ */
+/**
+ * @name Breakpoints
+ * @collection core
+ * @example-file ./examples.html
+ */
+/**
+ * Dependencies
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Utils
+ * @collection core
+ * @description Base utils on core
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Core config file
+ * @version 1.0
+ * @description Config on core styles
+ */
+/**
+ * Dependencies
+ */
+/**
+ * Make retina media query
+ * Returns the @content (This mixin is helper)
+ * @returns {String}
+ */
+/**
+ * Make print media query
+ * Returns the @content (This mixin is helper)
+ * @returns {String}
+ */
+/**
+ * Dependencies
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Utils
+ * @collection core
+ * @description Base utils on core
+ */
+/**
+ * Dependencies
+ */
+/**
+ * @name Core config file
+ * @version 1.0
+ * @description Config on core styles
+ */
+/**
+ * Dependencies
+ */
+/**
+ * Make retina media query
+ * Returns the @content (This mixin is helper)
+ * @returns {String}
+ */
+/**
+ * Make print media query
+ * Returns the @content (This mixin is helper)
+ * @returns {String}
+ */
+/**
+ * Create media query UP or DOWN
+ * @param {String|Number} $key
+ * @param {String|Number} $value
+ * @param {String} $direction
+ * @private
+ * @returns {String}
+ */
+/**
+ * Create media query between two values
+ * @param {String|Number} $value1
+ * @param {String|Number} $value2
+ * @private
+ * @returns {String}
+ */
+/**
+ * Validate and get media breakpoint
+ * @param {String|Number} $key
+ * @param {Map} $breakpoints-with-default
+ * @private
+ * @returns {String}
+ */
+/**
+ * Create media breakpoint or simple styles without a breakpoint
+ * @param {String|Number} $key
+ * @param {Map} $breakpoints-with-default
+ * @param {String} $direction down|up
+ * @returns {String}
+ */
+/**
+ * Create all breakpoints.
+ * .CLASS_NAME-sm, .CLASS_NAME-md etc.
+ * @param {String} $selector
+ * @param {Map} $breakpoints-with-default
+ * @param {String} $direction down|up
+ * @returns {String}
+ */
+/**
+ * Create DOWN media breakpoints
+ * @example @media screen and (max-width: BREAK_SIZE) { ... }
+ * @param {String|Number} $breakpoint
+ * @param {Map} $breakpoints-with-default
+ * @returns {String}
+ */
+/**
+ * Create UP media breakpoints
+ * @example @media screen and (min-width: BREAK_SIZE) { ... }
+ * @param {String|Number} $breakpoint
+ * @param {Map} $breakpoints-with-default
+ * @returns {String}
+ */
+/**
+ * Create media breakpoints between UP and Down
+ * @example @media screen and (min-width: BREAK_SIZE_1) and (max-width: BREAK_SIZE_2) { ... }
+ * @param {String|Number} $breakpoint-up
+ * @param {String|Number} $breakpoint-down
+ * @param {Map} $breakpoints-with-default
+ * @returns {String}
+ */
+.button {
+  height: 50px;
+  padding: 0 35px;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  line-height: 50px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  -webkit-transition: background-color 200ms;
+  transition: background-color 200ms;
+  color: #fff;
+  background-color: #18a3fa;
+}
+
+.button._disabled, .button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #0887d7;
+}
+
+.button:active, .button:focus {
+  color: #fff;
+  background-color: #0573b8;
+}
+
+.button._disabled, .button[disabled] {
+  color: #fff;
+  background-color: #18a3fa;
+}
+
+.button._transparent {
+  height: 50px;
+  padding: 0 35px;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  line-height: 50px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  -webkit-transition: background-color 200ms;
+  transition: background-color 200ms;
+  text-decoration: none;
+  color: #18a3fa;
+  background: none;
+}
+
+.button._transparent._disabled, .button._transparent[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button._transparent._disabled, .button._transparent[disabled] {
+  color: #18a3fa !important;
+}
+
+.button._transparent:hover {
+  color: #0887d7;
+}
+
+.button._transparent:active, .button._transparent:focus {
+  color: #0573b8;
+}
+
+.button._dark {
+  height: 50px;
+  padding: 0 35px;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  line-height: 50px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  -webkit-transition: background-color 200ms;
+  transition: background-color 200ms;
+  color: #fff;
+  background-color: #161616;
+}
+
+.button._dark._disabled, .button._dark[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button._dark:hover {
+  background-color: #5a5a5a;
+}
+
+.button._dark:active, .button._dark:focus {
+  background-color: #454545;
+}
+
+.button._dark._disabled, .button._dark[disabled] {
+  color: #fff;
+  background-color: #161616;
+}
+
+.button._gray {
+  height: 50px;
+  padding: 0 35px;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  line-height: 50px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  -webkit-transition: background-color 200ms;
+  transition: background-color 200ms;
+  color: #fff;
+  background-color: #636465;
+}
+
+.button._gray._disabled, .button._gray[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button._gray:hover {
+  background-color: #898a8b;
+}
+
+.button._gray:active, .button._gray:focus {
+  background-color: #7c7e7f;
+}
+
+.button._gray._disabled, .button._gray[disabled] {
+  color: #fff;
+  background-color: #636465;
+}
+
+.button._light {
+  height: 50px;
+  padding: 0 35px;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  line-height: 50px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  -webkit-transition: background-color 200ms;
+  transition: background-color 200ms;
+  color: #161616;
+  background-color: #fff;
+}
+
+.button._light._disabled, .button._light[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button._light:hover {
+  background-color: #e6e6e6;
+}
+
+.button._light:active, .button._light:focus {
+  background-color: #d9d9d9;
+}
+
+.button._light._disabled, .button._light[disabled] {
+  color: #161616;
+  background-color: #fff;
+}
+
+.button._warning {
+  height: 50px;
+  padding: 0 35px;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  line-height: 50px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  -webkit-transition: background-color 200ms;
+  transition: background-color 200ms;
+  color: #fff;
+  background-color: #fe315d;
+}
+
+.button._warning._disabled, .button._warning[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button._warning:hover {
+  background-color: #d1173f;
+}
+
+.button._warning:active, .button._warning:focus {
+  background-color: #b20127;
+}
+
+.button._warning._disabled, .button._warning[disabled] {
+  color: #fff;
+  background-color: #fe315d;
+}
+
+.button._icon-video {
+  padding-left: 55px;
+  background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2221%22%20height%3D%2221.06%22%20viewBox%3D%220%200%2021%2021.06%22%3E%0A%20%20%3Cpath%20d%3D%22M10.500%2C0.005%20L10.500%2C0.005%20C4.701%2C0.005%20-0.000%2C4.718%20-0.000%2C10.532%20L-0.000%2C10.532%20C-0.000%2C16.345%204.701%2C21.057%2010.500%2C21.057%20L10.500%2C21.057%20C16.299%2C21.057%2021.000%2C16.345%2021.000%2C10.532%20L21.000%2C10.532%20C21.000%2C4.718%2016.299%2C0.005%2010.500%2C0.005%20ZM8.235%2C15.100%20L8.235%2C5.962%20L13.932%2C10.532%20L8.235%2C15.100%20Z%22%20fill%3D%22%23fff%22%20%2F%3E%0A%3C%2Fsvg%3E%0A);
+  background-repeat: no-repeat;
+  background-position: 15px 50%;
+}
+
+.button._margin-bottom {
+  margin-bottom: 25px;
+}
+
+.button._margin-top {
+  margin-top: 25px;
+}
+
+.button._secondary {
+  height: 50px;
+  padding: 0 35px;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  line-height: 50px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  -webkit-transition: background-color 200ms;
+  transition: background-color 200ms;
+  border-width: 1px;
+  border-style: solid;
+  color: #18a3fa;
+  background-color: transparent;
+  -webkit-transition: color 200ms, border-color 200ms;
+  transition: color 200ms, border-color 200ms;
+}
+
+.button._secondary._disabled, .button._secondary[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button._secondary:hover {
+  border-color: #0887d7 !important;
+  color: #0887d7;
+  background-color: transparent;
+}
+
+.button._secondary:active, .button._secondary:focus {
+  border-color: #0573b8 !important;
+  color: #0573b8;
+  background-color: transparent;
+}
+
+.button._secondary._disabled, .button._secondary[disabled] {
+  color: #18a3fa;
+}
+
+.button._secondary._dark {
+  height: 50px;
+  padding: 0 35px;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  line-height: 50px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  -webkit-transition: background-color 200ms;
+  transition: background-color 200ms;
+  border-width: 1px;
+  border-style: solid;
+  color: #18a3fa;
+  background-color: transparent;
+  -webkit-transition: color 200ms, border-color 200ms;
+  transition: color 200ms, border-color 200ms;
+  border-color: #636465;
+}
+
+.button._secondary._dark._disabled, .button._secondary._dark[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button._secondary._dark:hover {
+  border-color: #0887d7 !important;
+  color: #0887d7;
+  background-color: transparent;
+}
+
+.button._secondary._dark:active, .button._secondary._dark:focus {
+  border-color: #0573b8 !important;
+  color: #0573b8;
+  background-color: transparent;
+}
+
+.button._secondary._dark._disabled, .button._secondary._dark[disabled] {
+  color: #18a3fa;
+}
+
+.button._secondary._dark._disabled, .button._secondary._dark[disabled] {
+  border-color: #636465 !important;
+}
+
+.button._secondary._light {
+  height: 50px;
+  padding: 0 35px;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  line-height: 50px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  -webkit-transition: background-color 200ms;
+  transition: background-color 200ms;
+  border-width: 1px;
+  border-style: solid;
+  color: #18a3fa;
+  background-color: transparent;
+  -webkit-transition: color 200ms, border-color 200ms;
+  transition: color 200ms, border-color 200ms;
+  border-color: #cccbcb;
+}
+
+.button._secondary._light._disabled, .button._secondary._light[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button._secondary._light:hover {
+  border-color: #0887d7 !important;
+  color: #0887d7;
+  background-color: transparent;
+}
+
+.button._secondary._light:active, .button._secondary._light:focus {
+  border-color: #0573b8 !important;
+  color: #0573b8;
+  background-color: transparent;
+}
+
+.button._secondary._light._disabled, .button._secondary._light[disabled] {
+  color: #18a3fa;
+}
+
+.button._secondary._light._disabled, .button._secondary._light[disabled] {
+  border-color: #cccbcb !important;
+}
+
+.button._secondary._icon-video {
+  padding-left: 55px;
+  background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2221%22%20height%3D%2221.06%22%20viewBox%3D%220%200%2021%2021.06%22%3E%0A%20%20%3Cpath%20d%3D%22M10.500%2C0.005%20L10.500%2C0.005%20C4.701%2C0.005%20-0.000%2C4.718%20-0.000%2C10.532%20L-0.000%2C10.532%20C-0.000%2C16.345%204.701%2C21.057%2010.500%2C21.057%20L10.500%2C21.057%20C16.299%2C21.057%2021.000%2C16.345%2021.000%2C10.532%20L21.000%2C10.532%20C21.000%2C4.718%2016.299%2C0.005%2010.500%2C0.005%20ZM8.235%2C15.100%20L8.235%2C5.962%20L13.932%2C10.532%20L8.235%2C15.100%20Z%22%20fill%3D%22%2318a3fa%22%20%2F%3E%0A%3C%2Fsvg%3E%0A);
+  background-repeat: no-repeat;
+  background-position: 15px 50%;
+}
+
+.button._size-1 {
+  height: 50px;
+  padding: 0 35px;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  line-height: 50px;
+}
+
+.button._size-2, .button._secondary._size-2 {
+  height: 40px;
+  padding: 0 20px;
+  -webkit-border-radius: 40px;
+          border-radius: 40px;
+  line-height: 40px;
+}
+
+.button._size-2._icon-video, .button._secondary._size-2._icon-video {
+  padding-left: 40px;
+  background-position: 10px 50%;
+}
+
+.button._size-3, .button._secondary._size-3 {
+  height: 25px;
+  padding: 0 15px;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  line-height: 25px;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+.button._size-3._icon-video, .button._secondary._size-3._icon-video {
+  padding-left: 25px;
+  background-position: 5px 50%;
+  background-size: 15px auto;
+}
+
+.button-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@media screen and (max-width: 640px) {
+  .button-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+  .button-group > .button,
+  .button-group > .button-with-note {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+}
+
+.button-group._align-left {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.button-group._align-right {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.button-group > .button,
+.button-group > .button-with-note {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.button-group__text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.button-with-note {
+  display: inline-block;
+  text-align: center;
+}
+
+.button-with-note__note {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.button-with-note__note._color-dark {
+  color: #696969;
+}
+
+.button-with-note__note._color-light {
+  color: #fff;
+}
+
+.button-multiple {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+}
+
+.button-multiple__first-box {
+  padding-right: 30px;
+  -webkit-border-top-right-radius: 0;
+          border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+          border-bottom-right-radius: 0;
+}
+
+.button-multiple__second-box {
+  position: relative;
+  margin-left: 1px;
+  padding-left: 15px;
+  padding-right: 25px;
+  -webkit-border-top-left-radius: 0;
+          border-top-left-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+          border-bottom-left-radius: 0;
+}

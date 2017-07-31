@@ -27,6 +27,14 @@ var conferenceType = {
         allProducts.webstorm
     ],
 
+    go: [
+        allProducts.gogland,
+        allProducts.teamcity,
+        allProducts.upsource,
+        allProducts.youtrack,
+        allProducts.webstorm
+    ],
+
     team: [
         allProducts.teamcity,
         allProducts.upsource,
@@ -46,6 +54,17 @@ var conferenceType = {
         allProducts.youtrack,
         allProducts.webstorm,
         allProducts.rubymine
+    ],
+
+    mobile: [
+        allProducts.appcode,
+        allProducts.kotlin,
+        allProducts.intellijIdea,
+        allProducts.webstorm
+    ],
+
+    ios: [
+        allProducts.appcode
     ],
 
     python: [

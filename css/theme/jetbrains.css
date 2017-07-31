@@ -328,6 +328,29 @@ body {
     width: 6vh;
     box-shadow: none; }
 
+.reveal section ul.slide-block-4 li {
+  display: inline-block;
+  padding-right: 5vh;
+  float: left; }
+  .reveal section ul.slide-block-4 li:nth-child(4n+1) {
+    clear: left; }
+  .reveal section ul.slide-block-4 li img.slide-logo {
+    height: 16vh;
+    width: 16vh;
+    box-shadow: none; }
+  .reveal section ul.slide-block-4 li img.slide-logo-customers {
+    height: 4vh;
+    width: 12vh;
+    box-shadow: none; }
+  .reveal section ul.slide-block-4 li img.slide-logo-small {
+    height: 8vh;
+    width: 8vh;
+    box-shadow: none; }
+  .reveal section ul.slide-block-4 li img.slide-logo-customers-round {
+    height: 5vh;
+    width: 6vh;
+    box-shadow: none; }
+
 body.blank-background {
   background: none !important; }
 
@@ -381,8 +404,8 @@ body.dotpeek-background {
   padding: 50px; }
 
 body.rider-background {
-  background-image: url("../../img/logo_rider.svg"), url("../../img/slides/beam_resharper_ultimate.svg"), url("../../img/slides/jetbrains_logo.svg");
-  background-position: 75px 60px, 0 0, 90% 35px;
+  background-image: url("../../img/logo_rider.svg"), url("../../img/slides/beam_rider.svg"), url("../../img/slides/jetbrains_logo.svg");
+  background-position: 75px 60px, -90px -85px, 90% 35px;
   background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
   padding: 50px; }
@@ -482,6 +505,13 @@ body.mps-background {
   background-image: url("../../img/logo_mps.svg"), url("../../img/slides/beam_mps.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, 0 0, 90% 35px;
   background-size: auto 50px, auto 540px, auto 100px;
+  background-repeat: no-repeat;
+  padding: 50px; }
+
+body.gogland-background {
+  background-image: url("../../img/logo_gogland.svg"), url("../../img/slides/beam_gogland.svg"), url("../../img/slides/jetbrains_logo.svg");
+  background-position: 75px 60px, -20px -40px, 90% 35px;
+  background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
   padding: 50px; }
 
