@@ -21,8 +21,9 @@ var conferenceType = {
 
     java: [
         allProducts.intellijIdea,
+        allProducts.kotlin,
         allProducts.teamcity,
-        allProducts.upsource,
+        // allProducts.upsource,
         allProducts.youtrack,
         allProducts.webstorm
     ],
