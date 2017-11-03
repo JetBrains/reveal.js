@@ -29,7 +29,7 @@ var conferenceType = {
     ],
 
     go: [
-        allProducts.gogland,
+        allProducts.goland,
         allProducts.teamcity,
         allProducts.upsource,
         allProducts.youtrack,
