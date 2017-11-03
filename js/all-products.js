@@ -21,7 +21,7 @@ function getAllProducts() {
         datagrip: 'datagrip',
         hub: 'hub',
         mps: 'mps',
-        gogland: 'gogland',
+        goland: 'goland',
         general: 'general'
     };
 }

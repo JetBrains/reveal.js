@@ -233,8 +233,8 @@ body.mps-background {
   @include slide-background-template($productName: 'mps');
 }
 
-body.gogland-background {
-  @include slide-background-template($productName: 'gogland', $beamPosition: -20px -40px, $logoSize: auto 42px);
+body.goland-background {
+  @include slide-background-template($productName: 'goland', $beamPosition: -20px -40px, $logoSize: auto 42px);
 }
 
 body.general-background {
