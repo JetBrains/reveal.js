@@ -66,8 +66,13 @@ var conferenceType = {
 
     ios: [
         allProducts.appcode
-    ]
+    ],
 
+    php: [
+        allProducts.phpstorm,
+        // allProducts.datagrip,
+        // allProducts.webstorm
+    ]
 };
 
 // to switch on a playlist for a specific conference type,ª
