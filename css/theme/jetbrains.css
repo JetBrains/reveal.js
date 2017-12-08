@@ -562,8 +562,7 @@ body.default-background {
     transform: translateX(-50%); }
 
 body.fullscreen-mode {
-  padding: 0 !important;
-  background-color: #E8ECF1; }
+  padding: 0 !important; }
   body.fullscreen-mode .reveal {
     background-image: linear-gradient(to bottom, #fff 0, #fff 100%);
     background-position: 0 130px;
