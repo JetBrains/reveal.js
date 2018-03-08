@@ -51,6 +51,12 @@ function selectBackground() {
     var matchingProductFound = false;
 
     for (var product in allProducts) {
+        if ($(currentSection).hasClass('no-background')) {
+            $('body').removeClass().addClass('black-background');
+            $(currentSection).css('padding-top', 0);
+            matchingProductFound = true;
+            break;
+        }
 
         if ($(currentSection).attr('data-product') == allProducts[product]) {
             $('body').removeClass().addClass(allProducts[product].concat('-background'));

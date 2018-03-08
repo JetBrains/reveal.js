@@ -22,6 +22,7 @@ function getAllProducts() {
         hub: 'hub',
         mps: 'mps',
         goland: 'goland',
-        general: 'general'
+        general: 'general',
+        gdc_video: 'gdc_video'
     };
 }

@@ -536,6 +536,11 @@ body.general-background {
   body.general-background div.jetbrains-logo {
     padding-right: 1.5em; }
 
+body.black-background {
+  background-color: black;
+  background-repeat: no-repeat;
+  padding: 0; }
+
 body.default-background {
   background-image: url("../../img/slides/jetbrains_logo.svg");
   background-position: 90% 35px;
