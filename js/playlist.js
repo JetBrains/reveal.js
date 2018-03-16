@@ -72,6 +72,10 @@ var conferenceType = {
         allProducts.phpstorm,
         // allProducts.datagrip,
         // allProducts.webstorm
+    ],
+
+    gaming: [
+        allProducts.riderUnity
     ]
 };
 

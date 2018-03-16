@@ -18,6 +18,7 @@ module.exports = {
     {'pycharm': 'pycharm/pycharm.svg'},
     {'pycharm-edu': 'pycharm-edu/pycharm-edu.svg'},
     {'rider': 'rider/rider.svg'},
+    {'rider-unity': 'rider/rider-unity.svg'},
     {'resharper': 'resharper/resharper.svg'},
     {'resharper-cpp': 'resharper-cpp/resharper-cpp.svg'},
     {'rubymine': 'rubymine/rubymine.svg'},

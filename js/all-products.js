@@ -7,6 +7,7 @@ function getAllProducts() {
         dotpeek: 'dotpeek',
         resharperCpp: 'resharper-cpp',
         rider: 'rider',
+        riderUnity: 'rider-unity',
         webstorm: 'webstorm',
         appcode: 'appcode',
         clion: 'clion',

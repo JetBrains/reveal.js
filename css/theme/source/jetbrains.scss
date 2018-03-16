@@ -119,14 +119,14 @@ section.has-dark-background {
   @include slide-block-template($itemsPerRow: 4)
 }
 
-@mixin slide-background-template($productName, $beamName: $productName, $beamPosition: 0 0, $logoSize: auto 50px) {
+@mixin slide-background-template($productName, $beamName: $productName, $logoPosition: 75px 60px, $beamPosition: 0 0, $logoSize: auto 50px) {
 
   background: {
     image:        url("../../img/logo_#{$productName}.svg"),
                   url("../../img/slides/beam_#{$beamName}.svg"),
                   url("../../img/slides/jetbrains_logo.svg");
 
-    position:     75px 60px,
+    position:     $logoPosition,
                   $beamPosition,
                   90% 35px;
 
@@ -176,6 +176,10 @@ body.dotpeek-background {
 
 body.rider-background {
   @include slide-background-template($productName: 'rider', $beamPosition: -90px -85px, $logoSize: auto 42px);
+}
+
+body.rider-unity-background {
+  @include slide-background-template($productName: 'rider_unity', $logoPosition: 75px 49px, $beamPosition: -90px -85px, $logoSize: auto 70px);
 }
 
 body.webstorm-background {
