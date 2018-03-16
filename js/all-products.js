@@ -24,6 +24,6 @@ function getAllProducts() {
         mps: 'mps',
         goland: 'goland',
         general: 'general',
-        gdc_video: 'gdc_video'
+        GDCGeneral: 'gdc_video_general'
     };
 }
