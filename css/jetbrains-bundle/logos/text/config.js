@@ -14,6 +14,7 @@ module.exports = {
     'pycharm-text': 'pycharm/pycharm-text.svg',
     'pycharm-edu-text': 'pycharm-edu/pycharm-edu-text.svg',
     'rider-text': 'rider/rider-text.svg',
+    'rider-unity-text': 'rider/rider-unity-text.svg',
     'resharper-text': 'resharper/resharper-text.svg',
     'resharper-cpp-text': 'resharper-cpp/resharper-cpp-text.svg',
     'resharper-ultimate-text': 'resharper-ultimate/resharper-ultimate-text.svg',
