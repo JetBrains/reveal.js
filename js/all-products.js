@@ -26,7 +26,7 @@ function getAllProducts() {
         general: 'general',
         GameDevIntro: 'gamedev_video_intro',
         GameDevUnityIntro:'gamedev_video_unity_intro',
-        GameDevUnrealIntro:'gamedev_video_unreal_intro'
-
+        GameDevUnrealIntro:'gamedev_video_unreal_intro',
+        GameDevTeamIntro:'gamedev_video_team_intro'
     };
 }
