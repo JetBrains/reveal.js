@@ -24,6 +24,9 @@ function getAllProducts() {
         mps: 'mps',
         goland: 'goland',
         general: 'general',
-        GDCGeneral: 'gdc_video_general'
+        GameDevIntro: 'gamedev_video_intro',
+        GameDevUnityIntro:'gamedev_video_unity_intro',
+        GameDevUnrealIntro:'gamedev_video_unreal_intro'
+
     };
 }
