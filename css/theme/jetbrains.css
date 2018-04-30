@@ -410,6 +410,13 @@ body.rider-background {
   background-repeat: no-repeat;
   padding: 50px; }
 
+body.rider-unity-background {
+  background-image: url("../../img/logo_rider_unity.svg"), url("../../img/slides/beam_rider_unity.svg"), url("../../img/slides/jetbrains_logo.svg");
+  background-position: 75px 49px, -90px -85px, 90% 35px;
+  background-size: auto 70px, auto 540px, auto 100px;
+  background-repeat: no-repeat;
+  padding: 50px; }
+
 body.webstorm-background {
   background-image: url("../../img/logo_webstorm.svg"), url("../../img/slides/beam_webstorm.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, -70px -60px, 90% 35px;
@@ -508,8 +515,8 @@ body.mps-background {
   background-repeat: no-repeat;
   padding: 50px; }
 
-body.gogland-background {
-  background-image: url("../../img/logo_gogland.svg"), url("../../img/slides/beam_gogland.svg"), url("../../img/slides/jetbrains_logo.svg");
+body.goland-background {
+  background-image: url("../../img/logo_goland.svg"), url("../../img/slides/beam_goland.svg"), url("../../img/slides/jetbrains_logo.svg");
   background-position: 75px 60px, -20px -40px, 90% 35px;
   background-size: auto 42px, auto 540px, auto 100px;
   background-repeat: no-repeat;
@@ -529,6 +536,11 @@ body.general-background {
     font-weight: 600; }
   body.general-background div.jetbrains-logo {
     padding-right: 1.5em; }
+
+body.black-background {
+  background-color: black;
+  background-repeat: no-repeat;
+  padding: 0; }
 
 body.default-background {
   background-image: url("../../img/slides/jetbrains_logo.svg");
@@ -556,8 +568,7 @@ body.default-background {
     transform: translateX(-50%); }
 
 body.fullscreen-mode {
-  padding: 0 !important;
-  background-color: #E8ECF1; }
+  padding: 0 !important; }
   body.fullscreen-mode .reveal {
     background-image: linear-gradient(to bottom, #fff 0, #fff 100%);
     background-position: 0 130px;

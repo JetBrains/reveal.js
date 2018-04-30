@@ -29,7 +29,7 @@ var conferenceType = {
     ],
 
     go: [
-        allProducts.gogland,
+        allProducts.goland,
         allProducts.teamcity,
         allProducts.upsource,
         allProducts.youtrack,
@@ -70,11 +70,20 @@ var conferenceType = {
 
     python: [
         allProducts.pycharm
-    ]
+    ],
 
+    php: [
+        allProducts.phpstorm,
+        // allProducts.datagrip,
+        // allProducts.webstorm
+    ],
+
+    gaming: [
+        allProducts.riderUnity
+    ]
 };
 
 // to switch on a playlist for a specific conference type,ª
 // assign it to the currentPlaylist variable, i.e.:
 // var currentPlaylist = conferenceType.dotnet;
-var currentPlaylist = conferenceType.python;
+var currentPlaylist = conferenceType.dotnet;

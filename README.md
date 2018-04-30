@@ -1,4 +1,5 @@
 # What this repository is for
+[![JetBrains team project](http://jb.gg/badges/team.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
 
 This repository contains a collection of HTML-based slides about JetBrains tools that is used to play back at expo booths whenever JetBrains makes a booth appearance at a sponsored conference.
 
@@ -32,7 +33,7 @@ To select a playlist:
 
 Here's the general procedure for editing slides:
 
-1. Clone this repository: `git clone https://github.com/gorohoroh/reveal.js.git`
+1. Clone this repository: `git clone https://github.com/jetbrains/reveal.js.git`
 
 2. Open the project in WebStorm or another editor.
 
