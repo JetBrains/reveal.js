@@ -68,6 +68,10 @@ var conferenceType = {
         allProducts.appcode
     ],
 
+    python: [
+        allProducts.pycharm
+    ],
+
     php: [
         allProducts.phpstorm,
         // allProducts.datagrip,
