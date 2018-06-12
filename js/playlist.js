@@ -42,6 +42,13 @@ var conferenceType = {
         allProducts.youtrack
     ],
 
+    velocity: [
+        allProducts.teamcity,
+        allProducts.webstorm,
+        allProducts.youtrack,
+        allProducts.upsource
+    ],
+
     database: [
         allProducts.datagrip,
         allProducts.resharper,
@@ -86,4 +93,4 @@ var conferenceType = {
 // to switch on a playlist for a specific conference type,ª
 // assign it to the currentPlaylist variable, i.e.:
 // var currentPlaylist = conferenceType.dotnet;
-var currentPlaylist = conferenceType.dotnet;
+var currentPlaylist = conferenceType.velocity;
