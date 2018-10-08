@@ -3,7 +3,6 @@ var allProducts = getAllProducts();
 var conferenceType = {
 
     cpp: [
-        allProducts.appcode,
         allProducts.clion,
         allProducts.resharperCpp,
         allProducts.general
@@ -86,7 +85,16 @@ var conferenceType = {
     ],
 
     gaming: [
-        allProducts.riderUnity
+        allProducts.GameDevIntro,
+        allProducts.GameDevUnityIntro,
+        allProducts.riderUnity,
+        allProducts.GameDevUnrealIntro,
+        allProducts.resharperCpp,
+        allProducts.clion,
+        allProducts.GameDevTeamIntro,
+        allProducts.teamcity,
+        allProducts.upsource,
+        allProducts.youtrack
     ]
 };
 
