@@ -172,3 +172,9 @@ Example:
 	<div class="jetbrains-logo _logo-dotcover _size-5"></div>
 </section>
 ```
+## How to use GIT-LFS for large files
+
+Please refer to [GitHub's tutorials](https://help.github.com/articles/configuring-git-large-file-storage/).
+
+Right now we have a "tracking" the following files with `git-lfs`:
+* /img/screenshots/jetbrains/jb_promo-v1.7.mp4
