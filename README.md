@@ -178,5 +178,11 @@ Please refer to [GitHub's tutorials](https://help.github.com/articles/configurin
 
 Right now we have a "tracking" the following files with `git-lfs`:
 * /img/screenshots/jetbrains/jb_promo-v1.7.mp4
+* /img/screenshots/jetbrains/jb_promo-v1.7-cn-subtitles.mp4
+* /img/screenshots/jetbrains/jb_promo-v1.7-eng-subtitles.mp4
+* /img/screenshots/jetbrains/JetBrains_developer_tools_for_professionals_and_teams.mp4
+* /img/screenshots/jetbrains/JetBrains_TheDrivetoDevelop_Logo.mp4
+* /img/screenshots/jetbrains/wearejb_v4.2.mp4
+* /img/screenshots/jetbrains/DSGN-5489AnnualReport_d10.mp4
 
-If you would like to track more files, add them to `.gitattributes` as `FILE_NAME filter=lfs diff=lfs merge=lfs -text`
+If you would like to track more files, add them with `git-lfs track FILE_NAME`
