@@ -1,1 +1,7 @@
 jb_promo-v1.7.mp4 filter=lfs diff=lfs merge=lfs -text
+jb_promo-v1.7-cn-subtitles.mp4 filter=lfs diff=lfs merge=lfs -text
+jb_promo-v1.7-eng-subtitles.mp4 filter=lfs diff=lfs merge=lfs -text
+JetBrains_developer_tools_for_professionals_and_teams.mp4 filter=lfs diff=lfs merge=lfs -text
+JetBrains_TheDrivetoDevelop_Logo.mp4 filter=lfs diff=lfs merge=lfs -text
+wearejb_v4.2.mp4 filter=lfs diff=lfs merge=lfs -text
+DSGN-5489AnnualReport_d10.mp4 filter=lfs diff=lfs merge=lfs -text
