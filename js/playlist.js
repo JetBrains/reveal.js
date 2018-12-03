@@ -36,16 +36,16 @@ var conferenceType = {
     ],
 
     team: [
-        allProducts.teamcity,
         allProducts.upsource,
-        allProducts.youtrack
+        allProducts.youtrack,
+        allProducts.teamcity
     ],
 
     velocity: [
         allProducts.teamcity,
         allProducts.webstorm,
-        allProducts.youtrack,
-        allProducts.upsource
+        allProducts.upsource,
+        allProducts.youtrack
     ],
 
     database: [
@@ -84,6 +84,13 @@ var conferenceType = {
         // allProducts.webstorm
     ],
 
+    devopscon: [
+        allProducts.teamcity,
+        allProducts.pycharm,
+        allProducts.upsource,
+        allProducts.youtrack
+    ],
+
     gaming: [
         allProducts.GameDevIntro,
         allProducts.GameDevUnityIntro,
@@ -101,4 +108,4 @@ var conferenceType = {
 // to switch on a playlist for a specific conference type,ª
 // assign it to the currentPlaylist variable, i.e.:
 // var currentPlaylist = conferenceType.dotnet;
-var currentPlaylist = conferenceType.java;
+var currentPlaylist = conferenceType.devopscon;
