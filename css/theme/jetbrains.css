@@ -535,7 +535,31 @@ body.general-background {
     padding-top: 1.5em;
     font-weight: 600; }
   body.general-background div.jetbrains-logo {
-    padding-right: 1.5em; }
+    padding-right: 1.5em;}
+
+body.rider-cpp-preview-background {
+  padding: 0;
+  background-image: url("../../img/slides/beam_general.svg");
+  background-position: 100% 80%;
+  background-color: black;
+  background-repeat: no-repeat; }
+body.rider-cpp-preview-background section {
+  text-align: left; }
+body.rider-cpp-preview-background h1 {
+  color: white;
+  padding-top: 1.5em;
+  font-weight: 600; }
+body.rider-cpp-preview-background div.jetbrains-logo {
+  padding-right: 1.5em;
+  padding-top: 1.5em;
+  height: 24vh;
+  width: 24vh;}
+body.rider-cpp-preview-background img.slide-logo-small {
+  padding-right: 1.5em;
+  height: 24vh;
+  width: 24vh;
+  box-shadow: none;
+  background-color: black;}
 
 body.black-background {
   background-color: black;

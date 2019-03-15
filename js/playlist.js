@@ -89,15 +89,16 @@ var conferenceType = {
     ],
 
     gaming: [
+        allProducts.general,
         allProducts.GameDevIntro,
         allProducts.GameDevUnityIntro,
         allProducts.riderUnity,
         allProducts.GameDevUnrealIntro,
         allProducts.resharperCpp,
         allProducts.clion,
+        allProducts.riderCppPreview,
         allProducts.GameDevTeamIntro,
         allProducts.teamcity,
-        allProducts.upsource,
         allProducts.youtrack
     ]
 };
@@ -105,4 +106,4 @@ var conferenceType = {
 // to switch on a playlist for a specific conference type,ª
 // assign it to the currentPlaylist variable, i.e.:
 // var currentPlaylist = conferenceType.dotnet;
-var currentPlaylist = conferenceType.database;
+var currentPlaylist = conferenceType.gaming;

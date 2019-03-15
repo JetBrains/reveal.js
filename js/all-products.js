@@ -8,6 +8,7 @@ function getAllProducts() {
         resharperCpp: 'resharper-cpp',
         rider: 'rider',
         riderUnity: 'rider-unity',
+        riderCppPreview: 'rider-cpp-preview',
         webstorm: 'webstorm',
         appcode: 'appcode',
         clion: 'clion',
