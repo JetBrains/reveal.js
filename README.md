@@ -7,11 +7,21 @@ It is based on [reveal.js](https://github.com/hakimel/reveal.js/), a HTML-based 
 
 ## How to set up presentation playback at a conference
 
-1. Download and unpack the latest revision from this repository's `master` branch (unless you have agreed to use a different revision) to an Intel NUC device that will be used to display presentations.
+1. Download and unpack the latest revision from this repository's `master` branch (unless you have agreed to use a different revision) to an Intel NUC device or other computer that will be used to display presentations.
 
 2. If necessary, modify the playlist to match a particular conference type. (See *How to select a playlist* below)
 
 3. Double-click `jetbrains-tools.html`. Presentations will be played back in a loop.
+
+You don't need to connect the device to the Internet: the presentations are self-contained and will work offline.
+
+## How to set up presentation playback with general JetBrains videos
+
+1. Check out the latest revision from this repository's `master` branch e.g. with `git clone https://github.com/JetBrains/reveal.js.git` (unless you have agreed to use a different revision) to an Intel NUC device or other computer that will be used to display presentations.
+
+2. If necessary, modify the playlist to match a particular conference type. (See *How to select a playlist* below)
+
+3. Double-click `jetbrains-general.html`. Presentations will be played back in a loop.
 
 You don't need to connect the device to the Internet: the presentations are self-contained and will work offline.
 
