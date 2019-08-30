@@ -1,0 +1,3882 @@
+<!doctype html>
+<!--suppress RequiredAttributes -->
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Booth presentation - JetBrains tools - JP</title>
+
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Hakim El Hattab">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/jetbrains.css" id="theme">
+
+	<!-- Code syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
+	<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="js/jetbrains-slides.js"></script>
+	<script type="text/javascript" src="js/all-products.js"></script>
+	<script type="text/javascript" src="js/playlist.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body class="classToBeRemoved">
+
+<div class="reveal">
+
+	<!-- Any section element inside of this container is displayed as a slide -->
+	<div class="slides">
+
+		<!--region General slides (license giveaways, announcements etc.)-->
+		<section data-product="general" data-autoslide="20000">
+			<div class="jetbrains-logo _logo-jetbrains _size-5"></div>
+			<h1>アンケートに参加して &mdash;<br/>ライセンスを獲得してください！</h1>
+		</section>
+		<!--endregion-->
+
+		<!--region GameDev Intro-->
+		<section data-product="gamedev_video_intro" data-autoslide="12000"
+				 data-background-video="img/screenshots/gamedev/gamedev_intro.mp4" class="no-background"
+				 data-background-size="cover">
+		</section>
+		<!--endregion-->
+
+		<!--region Rider-->
+
+		<!-- 200 dpi is preferred (some images use 150 dpi), Visual Studio Dark, Darcula -->
+		<section data-product="rider">
+			<h2>Rider</h2>
+			<p>高速で強力なクロスプラットフォーム.NET IDE</p>
+			<div class="jetbrains-logo _logo-rider _size-5"></div>
+		</section>
+
+		<section class="high-image-inside" data-product="rider">
+			<div class="content-col">
+				<h2>Windows、macOS、Linuxで.NETのコーディング</h2>
+				<p>WebStorm、IntelliJ IDEA、その他のJetBrainsツールと同様のIDEでコーディングできます。</p>
+			</div>
+
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider/welcome.png">
+			</div>
+		</section>
+
+		<section data-product="rider">
+			<h2>Alt+Enterでコードを修正または改善</h2>
+			<p>Riderは内部的にReSharperのコード解析を使用しています。</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/rider/alt_enter.png">
+			</p>
+		</section>
+
+		<section class="high-image-inside" data-product="rider" data-autoslide="18300">
+			<h2>Roslynアナライザ</h2>
+			<p>さらに強力にコードの品質を向上させます。</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider/roslyn-analyzer.gif">
+			</div>
+		</section>
+
+		<section data-product="rider">
+			<h2>コードの改善にかかる時間を節約</h2>
+			<p>多数のクイックフィックスをファイル、プロジェクト、またはソリューションに適用できます。</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/rider/quick_fix_remove_redundant_code.png">
+			</p>
+		</section>
+		<section class="high-image-inside" data-product="rider" data-autoslide="12000">
+			<h2>Code Vision</h2>
+			<p>新しい方法で、エディタ内から直接コードに関する有用な情報を確認できます。</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider/code-vision.gif">
+			</div>
+		</section>
+
+		<section data-product="rider">
+			<h2>コードを片っ端からリファクタリング</h2>
+			<p>コードのRename（名前変更）・move（移動）・extract（抽出）、または階層の変更を実行できます。</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/rider/refactor.png">
+			</p>
+		</section>
+
+		<section data-product="rider">
+			<h2>プロジェクト全体のRename（名前変更）</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/rider/rename-project.png">
+			</p>
+		</section>
+
+		<section data-product="rider">
+			<h2>Solution Explorerまたはパンくずリストによるナビゲーション</h2>
+			<p>複数のナビゲーション機能でコードベース内を移動できます。</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/rider/navigation_breadcrumbs.png">
+			</p>
+		</section>
+
+		<section data-product="rider">
+			<h2>Search Everywhere（どこでも検索）</h2>
+			<p>単一のUIからクラス・ファイル・最近編集した項目を検索できます。</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/rider/search_everywhere.png">
+			</p>
+		</section>
+
+		<section data-product="rider">
+			<h2>任意の.NETアプリケーションをデバッグ</h2>
+			<p>デバッガは .NET Framework、.NET Core、Mono、Xamarin、Unity、ASP.NET、ASP.NET Coreをサポートしています。</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/rider/debugger.png">
+			</p>
+		</section>
+
+		<section data-product="rider" data-autoslide="7000">
+			<h2>サードパーティのコードをデバッグ</h2>
+			<p>Riderがデコンパイルするアセンブリ内で直接ステップ実行を行い、<br>ブレークポイントを設定できます。</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/rider/debugging-third-party-code.png">
+			</p>
+		</section>
+
+		<section data-product="rider">
+			<h2>スマートなステップインアクション</h2>
+			<p>Riderは複数のステートメントを含む行のデバッグを簡単にします。</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/rider/smart-step-into.png">
+			</p>
+		</section>
+
+		<section data-product="rider" data-autoslide="7000">
+			<h2>デバッガのMemoryビュー</h2>
+			<p>アプリケーションの内部動作を確認し、デバッグ中にマネージヒープを調べることができます。</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/rider/memory-view.png">
+			</p>
+		</section>
+
+		<section class="high-image-inside" data-product="rider">
+			<h2>デバッガでのDockerのサポート</h2>
+			<p>Dockerコンテナ内でアプリケーションをデバッグできます。</p>
+
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider/docker-debugging.png">
+			</div>
+		</section>
+
+		<section data-product="rider">
+			<h2>リモートデバッグ</h2>
+			<p>.NET Framework、.NET Core、Monoのアプリケーションをリモートでデバッグできます。</p>
+
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider/remote-debug.png">
+			</div>
+		</section>
+
+		<section data-product="rider" data-autoslide="7000">
+			<h2>例外のポップアップ </h2>
+			<p>発生した例外に関する基本的な情報を参照し、ハイライト表示されたスタックトレースからすばやく移動できます。</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/rider/exception-popup.png">
+			</p>
+		</section>
+
+		<section class="high-image-inside" data-product="rider">
+			<h2>ユニットテストの実行と管理</h2>
+			<p>.NET Framework、.NET Core、またはMonoを対象にするNUnitまたはxUnitを使用できます。</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider/unit_testing.png">
+			</div>
+		</section>
+
+		<section data-product="rider">
+			<h2>単体テストのカバーと継続的な実行</h2>
+			<p>Windowsのみ</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/rider/unit-test-coverage.png">
+			</p>
+		</section>
+
+		<section class="high-image-inside" data-product="rider">
+			<h2>統合されたパフォーマンスプロファイラ</h2>
+			<p>Windowsのみ</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider/performance-profiler.png">
+			</div>
+		</section>
+
+		<section data-product="rider">
+			<h2>IISまたはFTPへの公開</h2>
+			<p>ローカルまたはリモートサーバーにASP.NET Coreウェブアプリケーションをデプロイできます。</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/rider/publishing-to-iis.png">
+			</p>
+		</section>
+
+		<section class="high-image-inside" data-product="rider">
+			<h2>F#プロジェクトのビルド・実行・デバッグ </h2>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider/support-f-sharp.png">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="rider">
+			<h2>データベースおよびSQLに対応</h2>
+			<p>SQLスクリプトの編集と実行、SQLサーバーや各種DBMSへの接続に対応しています。</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider/database.png">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="rider">
+			<div class="content-col">
+				<h2>VCSの変更を管理</h2>
+				<p>Git、GitHub、Subversion、Mercurial、Perforce、CVSおよびTFVCに対応しています。</p>
+			</div>
+
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider/vcs.png">
+			</div>
+		</section>
+
+		<section data-product="rider">
+			<h2>集中モード</h2>
+			<p>Riderをメモ帳のような外観にしながら、パワフルなIDEのように機能させることができます。</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/rider/distraction_free_mode.png">
+			</p>
+		</section>
+
+		<section data-product="rider">
+			<h2>1000種類以上のプラグイン</h2>
+			<p>ReSharperとIntelliJプラットフォームのプラグインをRiderでご利用いただけます。</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/rider/plugins.png">
+			</p>
+		</section>
+
+		<section data-product="rider">
+			<h2>詳細を確認して、無料30日間体験版のダウンロード</h2>
+			<p>jetbrains.com/rider</p>
+			<div class="jetbrains-logo _logo-rider _size-5"></div>
+		</section>
+		<!--endregion-->
+
+		<!--region GameDev Intro: Unity-->
+		<section data-product="gamedev_video_unity_intro" data-autoslide="12000"
+				 data-background-video="img/screenshots/gamedev/Unity_intro.mp4" class="no-background"
+				 data-background-size="cover">
+		</section>
+		<!--endregion-->
+
+		<!--region rider-unity-->
+		<section data-product="rider-unity" class="no-background" style="color: white"
+				 data-background-image="img/background_rider_unity.jpg" data-background-size="cover">
+			<img data-src="img/big_logo_rider_unity.svg" class="plain" style="background: none;"/>
+			<p>クロスプラットフォーム.NET IDE</p>
+			<p>Unity C#スクリプト作成を強力に支援</p>
+			<div class="jetbrains-logo _logo-rider _size-5"></div>
+		</section>
+
+		<section class="high-image-inside" data-product="rider-unity">
+			<div class="content-col">
+				<h2>2,500種類以上のインスペクション、リファクタリング、およびクイックフィックス</h2>
+				<p>Unityスクリプトのコードを深く理解します。</p>
+			</div>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider-unity/inspections.png" class="plain">
+			</div>
+		</section>
+
+		<section data-product="rider-unity" data-autoslide="6000">
+			<h2><kbd>Alt</kbd>+<kbd>Enter</kbd>でフィックスインスペクション
+			</h2>
+			<p>高速かつ静的なコード解析により、コードの問題を検出して修正できます。</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider-unity/unity_alt_enter.gif">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="rider-unity">
+			<h2>Search Everywhere（どこでも検索）</h2>
+			<p>単一のUIからパワフルかつ高速な検索機能を使って、ファイルやC#のクラス、またはシンボルを見つけることができます。</p>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/resharper-ultimate/rider-unity/search_everywhere.png">
+			</div>
+		</section>
+
+		<section data-product="rider-unity">
+			<h2>豊富なコードナビゲーション</h2>
+			<p>使用箇所を検索し、型メンバーに移動し、クラス階層間を遷移できます。</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider-unity/navigate_to.png">
+			</div>
+		</section>
+
+		<section data-product="rider-unity" data-autoslide="12500">
+			<h2>Unityの外部エディタとして設定</h2>
+			<p>C#ファイルをダブルクリックし、Riderで開くことができます。</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider-unity/unity_integration.gif">
+			</div>
+		</section>
+
+		<section data-product="rider-unity">
+			<h2>ワンクリックでUnityエディタをデバッグ</h2>
+			<p>プレイモードに自動的に切り替えできます。</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider-unity/debug_configurations.png">
+			</div>
+		</section>
+
+		<section data-product="rider-unity">
+			<h2>Unityプレイヤーをデバッグ</h2>
+			<p>ローカルのプレイヤーまたはネットワーク上のデバイスを検出できます。</p>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/resharper-ultimate/rider-unity/debug_players.png">
+			</div>
+		</section>
+
+		<section data-product="rider-unity">
+			<h2>割り当てられたコンポーネントと<br>子階層をデバッガで表示</h2>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider-unity/debug_extensions.png">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="rider-unity">
+			<h2>Unity ExplorerでUnityプロジェクトの構造を表示</h2>
+			<p>アセットとパッケージを表示します。</p>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/resharper-ultimate/rider-unity/unity_explorer.png">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="rider-unity">
+			<h2>エディタから直接Unityスクリプトを作成</h2>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider-unity/file_templates.png">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="rider-unity" data-autoslide="15500">
+			<h2>Unityログビューア</h2>
+			<p>ログを表示し、その中を遷移できます。</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider-unity/log_viewer.gif">
+			</div>
+		</section>
+
+		<section data-product="rider-unity" data-autoslide="16500">
+			<h2>Riderから直接Unityを再生、一時停止、ステップ実行</h2>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider-unity/play_pause.gif">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="rider-unity" data-autoslide="10500">
+			<h2>Unityイベント関数の生成</h2>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider-unity/unity_generate_code.gif">
+			</div>
+
+		</section>
+
+		<section data-product="rider-unity" data-autoslide="8000">
+			<h2>Unityイベント関数のコード補完</h2>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider-unity/unity_code_completion.gif">
+			</div>
+		</section>
+
+		<section data-product="rider-unity">
+			<h2>クイックドキュメントとUnityヘルプへのリンク</h2>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider-unity/quick_doc.png">
+			</div>
+		</section>
+
+		<section data-product="rider-unity">
+			<h2>Unity固有のCode Vision</h2>
+			<p>明示的に使用されているクラス、イベント関数、およびシリアル化されたフィールドのリンク</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider-unity/code_vision.png">
+			</div>
+		</section>
+
+		<section data-product="rider-unity">
+			<h2>シーンおよびアセット内のイベントハンドラの使用箇所を検索</h2>
+			<p>Unityでの使用箇所を表示できます。</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider-unity/show_usages_in_unity.png">
+			</div>
+		</section>
+
+		<section data-product="rider-unity">
+			<h2>「マジックストリング」のサポート</h2>
+			<p>コード補完、使用箇所の検索、名前の変更
+			<p>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider-unity/invoke.png">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="rider-unity" data-autoslide="28000">
+			<h2>Unity固有のコードインスペクションとクイックフィックス</h2>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider-unity/unity_inspections.gif">
+			</div>
+		</section>
+
+		<section data-product="rider-unity">
+			<h2>パフォーマンスインジケーター</h2>
+			<p>パフォーマンスに問題のあるコードとコストの高い既知のAPIへの呼び出しをハイライト</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider-unity/performance_indicators.png">
+			</div>
+		</section>
+
+		<section data-product="rider-unity">
+			<h2>統合ILビューア</h2>
+			<p>コードの挙動を正確に把握できます。</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider-unity/il_viewer.png">
+			</div>
+		</section>
+
+		<section data-product="rider-unity">
+			<h2>シェーダーファイルのサポート</h2>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider-unity/shaderlab.png">
+			</div>
+		</section>
+
+		<section data-product="rider-unity">
+			<h2>ハイライト表示と編集のカラー化</h2>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider-unity/colour_highlighting.png">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="rider-unity">
+			<div class="content-col">
+				<h2>VCSの変更を管理</h2>
+				<p>Git、GitHub、Mercurial、Perforce、Subversion、CVSおよびTFVCに対応しています。</p>
+			</div>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider/vcs.png">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="rider-unity">
+			<h2>データベースおよびSQLに対応</h2>
+			<p>複数のデータベースプラットフォームでのSQLスクリプトの編集と実行に対応しています。</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider/database.png">
+			</div>
+		</section>
+
+		<section data-product="rider-unity">
+			<h2>1000種類以上のプラグイン</h2>
+			<p>ReSharperとIntelliJのプラグインをRiderでご利用いただけます。</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/rider/plugins.png">
+			</div>
+		</section>
+
+		<section data-product="rider-unity">
+			<h2>詳細を確認して、無料30日間体験版のダウンロード</h2>
+			<p>jetbrains.com/unity</p>
+			<div class="jetbrains-logo _logo-rider _size-5"></div>
+		</section>
+		<!--endregion-->
+
+		<!--region ReSharper-->
+
+		<section data-product="resharper">
+			<h2>ReSharper</h2>
+			<p>.NETおよびウェブ開発者向け<br/>Visual Studio拡張機能</p>
+			<div class="jetbrains-logo _logo-resharper _size-5"></div>
+		</section>
+
+		<section data-product="resharper">
+			<h2>継続的なコード品質解析</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/code_analysis.png">
+			</p>
+		</section>
+
+		<section data-product="resharper">
+			<h2>クイックフィックスによるコードの改善</h2>
+			<p>C#、VB.NET、XAML、ASP.NET、HTML、JavaScript、TypeScript、CSS、XML</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/qf_general.png">
+				<!--TODO Add shortcut callout (Alt+Enter)-->
+			</p>
+		</section>
+
+		<section data-product="resharper">
+			<h2>共通の命名規則を使用</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/qf_naming.png">
+			</p>
+		</section>
+
+		<section data-product="resharper">
+			<h2>準備が完了次第、C#6 または 7に移行可能</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/qf_csharp6.png">
+			</p>
+		</section>
+
+		<section data-product="resharper">
+			<h2>LINQの使用箇所を確認可能</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/qf_linq.png">
+			</p>
+		</section>
+
+		<section data-product="resharper">
+			<h2>潜在的な例外の検出と予防</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/qf_invalid_cast.png">
+			</p>
+		</section>
+
+		<section data-product="resharper">
+			<h2>未使用または到達不能なコードを検出</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/qf_unreachable_code.png">
+			</p>
+		</section>
+
+		<section data-product="resharper">
+			<h2>潜在的な脅威となる問題を検出</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/qf_lock.png">
+			</p>
+		</section>
+
+		<section data-product="resharper">
+			<h2>ソリューション全体で発生したエラーを追跡</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/swa.png">
+			</p>
+		</section>
+
+		<section data-product="resharper">
+			<h2>任意の範囲であらゆるコードの問題をすばやく検出</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/inspection_results.png">
+			</p>
+		</section>
+
+		<section data-product="resharper">
+			<h2>統合されたReSpellerによるコードのスペルチェック</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/spell-checking.png">
+			</p>
+		</section>
+
+		<section data-product="resharper">
+			<h2>JSLint、ESLint、TSLintによるJS/TSコードのリンティング</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/linters.png">
+			</p>
+		</section>
+
+		<section data-product="resharper">
+			<h2>拡張された補完機能で高速にコーディング</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/completion.png">
+				<!--TODO Add shortcut callout (Ctrl+Space)-->
+			</p>
+		</section>
+
+		<section data-product="resharper">
+			<h2>拡張された補完機能で高速にコーディング</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/completion2.png">
+			</p>
+		</section>
+
+		<section data-product="resharper">
+			<h2>ボイラープレートコードの高速生成</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/generate_general.png">
+			</p>
+		</section>
+
+		<section data-product="resharper">
+			<h2>ボイラープレートコードの高速生成</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/generate_override_members.png">
+			</p>
+		</section>
+
+		<section class="high-image-inside" data-product="resharper">
+			<h2>楽しくデバッグ</h2>
+			<p>インラインデバッグ情報と検索可能なデータヒント</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/resharper/debugging_assistance.png">
+			</div>
+		</section>
+
+		<section data-product="resharper">
+			<h2>安全にリファクタリング</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/refactor_this.png">
+				<!--TODO Add shortcut callout (Ctrl+Shift+R)-->
+			</p>
+		</section>
+
+		<section data-product="resharper">
+			<h2>コード使用箇所の検索と参照</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/find_usages.png">
+			</p>
+		</section>
+
+		<section data-product="resharper">
+			<h2>コード使用箇所の検索と参照</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/go_to_usages.png">
+			</p>
+		</section>
+
+		<section data-product="resharper">
+			<h2>任意のコードにすばやく移動</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/go_to_symbol.png">
+			</p>
+		</section>
+
+		<section data-product="resharper">
+			<h2>ソースやテキスト形式ファイル内で任意のテキストを検索</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/go_to_word.png">
+			</p>
+		</section>
+
+		<section data-product="resharper">
+			<h2>コンテキスト対応ナビゲーションによる高速化</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/navigate_to.png">
+			</p>
+		</section>
+
+		<section data-product="resharper" data-autoslide="25000">
+			<h2>構造的なコード片間を移動</h2>
+			<p>ブラウザでウェブページをタブで切り替えるように移動できます。</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/tab_navigation.gif">
+			</p>
+		</section>
+
+		<section data-product="resharper">
+			<h2>ウェブ開発を楽しむ</h2>
+			<p>ASP.NET（Core、MVC、Web Forms）、HTML、JavaScript、TypeScript、Angular、JSON、CSS</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/aspnet.png">
+				<!--TODO Add shortcut callout (Alt+Enter)-->
+			</p>
+		</section>
+
+		<section data-product="resharper">
+			<h2>XAML開発を楽しむ</h2>
+			<p>WPF、Silverlight、Windows Phone、ユニバーサルWindowsプラットフォーム</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/xaml1.png">
+				<!--TODO Add shortcut callout (Alt+Enter)-->
+			</p>
+		</section>
+
+		<section data-product="resharper">
+			<h2>XAML開発を楽しむ</h2>
+			<p>WPF、Silverlight、Windows Phone、ユニバーサルWindowsプラットフォーム</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/xaml2.png">
+			</p>
+		</section>
+
+		<section data-product="resharper">
+			<h2>ユニットテストの管理と実行</h2>
+			<p>NUnit、MSTest、xUnit、QUnit、Jasmine...</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/unit_test_explorer_default.png">
+			</p>
+		</section>
+
+		<section data-product="resharper">
+			<h2>ユニットテストの管理と実行</h2>
+			<p>NUnit、MSTest、xUnit、QUnit、Jasmine...</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/unit_test_explorer_categories.png">
+			</p>
+		</section>
+
+		<section data-product="resharper">
+			<h2>ユニットテストの管理と実行</h2>
+			<p>NUnit、MSTest、xUnit、QUnit、Jasmine...</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/unit_test_explorer_sessions.png">
+			</p>
+		</section>
+
+		<section data-product="resharper">
+			<h2>ユニットテストの管理と実行</h2>
+			<p>NUnit、MSTest、xUnit、QUnit、Jasmine...</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/unit_tests_context.png">
+			</p>
+		</section>
+
+		<section data-product="resharper">
+			<h2>ユニットテストの管理と実行</h2>
+			<p>NUnit、MSTest、xUnit、QUnit、Jasmine...</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/unit_test_sessions.png">
+			</p>
+		</section>
+
+		<section data-product="resharper">
+			<h2>ReSharperの拡張</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/extensions.png">
+			</p>
+		</section>
+
+		<section data-product="resharper">
+			<h2>コマンドラインからインスペクションを実行</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper/command_line.png">
+			</p>
+		</section>
+
+		<section data-product="resharper">
+			<h2>詳細を確認して、無料30日間体験版のダウンロード</h2>
+			<p>jetbrains.com/resharper</p>
+			<div class="jetbrains-logo _logo-resharper _size-5"></div>
+		</section>
+		<!--endregion-->
+
+		<!--region GameDev Intro: Unreal-->
+		<section data-product="gamedev_video_unreal_intro" data-autoslide="12000"
+				 data-background-video="img/screenshots/gamedev/Unreal_intro.mp4" class="no-background"
+				 data-background-size="cover">
+		</section>
+		<!--endregion-->
+
+		<!--region ReSharper C++-->
+
+		<section data-product="resharper-cpp">
+			<h2>ReSharper C++</h2>
+			<p>C++開発者向け<br/>Visual Studio拡張機能</p>
+			<div class="jetbrains-logo _logo-resharper-cpp _size-5"></div>
+		</section>
+
+		<section data-product="resharper-cpp">
+			<h2>最新のC++標準をネイティブでサポート</h2>
+			<p>C++14、C++17、C++20を含む！</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/fold_expressions.png">
+			</p>
+		</section>
+
+		<section data-product="resharper-cpp" data-autoslide="8000">
+			<h2>C++/CLIの初期サポート</h2>
+			<p>次を含みます。</p>
+			<ul>
+				<li>コードインスペクション</li>
+				<li>入力支援</li>
+				<li>書式設定</li>
+				<li>コード補完</li>
+				<li>ナビゲーション</li>
+			</ul>
+			<p>
+				ReSharper Ultimateのサブスクリプションが必要です。
+			</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/cpp-cli-rename.gif">
+			</p>
+		</section>
+
+		<section class="high-image-inside" data-product="resharper-cpp">
+			<h2>デザイン時のコード品質解析</h2>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/code_analysis.png">
+			</div>
+		</section>
+
+		<section data-product="resharper-cpp">
+			<h2>テンプレートコードで役立つエラー診断</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/substitution_failed.png">
+			</p>
+		</section>
+
+		<section data-product="resharper-cpp">
+			<h2>プロジェクトまたはソリューション内でコードの問題を検出</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/inspection_results.png">
+			</p>
+		</section>
+
+		<section data-product="resharper-cpp">
+			<h2>クイックフィックスによるコードの修正と改善</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/qf_redundant_qualifier.png">
+			</p>
+		</section>
+
+		<section data-product="resharper-cpp">
+			<h2>クイックフィックスによるコードの修正と改善</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/qf_use_type.png">
+			</p>
+		</section>
+
+		<section data-product="resharper-cpp">
+			<h2>スマート補完機能で高速にコーディング</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/code_completion.png">
+			</p>
+		</section>
+
+		<section data-product="resharper-cpp">
+			<h2>コンテキストアクションを使ったコード変換</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/ca_generate_constructor.png">
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/ca_generate_implementation.png">
+			</p>
+		</section>
+
+		<section data-product="resharper-cpp">
+			<h2>コンテキストアクションを使ったコード変換</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/ca_substitute_typedef.png">
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/ca_merge_nested_if.png">
+			</p>
+		</section>
+
+
+		<section class="high-image-inside" data-product="resharper-cpp" data-autoslide="33000">
+			<h2>コンテキストアクションを使ったコード変換</h2>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/enum_to_string2.gif">
+			</div>
+		</section>
+
+		<section data-product="resharper-cpp">
+			<h2>安全にリファクタリング</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/refactoring_popup.png">
+			</p>
+		</section>
+
+		<section class="high-image-inside" data-product="resharper-cpp">
+			<h2>安全にリファクタリング</h2>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/refactoring_dialog.png">
+			</div>
+		</section>
+
+		<section data-product="resharper-cpp">
+			<h2>シンボルの使用箇所を参照</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/find_usages.png">
+			</p>
+		</section>
+
+		<section data-product="resharper-cpp">
+			<h2>詳細なパラメータ情報の取得</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/parameter_info_templates.png">
+			</p>
+		</section>
+
+		<section data-product="resharper-cpp">
+			<h2>パラメータや名前空間のリスト内を移動</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/parameter_hints.png">
+			</p>
+		</section>
+
+		<section data-product="resharper-cpp">
+			<h2>To-doコメントの参照</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/todo_explorer.png">
+			</p>
+		</section>
+
+		<section data-product="resharper-cpp">
+			<h2>あらゆるものをすばやく検索</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/go_to_combos.png">
+			</p>
+		</section>
+
+		<section data-product="resharper-cpp">
+			<h2>スマートなナビゲーションによる高速化</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/navigate_to.png">
+			</p>
+		</section>
+
+		<section data-product="resharper-cpp">
+			<h2>テンプレートの特殊化間を移動</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/template_specializations.png">
+			</p>
+		</section>
+
+		<section class="high-image-inside" data-product="resharper-cpp" data-autoslide="33000">
+			<h2>Go to declaration（宣言に移動）による<br>一致しないシグニチャへの移動</h2>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/go_to_unmatched.gif">
+			</div>
+		</section>
+
+		<section data-product="resharper-cpp">
+			<h2>型の階層を視覚的に参照</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/subtypes_hierarchy.png">
+			</p>
+		</section>
+
+		<section data-product="resharper-cpp">
+			<h2>include文の階層を視覚的に参照</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/includes_hierarchy.png">
+			</p>
+		</section>
+
+		<section data-product="resharper-cpp">
+			<h2>Includes Analyzerによるコンパイル速度の最適化</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/includes_analyzer.png">
+			</p>
+		</section>
+
+		<section data-product="resharper-cpp">
+			<h2>定型コードの生成</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/generate_popup.png">
+			</p>
+		</section>
+
+		<section data-product="resharper-cpp">
+			<h2>コードテンプレートを使用したコーディングの高速化</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/templates_surround.png">
+			</p>
+		</section>
+
+		<section data-product="resharper-cpp">
+			<h2>任意の範囲でコードを再フォーマット</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/format_selection.png">
+			</p>
+		</section>
+
+		<section data-product="resharper-cpp">
+			<h2>コマンドラインからインスペクションを実行</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/command_line_tools.png">
+			</p>
+		</section>
+
+		<section data-product="resharper-cpp">
+			<h2>スマートなデバッグ：ステップ動作のコントロール</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/step_filters_settings.png">
+			</p>
+		</section>
+
+		<section data-product="resharper-cpp">
+			<h2>楽しくテスト</h2>
+			<p>Google Test、Boost.Test、Doctest、Catchとの統合</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/unit_testing.png">
+			</p>
+		</section>
+
+		<section class="high-image-inside" data-product="resharper-cpp" data-autoslide="10000">
+			<h2>Unreal Engine：リフレクション指定子の補完</h2>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/reflection_specifiers_completion.gif">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="resharper-cpp">
+			<h2>Unreal Engine：リモートプロシージャコールの操作</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/rpc_navigation_missing.png">
+			</p>
+		</section>
+
+		<section class="high-image-inside" data-product="resharper-cpp">
+			<h2>Unreal Engine：生成されたヘッダーを考慮する<br>自動インポートとコード解析</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/generated_header_last.png">
+			</p>
+		</section>
+
+		<section class="high-image-inside" data-product="resharper-cpp">
+			<h2>Unreal Engine：UE4の命名規則</h2>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/Capture_naming_inspections.png">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="resharper-cpp">
+			<h2>Unreal Engine：パフォーマンスの最適化</h2>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/resharper-cpp/ue_performance_settings.png">
+			</div>
+		</section>
+
+		<section data-product="resharper-cpp">
+			<h2>詳細を確認して、無料30日間体験版のダウンロード</h2>
+			<p>jetbrains.com/resharper-cpp</p>
+			<div class="jetbrains-logo _logo-resharper-cpp _size-5"></div>
+		</section>
+		<!--endregion-->
+
+		<!--region dotTrace-->
+
+		<section data-product="dottrace">
+			<h2>dotTrace</h2>
+			<p>.NETパフォーマンスプロファイラ</p>
+			<div class="jetbrains-logo _logo-dottrace _size-5"></div>
+		</section>
+
+		<section class="high-image-inside" data-product="dottrace">
+			<h2>各種.NETアプリケーションのプロファイリング</h2>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/dottrace/dottrace_home_screen.png">
+			</div>
+		</section>
+
+		<section data-product="dottrace">
+			<h2>リモートアプリケーションのプロファイリング</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/dottrace/remote_profiling.png">
+			</p>
+		</section>
+
+		<section data-product="dottrace">
+			<h2>Visual Studioで直接プロファイリング</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/dottrace/performance_profiler_in_visual_studio.png">
+			</p>
+		</section>
+
+		<section class="high-image-inside" data-product="dottrace">
+			<h2>統合デコンパイラによる掘り下げ</h2>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/dottrace/dottrace_decompiled_source.png">
+			</div>
+		</section>
+
+		<section data-product="dottrace">
+			<h2>さまざまなビューでプロファイリング結果を参照</h2>
+			<p>コールツリー、スレッドツリー、ホットスポット、プレーンリスト、...</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/dottrace/call_tree_view.png">
+				<img data-src="img/screenshots/resharper-ultimate/dottrace/threads_view.png">
+			</p>
+		</section>
+
+		<section data-product="dottrace">
+			<h2>非同期呼び出しを簡単にプロファイリング</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/dottrace/async_profiling.png">
+			</p>
+		</section>
+
+		<section data-product="dottrace">
+			<h2>Subsystems（サブシステム）ビューによるボトルネックの検出</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/dottrace/subsystems.png">
+			</p>
+		</section>
+
+		<section data-product="dottrace">
+			<h2>プロファイリング結果の比較</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/dottrace/snapshot_comparison.png">
+			</p>
+		</section>
+
+		<section data-product="dottrace">
+			<h2>Visual StudioとReSharperとの統合</h2>
+			<p>現在のプロジェクトとユニットテストをワンクリックでプロファイリングできます。</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/dottrace/profile_all_tests.png">
+			</p>
+		</section>
+
+		<section data-product="dottrace">
+			<h2>詳細を確認して、無料日間体験版のダウンロード</h2>
+			<p>jetbrains.com/profiler</p>
+			<div class="jetbrains-logo _logo-dottrace _size-5"></div>
+		</section>
+		<!--endregion-->
+
+		<!--region dotCover-->
+
+		<section data-product="dotcover">
+			<h2>dotCover</h2>
+			<p>.NETユニットテストランナーと<br/>コードカバレッジツール</p>
+			<div class="jetbrains-logo _logo-dotcover _size-5"></div>
+		</section>
+
+		<section class="high-image-inside" data-product="dotcover">
+			<h2>ユニットテストのコードカバレッジ</h2>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/dotcover/unit_testing_coverage_tab.png">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="dotcover">
+			<h2>手動テストセッションのコードカバレッジ</h2>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/dotcover/manual_test_coverage.png">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="dotcover">
+			<h2>継続的なユニットテストの実行</h2>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/dotcover/continuous_testing.png">
+			</div>
+		</section>
+
+		<section data-product="dotcover">
+			<h2>コードカバレッジの可視化</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/dotcover/dotcover_new_highlighting.png">
+			</p>
+		</section>
+
+		<section data-product="dotcover">
+			<h2>カバレッジテストへのナビゲーション</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/dotcover/navigate_to_covering_tests.png">
+				<!--TODO Add shortcut callout (Ctrl+Alt+K,T)-->
+			</p>
+		</section>
+
+		<section class="high-image-inside" data-product="dotcover">
+			<h2>カバレッジの結果をエクスポート</h2>
+			<p>HTML、XML、またはJSONにエクスポートできます。</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/dotcover/coverage_report.png">
+			</div>
+		</section>
+
+		<section data-product="dotcover">
+			<h2>詳細を確認して、無料日間体験版のダウンロード</h2>
+			<p>jetbrains.com/dotcover</p>
+			<div class="jetbrains-logo _logo-dotcover _size-5"></div>
+		</section>
+		<!--endregion-->
+
+		<!--region dotMemory-->
+
+		<section data-product="dotmemory">
+			<h2>dotMemory</h2>
+			<p>.NETメモリプロファイラ</p>
+			<div class="jetbrains-logo _logo-dotmemory _size-5"></div>
+		</section>
+
+		<section class="high-image-inside" data-product="dotmemory">
+			<h2>独自のユーザーインターフェースでメモリを解析</h2>
+			<p>ステップバイステップで簡単に実行できます。</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/dotmemory/dotmemory_ui.png">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="dotmemory">
+			<h2>メモリの問題を正確に特定</h2>
+			<p>自動インスペクションを使用します。</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/dotmemory/memory_inspections.png">
+			</div>
+		</section>
+
+		<section data-product="dotmemory">
+			<h2>メモリ消費量をリアルタイムに解析</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/dotmemory/real_time_memory_analysis.png">
+			</p>
+		</section>
+
+		<section class="high-image-inside" data-product="dotmemory">
+			<h2>コールスタックを解析</h2>
+			<p>Icicleチャートで解析できます。</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/dotmemory/icicle_chart.png">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="dotmemory">
+			<h2>占有オブジェクトの解析</h2>
+			<p>サンバーストグラフで解析できます。</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/dotmemory/sunburst_diagram.png">
+			</div>
+		</section>
+
+		<section data-product="dotmemory">
+			<h2>詳細を確認して、無料日間体験版のダウンロード</h2>
+			<p>jetbrains.com/dotmemory</p>
+			<div class="jetbrains-logo _logo-dotmemory _size-5"></div>
+		</section>
+		<!--endregion-->
+
+		<!--region dotPeek-->
+
+		<section data-product="dotpeek">
+			<h2>dotPeek</h2>
+			<p>無料の.NETデコンパイラと<br/>アセンブリブラウザ</p>
+			<div class="jetbrains-logo _logo-dotpeek _size-5"></div>
+		</section>
+
+		<section class="high-image-inside" data-product="dotpeek">
+			<h2>.NETアセンブリをデコンパイルと参照</h2>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/dotpeek/dotpeek_general.png">
+			</div>
+		</section>
+
+		<section data-product="dotpeek">
+			<h2>アセンブリをソースプロジェクトにエクスポート</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/dotpeek/export_to_visual_studio.png">
+			</p>
+		</section>
+
+		<section data-product="dotpeek">
+			<h2>デコンパイル済みコード内の移動と検索</h2>
+			<p>ReSharperを組み込んだVisual Studioと同様の操作で実行できます。</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/dotpeek/find_usages_dotpeek.png">
+			</p>
+		</section>
+
+		<section data-product="dotpeek">
+			<h2>デコンパイル済みコード内の移動と検索</h2>
+			<p>ReSharperを組み込んだVisual Studioと同様の操作で実行できます。</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/dotpeek/go_to_everything.png">
+			</p>
+		</section>
+
+		<section class="high-image-inside" data-product="dotpeek">
+			<h2>デコンパイル済みコード内の移動と検索</h2>
+			<p>ReSharperを組み込んだVisual Studioと同様の操作で実行できます。</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/dotpeek/dotpeek_type_dependency_diagram.png">
+			</div>
+		</section>
+
+		<section data-product="dotpeek">
+			<h2>その場でPDBファイルを生成</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/dotpeek/pdb_generation_dialog.png">
+			</p>
+		</section>
+
+		<section data-product="dotpeek">
+			<h2>その場でPDBファイルを生成</h2>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/dotpeek/pdb_generation_log.png">
+			</p>
+		</section>
+
+		<section data-product="dotpeek">
+			<h2>dotPeekシンボルサーバーを使用</h2>
+			<p>デバッガ用のPDBとソースファイルを生成できます。</p>
+			<p>
+				<img data-src="img/screenshots/resharper-ultimate/dotpeek/symbol_server.png">
+			</p>
+		</section>
+
+		<section class="high-image-inside" data-product="dotpeek">
+			<h2>.NETアセンブリのメタデータを参照</h2>
+			<p>Assembly Explorerから直接参照できます。</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/resharper-ultimate/dotpeek/dotpeek_metadata_viewer.png">
+			</div>
+		</section>
+		<section data-product="dotpeek">
+			<h2>詳細を確認して、無料体験版をダウンロード</h2>
+			<p>jetbrains.com/decompiler</p>
+			<div class="jetbrains-logo _logo-dotpeek _size-5"></div>
+		</section>
+		<!--endregion-->
+
+		<!--region CLion-->
+
+		<section data-product="clion">
+			<h2>CLion</h2>
+			<p>CとC++用の<br/>スマートクロスプラットフォームIDE</p>
+			<div class="jetbrains-logo _logo-clion _size-5"></div>
+		</section>
+
+		<!--<section data-product="clion">-->
+		<!--<h2>Develop and debug audio app with ease</h2>-->
+		<!--<video data-autoplay data-src="img/screenshots/clion/JUCE_audio_demo.mp4" />-->
+		<!--</section>-->
+
+		<section data-product="clion">
+			<h2>CとC++用の<br/>スマートクロスプラットフォームIDEを入手</h2>
+			<p>
+				<img data-src="img/screenshots/clion/cpp_ide-1200.png">
+			</p>
+		</section>
+
+		<section data-product="clion">
+			<h2>最新のC++標準を含む<br/>CとC++をネイティブにサポート</h2>
+			<p>
+				<img data-src="img/screenshots/clion/cpp14_auto_return.png">
+			</p>
+		</section>
+
+		<section data-product="clion">
+			<h2>GCC、Clang、MSVCに対応<br/>
+Windows上のWSLツールチェーンとの互換性
+			</h2>
+			<p>
+				<img data-src="img/screenshots/clion/WSL_settings.png">
+			</p>
+		</section>
+
+		<section class="high-image-inside" data-product="clion" data-autoslide="22000">
+			<h2>リモート開発：ローカル実行中のCLionから<br>リモートホスト上でビルド・実行・デバッグ</h2>
+			<div class="image-col">
+				<img data-src="img/screenshots/clion/remote_run_app.gif">
+			</div>
+		</section>
+
+		<section data-product="clion">
+			<h2>CMake、Gradleとコンパイルデータベースをサポート</h2>
+			<p>
+				<img data-src="img/screenshots/clion/gradle_build.png">
+			</p>
+		</section>
+
+		<section class="high-image-inside" data-product="clion">
+			<h2>スマートなエディタで高速にコーディング</h2>
+			<p>パラメータ情報</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/clion/deduction_guides.png">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="clion">
+			<h2>スマートなエディタで高速にコーディング</h2>
+			<p>パラメーターヒント</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/clion/parameter_hints.png">
+			</div>
+		</section>
+
+		<section data-product="clion" data-autoslide="51000">
+			<h2>スマートなエディタで高速にコーディング</h2>
+			<p>ライブテンプレートと複数のカーソル</p>
+			<p>
+				<img data-src="img/screenshots/clion/multiple_cursor_templates_compl.gif">
+			</p>
+		</section>
+
+		<section class="high-image-inside" data-product="clion">
+			<div class="content-col">
+				<h2>コーディング体験をカスタマイズ</h2>
+				<p>カラースキーム、背景画像、コードスタイル設定、命名規則をカスタマイズできます。</p>
+			</div>
+
+			<div class="image-col">
+				<img data-src="img/screenshots/clion/code_styles_predefined.png">
+			</div>
+		</section>
+
+		<section data-product="clion" data-autoslide="15000">
+			<h2>ClangFormatを代替コードフォーマッタとして使用</h2>
+			<p>すべてのIDEアクションで動作します。</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/clion/clangformat.gif">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="clion">
+			<div class="content-col">
+				<h2>コーディング体験をカスタマイズ</h2>
+				<p>設定可能なキーマップ</p>
+			</div>
+
+			<div class="image-col">
+				<img data-src="img/screenshots/clion/keymap-1627.png">
+			</div>
+		</section>
+
+		<section data-product="clion">
+			<h2>高いコード可読性</h2>
+			<p>セマンティックハイライト</p>
+			<p>
+				<img data-src="img/screenshots/clion/semantic_highlight.png"><br/>
+			</p>
+		</section>
+
+		<section class="high-image-inside" data-product="clion" data-autoslide="20000">
+			<h2>高いコード可読性</h2>
+			<p>コンテキストの解決</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/clion/resolve_context.gif"><br/>
+			</div>
+		</section>
+
+		<section data-product="clion">
+			<h2>効率よく移動</h2>
+			<p>構造ビュー</p>
+			<p>
+				<img data-src="img/screenshots/clion/structure_view.png"><br/>
+			</p>
+		</section>
+
+		<section data-product="clion">
+			<h2>効率よく移動</h2>
+			<p>クラス、ファイル、シンボルに名前で移動できます。</p>
+			<p>
+				<img data-src="img/screenshots/clion/search_everywhere_an.png">
+			</p>
+		</section>
+
+		<section data-product="clion">
+			<h2>効率よく移動</h2>
+			<p>階層表示に対応しています。</p>
+			<p>
+				<img data-src="img/screenshots/clion/hierarchy.png">
+			</p>
+		</section>
+
+		<section data-product="clion">
+			<h2>効率よく移動</h2>
+			<p>C/C++用のブレッドクラム</p>
+			<p>
+				<img data-src="img/screenshots/clion/breadcrumbs.png">
+			</p>
+		</section>
+
+		<section data-product="clion" data-autoslide="10000">
+			<h2>テンプレートで高速にコーディング</h2>
+			<p>Surround With...（囲む...） テンプレート</p>
+			<p>
+				<img data-src="img/screenshots/clion/surround_with_if.gif">
+			</p>
+		</section>
+
+		<section data-product="clion" data-autoslide="10000">
+			<h2>テンプレートで高速にコーディング</h2>
+			<p>C、C++、CMakeなどのライブテンプレート</p>
+			<p>
+				<img data-src="img/screenshots/clion/cmake_boost_live_template.gif">
+			</p>
+		</section>
+
+		<section data-product="clion">
+			<h2>コード生成による高速化</h2>
+			<p>使用箇所からの作成</p>
+			<p>
+				<img data-src="img/screenshots/clion/create_usage-2454.png">
+			</p>
+		</section>
+
+		<section data-product="clion">
+			<h2>コード生成による高速化</h2>
+			<p>演算子の生成</p>
+			<p>
+				<img data-src="img/screenshots/clion/generate_operator-2690.png">
+			</p>
+		</section>
+
+		<section data-product="clion">
+			<h2>コード生成による高速化</h2>
+			<p>Override/Implement（オーバーライド/実装）、その他</p>
+			<p>
+				<img data-src="img/screenshots/clion/generate_menu-2660.png">
+			</p>
+		</section>
+
+		<section data-product="clion" data-autoslide="15000">
+			<h2>高品質を<code></code>維持</h2>
+			<p>コードのオンザフライ分析</p>
+			<p>
+				<img data-src="img/screenshots/clion/analysis.png">
+			</p>
+		</section>
+
+		<section data-product="clion">
+			<h2>高品質を<code></code>維持</h2>
+			<p>コードのオンザフライ分析</p>
+			<p>
+				<img data-src="img/screenshots/clion/wrong_arguments_inspection.png">
+			</p>
+		</section>
+
+		<section data-product="clion" data-autoslide="26000">
+			<h2>高いコード品質を維持</h2>
+			<p>クイックフィックス</p>
+			<p>
+				<img data-src="img/screenshots/clion/cast_operators.gif">
+			</p>
+		</section>
+
+		<section data-product="clion" data-autoslide="16000">
+			<h2>高いコード品質を維持</h2>
+			<p>Clang-Tidyの統合：C++ Core Guidelines、Modernizeなど。 </p>
+			<p>
+				<img data-src="img/screenshots/clion/cppcoreguidelines.gif">
+			</p>
+		</section>
+
+		<section data-product="clion" data-autoslide="15000">
+			<h2>安全にリファクタリング</h2>
+			<p>シンボルとそのコンテキストの使用箇所すべての名前を変更できます。</p>
+			<p>
+				<img data-src="img/screenshots/clion/doxygen_rename.gif">
+			</p>
+		</section>
+
+		<section data-product="clion" data-autoslide="12000">
+			<h2>安全にリファクタリング</h2>
+			<p>階層の段階的更新</p>
+			<p>
+				<img data-src="img/screenshots/clion/rename.gif">
+			</p>
+		</section>
+
+		<section class="high-image-inside" data-product="clion">
+			<h2>安全にリファクタリング</h2>
+			<p>関数、変数、Typedef、クラスなどを抽出できます。</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/clion/extract_variable.png">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="clion">
+			<div class="content-col">
+				<h2>安全にリファクタリング</h2>
+				<p>Change Signature（署名の変更）、Inline（インライン化）、Safe Delete（安全な削除）その他多くの操作を実行できます。</p>
+			</div>
+
+			<div class="image-col">
+				<img data-src="img/screenshots/clion/refactor_menu-2243.png">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="clion" data-autoslide="8000">
+			<div class="content-col">
+				<h2>単一のファイルを再コンパイル</h2>
+				<p>プロジェクト全体の再コンパイルを実行する必要はありません。</p>
+			</div>
+
+			<div class="image-col">
+				<img data-src="img/screenshots/clion/recompile_one.gif">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="clion">
+			<h2>GDBとLLDBを使用したデバッグ</h2>
+			<p>ローカルプロセスに接続するか、リモートGDBを使ってデバッグできます。</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/clion/remote_debug.png">
+			</div>
+		</section>
+
+		<section data-product="clion">
+			<h2>ビルトインデバッガによるコード検査</h2>
+			<p>エディタで直接変数の値を検査できます。</p>
+			<p>
+				<img data-src="img/screenshots/clion/inline_view-2298.png">
+			</p>
+		</section>
+
+		<section data-product="clion">
+			<h2>ビルトインデバッガによるコード検査</h2>
+			<p>式をウォッチし、評価できます。</p>
+			<p>
+				<img data-src="img/screenshots/clion/watches-1443.png">
+			</p>
+		</section>
+
+		<section class="high-image-inside" data-product="clion">
+			<h2>Memoryビューによるコード検査</h2>
+			<p>ポインタ/アドレスの背後にあるメモリをダンプします。</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/clion/memory_view.png">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="clion" data-autoslide="16000">
+			<h2>ビルトインデバッガによるコード検査</h2>
+			<p>逆アセンブリビュー</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/clion/disasm_lldb.gif">
+			</div>
+		</section>
+
+
+		<section class="high-image-inside" data-product="clion">
+			<h2>Valgrind Memcheckによるコード検査</h2>
+			<p>Windows（WSLを搭載）を含むすべてのプラットフォームでご利用いただけます。</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/clion/valgrind.png">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="clion" data-autoslide="20000">
+			<h2>Google Sanitizersによるコード検査</h2>
+			<p>アドレス指定の問題、メモリリーク、<br/>データ競合、未初期化メモリの問題を検出します。</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/clion/sanitizers_races.gif">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="clion" data-autoslide="30000">
+			<h2>CPUプロファイラによるコード検査</h2>
+			<p>Perf（Linux）またはDTrace（macOS）を使用して<br/>アプリケーションのパフォーマンスを解析できます。</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/clion/profile_run.gif">
+			</div>
+		</section>
+
+		<section data-product="clion">
+			<h2>ユニットテストでカバー</h2>
+			<p>Google Test、Boost.TestおよびCatchをサポート</p>
+			<p>
+				<img data-src="img/screenshots/clion/test_runner.png">
+			</p>
+		</section>
+
+		<section data-product="clion" data-autoslide="14000">
+			<h2>ユニットテストでカバー</h2>
+			<p>Google Test用のコードを生成</p>
+			<p>
+				<img data-src="img/screenshots/clion/generate_tests.gif">
+			</p>
+		</section>
+
+		<section class="high-image-inside" data-product="clion">
+			<div class="content-col">
+				<h2>継続的なコードのドキュメント化</h2>
+				<p>Doxygenサポート、ドキュメントプレビュー</p>
+			</div>
+
+			<div class="image-col">
+				<img data-src="img/screenshots/clion/clion_quick_doc.png">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="clion" data-autoslide="7000">
+			<h2>継続的なコードのドキュメント化</h2>
+			<p>補完、Rename（名前の変更）リファクタリング、コメントの生成</p>
+			<p>
+				<img data-src="img/screenshots/clion/doxygen_ellipsis_generate.gif">
+			</p>
+		</section>
+
+		<section class="high-image-inside" data-product="clion">
+			<div class="content-col">
+				<h2>組み込み開発</h2>
+				<p>MCU上でのデバッグ、ペリフェラルの表示に対応しています。</p>
+			</div>
+
+			<div class="image-col">
+				<img data-src="img/screenshots/clion/peripherals.png">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="clion">
+			<div class="content-col">
+				<h2>スマートなCMakeサポート</h2>
+				<p>Renameリファクタリング</p>
+			</div>
+
+			<div class="image-col">
+				<img data-src="img/screenshots/clion/cmake_rename-2762.png">
+			</div>
+		</section>
+
+		<section data-product="clion">
+			<h2>スマートなCMakeサポート</h2>
+			<p>補完</p>
+			<p>
+				<img data-src="img/screenshots/clion/cmake_completion-2347.png">
+			</p>
+		</section>
+
+		<section class="high-image-inside" data-product="clion">
+			<div class="content-col">
+				<h2>自動更新で時間を節約</h2>
+				<p>ファイルを作成・削除するときに自動的にCMakeを更新</p>
+			</div>
+
+			<div class="image-col">
+				<img data-src="img/screenshots/clion/new_class-2394.png">
+			</div>
+		</section>
+
+		<section data-product="clion">
+			<h2>VCS統合によるメリットを享受</h2>
+			<p>SVN、Git/GitHub、Mercurial、CVS、Perforce、TFSに対応しています。</p>
+			<p>
+				<img data-src="img/screenshots/clion/undo_commit.png">
+			</p>
+		</section>
+
+		<section class="high-image-inside" data-product="clion">
+			<div class="content-col">
+				<h2>VCS統合によるメリットを享受</h2>
+				<p>統合インターフェースとローカル履歴</p>
+			</div>
+
+			<div class="image-col">
+				<img data-src="img/screenshots/clion/local_history.png">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="clion">
+			<div class="content-col">
+				<h2>VCS統合によるメリットを享受</h2>
+				<p>コード解析を実行し、コミットの前にTODOをチェックできます。</p>
+			</div>
+
+			<div class="image-col">
+				<img data-src="img/screenshots/clion/commit_changes.png">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="clion">
+			<div class="content-col">
+				<h2>データベースツールとSQLのサポート</h2>
+			</div>
+
+			<div class="image-col">
+				<img data-src="img/screenshots/clion/database_clion.png">
+			</div>
+		</section>
+
+		<section data-product="clion">
+			<h2>言語は多いほど、力になる</h2>
+			<ul class="slide-block">
+				<li><img class="slide-logo" data-src="img/external_logos/python.svg"></li>
+				<li><img class="slide-logo" data-src="img/external_logos/swift.svg"></li>
+				<li><img class="slide-logo" data-src="img/external_logos/objc.svg"></li>
+				<li><img class="slide-logo" data-src="img/external_logos/javascript.svg"></li>
+				<li><img class="slide-logo" data-src="img/external_logos/html5.svg"></li>
+				<li><img class="slide-logo" data-src="img/external_logos/css3.svg"></li>
+				<li><img class="slide-logo" data-src="img/external_logos/kotlin.svg"></li>
+				<li><img class="slide-logo" data-src="img/external_logos/Fortran.svg"></li>
+				<li><img class="slide-logo" data-src="img/external_logos/rust.svg"></li>
+			</ul>
+			<!--TODO consider making images fragments-->
+		</section>
+
+		<section class="high-image-inside" data-product="clion" data-autoslide="20000">
+			<div class="content-col">
+				<h2>文字列リテラルをコードとして処理</h2>
+				<p>SQL、RegExp、HTMLなどの言語インジェクションに対応しています。</p>
+			</div>
+
+			<div class="image-col">
+				<img data-src="img/screenshots/clion/regexp.gif">
+			</div>
+		</section>
+
+		<section data-product="clion">
+			<h2>詳細を確認して、<br>無料30日間体験版のダウンロード</h2>
+			<p>jetbrains.com/clion</p>
+			<div class="jetbrains-logo _logo-clion _size-5"></div>
+		</section>
+
+		<!--endregion-->
+
+		<!--region Rider C++ Preview announcement -->
+		<section data-product="rider-cpp-preview" data-autoslide="20000">
+			<div class="jetbrains-logo _logo-rider _size-5"></div>
+			<img class="slide-logo-small" data-src="img/external_logos/ue4.svg"/>
+			<h1>Unreal Engineをお使いですか？ <br/>アンケートに参加してください &mdash;<br/>Rider C++のプレビューにご参加ください！</h1>
+		</section>
+		<!--endregion-->
+
+		<!--region Kotlin-->
+		<section data-product="kotlin">
+			<h2>Kotlin</h2>
+			<p>JVM、Android、ブラウザ用の<br>静的型付きプログラミング言語</p>
+			<div class="jetbrains-logo _logo-kotlin _size-5"></div>
+		</section>
+		<section data-product="kotlin">
+			<video class="stretch" data-autoplay data-src="img/screenshots/kotlin/kotlin.mov"/>
+		</section>
+
+		<!--endregion-->
+
+		<!--region AppCode -->
+		<section data-product="appcode">
+			<h2>AppCode</h2>
+			<p>iOS/macOS開発用の<br/>スマートIDE</p>
+			<div class="jetbrains-logo _logo-appcode _size-5"></div>
+		</section>
+		<section data-product="appcode">
+			<h2>スマートエディタ</h2>
+			<p>どの言語でも複数のカーソルを使用できます。</p>
+			<video data-autoplay data-src="img/screenshots/appcode/multicursor.mov"/>
+		</section>
+		<section class="high-image-inside" data-product="appcode">
+			<h2>スマートエディタ</h2>
+			<p>セマンティックハイライト</p>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/appcode/semantic@2x.png"/>
+			</div>
+		</section>
+		<section data-product="appcode">
+			<h2>スマートエディタ</h2>
+			<p>Swiftの型ヒントをインラインで表示します。</p>
+			<video data-autoplay data-src="img/screenshots/appcode/type_hints.mov"/>
+		</section>
+		<section class="high-image-inside" data-product="appcode">
+			<h2>スマートなインテンションアクションで高速にコーディング</h2>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/appcode/intentions.png"/>
+			</div>
+		</section>
+		<section class="high-image-inside" data-product="appcode">
+			<h2>スマートなインテンションアクションで高速にコーディング</h2>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/appcode/inspections_swift.png"/>
+			</div>
+		</section>
+		<section class="high-image-inside" data-product="appcode">
+			<h2>よりスマートな補完機能で高速にコーディング</h2>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/appcode/completion.png"/>
+			</div>
+		</section>
+		<section class="high-image-inside" data-product="appcode">
+			<h2>コード生成による高速化</h2>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/appcode/override_implement.png"/>
+			</div>
+		</section>
+		<section data-product="appcode">
+			<h2>コード生成による高速化</h2>
+			<video data-autoplay data-src="img/screenshots/appcode/cfu_1.mov"/>
+		</section>
+		<section data-product="appcode">
+			<h2>コード生成による高速化</h2>
+			<video data-autoplay data-src="img/screenshots/appcode/generate.mov"/>
+		</section>
+		<section data-product="appcode">
+			<h2>簡単にコードを再フォーマット</h2>
+			<video data-autoplay data-src="img/screenshots/appcode/reformat.mov"/>
+		</section>
+		<section class="high-image-inside" data-product="appcode">
+			<h2>コード品質を改善</h2>
+			<p>Objective-C、C++、Swiftのコードインスペクション</p>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/appcode/inspections_c.png"/>
+			</div>
+		</section>
+		<section data-product="appcode">
+			<h2>安全にリファクタリング</h2>
+			<p>Swiftに対応したRename（名前の変更）リファクタリング</p>
+			<video data-autoplay data-src="img/screenshots/appcode/rename.mov"/>
+		</section>
+		<section data-product="appcode">
+			<h2>安全にリファクタリング</h2>
+			<p>Extract Variable（変数の抽出）リファクタリング</p>
+			<video data-autoplay data-src="img/screenshots/appcode/extract.mov"/>
+		</section>
+		<section data-product="appcode">
+			<h2>安全にリファクタリング</h2>
+			<p>Swiftに対応したExtract Method（メソッドの抽出）リファクタリング</p>
+			<video data-autoplay data-src="img/screenshots/appcode/extract_method.mov"/>
+		</section>
+		<section data-product="appcode">
+			<h2>安全にリファクタリング</h2>
+			<p>Swiftに対応したExtract Closure（クロージャの抽出）リファクタリング</p>
+			<video data-autoplay data-src="img/screenshots/appcode/extract_closure.mov"/>
+		</section>
+		<section class="high-image-inside" data-product="appcode">
+			<h2>効率よく移動</h2>
+			<p>簡易ナビゲーションオプションと強力な検索機能</p>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/appcode/navigation_1.png"/>
+			</div>
+		</section>
+		<section class="high-image-inside" data-product="appcode">
+			<h2>効率よく移動</h2>
+			<p>簡易ナビゲーションオプションと強力な検索機能</p>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/appcode/navigation_2.png"/>
+			</div>
+		</section>
+		<section class="high-image-inside" data-product="appcode">
+			<h2>効率よく移動</h2>
+			<p>簡易ナビゲーションオプションと強力な検索機能</p>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/appcode/navigation_3.png"/>
+			</div>
+		</section>
+		<section class="high-image-inside" data-product="appcode">
+			<h2>簡単に検索</h2>
+			<p>クラス、メソッド、変数、またはリソースを簡単に検索できます。</p>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/appcode/find_usages.png"/>
+			</div>
+		</section>
+		<section class="high-image-inside" data-product="appcode">
+			<h2>複数の観点</h2>
+			<p>インポートの階層と呼び出し階層を表示し、ファイル構造を確認できます。</p>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/appcode/structure.png"/>
+			</div>
+		</section>
+		<section class="high-image-inside" data-product="appcode">
+			<h2>プロジェクトルート配下の任意のファイルを編集</h2>
+			<p>Files（ファイル）ビュー</p>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/appcode/files_view.png"/>
+			</div>
+		</section>
+		<section class="high-image-inside" data-product="appcode">
+			<h2>簡単にデバッグ</h2>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/appcode/debug_1.png"/>
+			</div>
+		</section>
+		<section class="high-image-inside" data-product="appcode">
+			<h2>簡単にデバッグ</h2>
+			<p>式をすばやく評価し、ウォッチを簡単に追加できます。</p>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/appcode/debug_2.png"/>
+			</div>
+		</section>
+		<section class="high-image-inside" data-product="appcode">
+			<h2>手間のかからないテスト</h2>
+			<p>実行時間でテストを並べ替え</p>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/appcode/sort_by_duration@2x.png"/>
+			</div>
+		</section>
+		<section class="high-image-inside" data-product="appcode">
+			<h2>手間のかからないテスト</h2>
+			<p>失敗したテストのみを再実行</p>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/appcode/rerun_failed_tests@2x.png"/>
+			</div>
+		</section>
+		<section class="high-image-inside" data-product="appcode">
+			<h2>手間のかからないテスト</h2>
+			<p>組み込みのテスト履歴によるメリットを享受</p>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/appcode/test_history@2x.png"/>
+			</div>
+		</section>
+		<section class="high-image-inside" data-product="appcode" data-autoslide="20000">
+			<h2>手間のかからないテスト</h2>
+			<p>XCTest、Quick、Kiwiに対応しています。</p>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/appcode/testing_1@2x.png"/>
+			</div>
+		</section>
+		<section class="high-image-inside" data-product="appcode" data-autoslide="20000">
+			<h2>手間のかからないテスト</h2>
+			<p>Google Test、Boost.Test、Catchに対応しています。</p>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/appcode/testing_2@2x.png"/>
+			</div>
+		</section>
+		<section class="high-image-inside" data-product="appcode">
+			<h2>依存関係をIDEから直接管理</h2>
+			<p>CocoaPodsマネージャが組み込まれています。</p>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/appcode/cocoapods.png"/>
+			</div>
+		</section>
+		<section class="high-image-inside" data-product="appcode">
+			<h2>データベースツールとSQLのサポート</h2>
+			<video style="border: solid #ccc 1px;" data-autoplay data-src="img/screenshots/appcode/database.mov"/>
+		</section>
+		<section class="high-image-inside" data-product="appcode">
+			<h2>Debug（デバッグ）ビューの階層</h2>
+			<p>Revealを統合</p>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/appcode/reveal@2x.png"/>
+			</div>
+		</section>
+		<section class="high-image-inside" data-product="appcode">
+			<h2>Git、SVN、Mercurial、Perforce</h2>
+			<p>VCSを完全に統合しています。</p>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/appcode/vcs_1.png"/>
+			</div>
+		</section>
+		<section class="high-image-inside" data-product="appcode">
+			<h2>Git、SVN、Mercurial、Perforce</h2>
+			<p>VCSを完全に統合しています。</p>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/appcode/vcs_2.png"/>
+			</div>
+		</section>
+		<section class="high-image-inside" data-product="appcode">
+			<h2>Git、SVN、Mercurial、Perforce</h2>
+			<p>VCSを完全に統合しています。</p>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/appcode/vcs_3.png"/>
+			</div>
+		</section>
+		<section class="high-image-inside" data-product="appcode">
+			<h2>ローカル履歴を使用した変更の保存</h2>
+			<p>バージョン管理システムがなくても保存できます。</p>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/appcode/local_history@2x.png"/>
+			</div>
+		</section>
+		<section class="high-image-inside" data-product="appcode">
+			<h2>iOSアプリでクロスプラットフォームフレームワークを使用</h2>
+			<p>PhoneGapまたはReact Nativeを使用できます。</p>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/appcode/react@2x.png"/>
+			</div>
+		</section>
+		<section class="high-image-inside" data-product="appcode">
+			<h2>ウェブ開発を楽しむ</h2>
+			<p>HTML、CSS、JavaScript、Emmet</p>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/appcode/web@2x.png"/>
+			</div>
+		</section>
+		<section class="high-image-inside" data-product="appcode">
+			<h2>環境をカスタマイズ</h2>
+			<p>カラースキーム、Xcodeのキーマップ、VIMのエミュレーション</p>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/appcode/themes.png"/>
+			</div>
+		</section>
+		<section data-product="appcode">
+			<div class="jetbrains-logo _logo-appcode _size-5"></div>
+			<p><a href="https://www.jetbrains.com/appcode">jetbrains.com/appcode</a> で無料体験版をダウンロードしてください</p>
+			<p><a href="http://twitter.com/appcode">@appcode</a> をTwitterでフォロー</p>
+		</section>
+
+		<!--endregion-->
+
+		<!--region IntelliJ IDEA -->
+
+		<section data-product="intellij">
+			<h2>JVM用の機能豊富で人間工学的なIDE</h2>
+			<p>Java、Scala、Groovy、Kotlinを使った<br/>エンタープライズ、モバイル、ウェブ開発に優れています。</p>
+
+			<div class="jetbrains-logo _logo-intellij-idea _size-5"></div>
+		</section>
+
+		<section data-product="intellij">
+			<h2>スマートなコード補完</h2>
+			<p>スマート補完は、作業中のコンテキストで推測される型のみを提案します。</p>
+			<p>
+				<img data-src="img/screenshots/intellij/idea_overview_7@2x-275.png">
+			</p>
+		</section>
+
+		<section data-product="intellij">
+			<h2>フレームワーク固有のコーディング支援</h2>
+			<p>SQL、JPQL、HTML、JavaScriptなどの広範な言語に対応したインテリジェントなコーディング支援機能を提供します。</p>
+			<p>
+				<img data-src="img/screenshots/intellij/idea_overview_8@2x-298.png">
+			</p>
+		</section>
+
+		<section data-product="intellij">
+			<h2>生産性の向上</h2>
+			<p>IDEは単調な繰り返しな開発タスクを自動化するため、開発者は全体像に集中することができます。</p>
+			<p>
+				<img data-src="img/screenshots/intellij/idea_overview_9@2x-319.png">
+			</p>
+		</section>
+
+		<section data-product="intellij">
+			<h2>最初からすぐに使える強力なツールセット</h2>
+			<p>
+				<img data-src="img/screenshots/intellij/idea_overview_toolset@2.png">
+			</p>
+		</section>
+
+		<section data-product="intellij">
+			<h2>ビルドツール</h2>
+			<p>Maven、Gradle、SBT、Grunt、Bowerその他のビルドツールとシームレスに統合できます。</p>
+			<p>
+				<img data-src="img/screenshots/intellij/idea_maven@2-643.png">
+			</p>
+		</section>
+
+		<section data-product="intellij">
+			<h2>バージョン管理システム</h2>
+			<p>Git、GitHub、SVN、Mercurial、Perforceおよびその他のバージョン管理システムにまとめて対応しています。</p>
+			<p>
+				<img data-src="img/screenshots/intellij/idea_vcs@2-660.png">
+			</p>
+		</section>
+
+		<section data-product="intellij">
+			<h2>SpringとJava EE</h2>
+			<p>SpringとJava EEのプロジェクトに対し、拡張されたコーディング支援機能を提供します。 エンタープライズアプリケーションサーバーとのスムーズな統合</p>
+			<p>
+				<img data-src="img/screenshots/intellij/idea_java_ee@2-375.png">
+			</p>
+		</section>
+
+		<section data-product="intellij">
+			<h2>GWTとVaadin</h2>
+			<p>GWTおよびVaadinのアプリケーション開発をネイティブにサポートし、高度なコーディング支援を提供します。</p>
+			<p>
+				<img data-src="img/screenshots/intellij/idea_gwt@2-389.png">
+			</p>
+		</section>
+
+		<section data-product="intellij">
+			<h2>GrailsとPlay</h2>
+			<p>どのGroovyおよびScalaプロジェクトでも簡単に選択できます。 PlayおよびGrailsのアプリケーション開発に高度なサポートを提供します。</p>
+			<p>
+				<img data-src="img/screenshots/intellij/idea_grails@2-529.png">
+			</p>
+		</section>
+
+		<section data-product="intellij">
+			<h2>Android</h2>
+			<p>Googleの公式Android IDEであるAndroid StudioとIntelliJ IDEAは、同じIntelliJプラットフォームとコア機能を共有しています。</p>
+			<p>
+				<img data-src="img/screenshots/intellij/idea_android@2-480.png">
+			</p>
+		</section>
+
+		<section data-product="intellij">
+			<h2>JavaScriptとHTML</h2>
+			<p>JavaScript・HTML・CSSのほか、その最新後継言語に対して最高級のサポートを提供しています。</p>
+			<p>
+				<img data-src="img/screenshots/intellij/idea_typescript_react@2-544.png">
+			</p>
+		</section>
+
+		<section data-product="intellij">
+			<h2>データベースツール</h2>
+			<p>IDEからOracle、SQL Server、PostgreSQL、MySQLおよびその他のデータベースに直接アクセスできます。</p>
+			<p>
+				<img data-src="img/screenshots/intellij/idea_database@2-625.png">
+			</p>
+		</section>
+
+		<section data-product="intellij">
+			<h2>プラグインエコシステム</h2>
+			<p>IntelliJ IDEAには、1500種類以上のプラグインを入手できる堅牢なプラグインシステムを備えています。</p>
+			<p>
+				<img data-src="img/screenshots/intellij/idea_plugins@2.png">
+			</p>
+		</section>
+
+		<section data-product="intellij">
+			<h2>Communityエディション</h2>
+			<p>JVMおよびAndroid開発向けの無料オープンソースIDEです。</p>
+
+			<h2>Ultimateエディション</h2>
+			<p>ウェブおよびエンタープライズ開発向けのフル機能のIDEです。</p>
+		</section>
+
+		<section data-product="intellij">
+			<h2>詳細情報とダウンロード</h2>
+			<p>jetbrains.com/idea</p>
+			<div class="jetbrains-logo _logo-intellij-idea _size-5"></div>
+		</section>
+
+		<!--endregion-->
+
+		<!--region GoLand-->
+
+		<section data-product="goland">
+			<h2>GoLand</h2>
+			<p>Go開発用のクレバーなIDE</p>
+
+			<div class="jetbrains-logo _logo-goland _size-5"></div>
+		</section>
+
+		<section data-product="goland" data-autoslide="8000">
+			<h2>コード補完</h2>
+			<p>GoLandではさまざまな方法でコードを補完できます。</p>
+			<p>
+				<img data-src="img/screenshots/goland/go_code_completion.gif">
+			</p>
+		</section>
+
+		<section data-product="goland">
+			<h2>スマートコード補完</h2>
+			<p>現在のコンテキストに適した最も関連性の高いシンボルの一覧が表示されます。</p>
+			<p>
+				<img data-src="img/screenshots/goland/go_completion_2.png">
+			</p>
+		</section>
+
+		<section data-product="goland" data-autoslide="8000">
+			<h2>関数用のメソッドのような補完</h2>
+			<p>個別の場合に応じて適切な関数をすべてリストで表示します。</p>
+			<p>
+				<img data-src="img/screenshots/goland/go_method_like_completion.gif">
+			</p>
+		</section>
+
+		<section data-product="goland" data-autoslide="14000">
+			<h2>Postfix Completion（後置補完）</h2>
+			<p><em>Postfix Completion</em> を使うと、ドットの後に入力する接尾辞に基づいて式を別のものに変換できます。</p>
+			<p>
+				<img data-src="img/screenshots/goland/go_sort_postfix_completion.gif">
+			</p>
+		</section>
+
+		<section data-product="goland">
+			<h2>インスペクションとクイックフィックス</h2>
+			<p>GoLandには、ほとんどのコードの問題をすぐに検出し、それらを修正するのに役立つ多数のクイックフィックスが備わっています。</p>
+			<p>
+				<img data-src="img/screenshots/goland/go_inspections_1.png">
+			</p>
+		</section>
+
+		<section data-product="goland">
+			<h2>Goに対応した豊富なリファクタリング一式</h2>
+			<p><em>Rename（名前の変更）</em>、<em>Move（移動）</em>、<em>Copy（コピー）</em>、<em>Change Signature（署名の変更）</em>、<em>Extract Interface（インターフェースの抽出）</em>、<em>Extract Method（メソッドの抽出）</em>など。</p>
+			<p>
+				<img data-src="img/screenshots/goland/go_refactorings_1.gif">
+			</p>
+		</section>
+
+		<section data-product="goland" data-autoslide="14000">
+			<h2>署名の変更</h2>
+			<p>数回クリックするだけで、さまざまな方法で関数、メソッド、またはメソッド仕様の署名を変更できます。</p>
+			<p>
+				<img data-src="img/screenshots/goland/go_change_signature_refactoring.gif">
+			</p>
+		</section>
+
+		<section data-product="goland" data-autoslide="8000">
+			<h2>Move（移動）リファクタリング</h2>
+			<p>最上位レベルのメンバーを同じパッケージの別のファイルにすばやく安全に移動できます。</p>
+			<p>
+				<img src="img/screenshots/goland/goland_2018_1_move.gif">
+			</p>
+		</section>
+
+		<section data-product="goland">
+			<h2>Extract Interface（インターフェースの抽出）</h2>
+			<p>選択したタイプに基づいて新しいインターフェースをすばやく作成できます。</p>
+			<p>
+				<img data-src="img/screenshots/goland/go_extract_interface_refactoring.png">
+			</p>
+		</section>
+
+		<section data-product="goland">
+			<h2>使用箇所と型階層のナビゲーション</h2>
+			<p>ワンクリックだけで、スーパー関数、実装、使用箇所などに切り替えられます。</p>
+			<p>
+				<img data-src="img/screenshots/goland/go_navigation_1.png">
+			</p>
+		</section>
+
+		<section data-product="goland">
+			<h2>コード生成</h2>
+			<p>多くの場合、IDEは細かいコードを生成します。</p>
+			<p>
+				<img data-src="img/screenshots/goland/go_implement_type.gif">
+			</p>
+		</section>
+
+		<section data-product="goland">
+			<h2>再帰呼び出しを検出</h2>
+			<p>関数内に再帰呼び出しがある場合、IDEがそれを検出してガターにマークします。</p>
+			<p>
+				<img data-src="img/screenshots/goland/go_detecting_recursive_calls.png">
+			</p>
+		</section>
+
+		<section data-product="goland">
+			<h2>式型</h2>
+			<p>Expression Typeアクションはキャレット位置の任意の式の型を識別できます。</p>
+			<p>
+				<img data-src="img/screenshots/goland/go_expression_type.png">
+			</p>
+		</section>
+
+		<section data-product="goland">
+			<h2>出口点のハイライト</h2>
+			<p>このIDEはすべての関数内のreturnステートメントをすばやく検出できます。</p>
+			<p>
+				<img data-src="img/screenshots/goland/go_semantic_highlighting_1.png">
+			</p>
+		</section>
+
+		<section data-product="goland">
+			<h2>セマンティックハイライト</h2>
+			<p>パッケージ名と変数、組み込みのコード構造と自ら書いたコード構造、型変換と関数呼び出しを容易に区別できます。</p>
+			<p>
+				<img data-src="img/screenshots/goland/go_default_darcula_color_schemes.png">
+			</p>
+		</section>
+
+		<section data-product="goland">
+			<h2>パラメーターヒント</h2>
+			<p>このIDEは、関数の引数として使用されるリテラルとnilのパラメータヒントを表示し、可読性を向上させます。</p>
+			<p>
+				<img data-src="img/screenshots/goland/go_parameter_hints.png">
+			</p>
+		</section>
+
+		<section data-product="goland">
+			<h2>入力中の自動フォーマット</h2>
+			<p> キャレットがチェーン呼び出しまたは文字列リテラル上にある際に<strong>Enter</strong>をクリックすると、IDEが結果のコードを自動フォーマットするようになりました。</p>
+			<p>
+				<img src="img/screenshots/goland/goland_2018_1_eap_indent.gif">
+			</p>
+		</section>
+
+		<section data-product="goland">
+			<h2>パワフルなデバッガ</h2>
+			<p>このIDEにはフル機能を備えたデバッガが搭載されています。</p>
+			<p>
+				<img data-src="img/screenshots/goland/go_powerful_debugger.png">
+			</p>
+		</section>
+
+		<section data-product="goland" data-autoslide="5900">
+			<h2>スマートステップイン</h2>
+			<p>この機能により、式中の任意の呼び出しにステップインし、興味がないメソッドを自動的にステップオーバーできます。</p>
+			<p>
+				<img data-src="img/screenshots/goland/go_smart_step_into.gif">
+			</p>
+		</section>
+
+		<section data-product="goland" data-autoslide="5900">
+			<h2>ワンクリックでHeap、CPU、Mutex、またはBlockプロファイラを実行</h2>
+			<p>GoLandで専用のツールウィンドウを使って、分析結果を確認し、並べ替えできます。</p>
+			<p>
+				<img data-src="img/screenshots/goland/go_run_with_profiler_options.gif">
+			</p>
+		</section>
+
+		<section data-product="goland">
+			<h2>テストランナーとカバレッジ</h2>
+			<p>このIDEはカバレッジデータを収集し、エディタの集計ビューとステートメントごとに表示します。</p>
+			<p>
+				<img data-src="img/screenshots/goland/go_coverage_2.png">
+			</p>
+		</section>
+
+		<section data-product="goland">
+			<h2>バージョン管理</h2>
+			<p>このIDEでは、変更履歴の閲覧、ブランチの管理、競合のマージなどの操作を実行できます。</p>
+			<p>
+				<img data-src="img/screenshots/goland/go_vcs.png">
+			</p>
+		</section>
+
+		<section data-product="goland">
+			<h2>型階層</h2>
+			<p><strong>Type Hierarchy</strong>ツールウィンドウには、キャレット位置の型で実装されているインターフェースや、キャレット位置のインターフェースを実装している型が表示されます。</p>
+			<p>
+				<img data-src="img/screenshots/goland/go_type_hierarchy_up.png">
+			</p>
+		</section>
+
+		<section data-product="goland">
+			<h2>呼び出し階層</h2>
+			<p><strong>Call Hierarchy</strong>ツールウィンドウには、キャレット位置の関数内の関数呼び出しがツリー上に表示されます。</p>
+			<p>
+				<img data-src="img/screenshots/goland/go_call_hierarchy.png">
+			</p>
+		</section>
+
+		<section data-product="goland">
+			<h2>構造体の補完</h2>
+			<p>このIDEには、キャレット位置の構造体を初期化するコードを自動生成するインテンションアクションが備わっています。</p>
+			<p>
+				<img data-src="img/screenshots/goland/go_fill_struct.gif">
+			</p>
+		</section>
+
+		<section data-product="goland">
+			<h2>getterとsetterの生成</h2>
+			<p>このIDEには、キャレット位置のフィールド用にgetterとsetterを自動生成するインテンションアクションが備わっています。</p>
+			<p>
+				<img data-src="img/screenshots/goland/go_getters_setters.gif">
+			</p>
+		</section>
+
+		<section data-product="goland">
+			<h2>テストの生成とテスト間の移動</h2>
+			<p><strong>Navigate to Test</strong>アクションを使うと、ファイル・パッケージ・関数用にテストのスタブを自動生成できます。 また、任意の関数とそのテストの間を移動することができます。</p>
+			<p>
+				<img data-src="img/screenshots/goland/go_navigate_to_test.gif">
+			</p>
+		</section>
+
+		<section data-product="goland">
+			<h2>SQL</h2>
+			<p>このIDEはコード内のSQLステートメントを編集するためのコーディング支援を提供します。</p>
+			<p>
+				<img data-src="img/screenshots/goland/go_sql.png">
+			</p>
+		</section>
+
+		<section data-product="goland">
+			<h2>Goテンプレート</h2>
+			<p>このIDEは、Goテンプレートの編集に役立つシンタックスハイライトと基本的なコーディング支援機能を提供しています。</p>
+			<p>
+				<img data-src="img/screenshots/goland/go_templates.png">
+			</p>
+		</section>
+
+		<section data-product="goland">
+			<h2>Goモジュールとdep統合</h2>
+			<p>IDEは依存関係管理用の<strong>Goモジュール</strong>と<strong>dep</strong>の両方をサポートします。
+				<strong>go.mod</strong>ファイルまたは<strong>Gopkg.toml</strong>ファイルを更新するたびに、このIDEはプロジェクトの依存関係を自動的にチェックし、インポートします。</p>
+			<p>
+				<img src="img/screenshots/goland/goland_2018_2_vgo.png">
+			</p>
+		</section>
+
+		<!--<section data-product="goland">
+					<video class="stretch" data-autoplay data-src="img/screenshots/goland	/goland-overview.mp4" />
+				</section>-->
+
+		<!--endregion-->
+
+		<!--region DataGrip-->
+
+		<section data-product="datagrip">
+			<h2>DataGrip</h2>
+			<p>多数のデータベース、1つのツール</p>
+			<div class="jetbrains-logo _logo-datagrip _size-5"></div>
+		</section>
+
+		<section data-product="datagrip" data-autoslide="22000">
+			<h2>コード補完の使用</h2>
+			<p>シンタックスに応じたコード補完</p>
+			<p>
+				<img data-src="img/screenshots/datagrip/Completion.gif">
+			</p>
+		</section>
+
+		<section data-product="datagrip" data-autoslide="7000">
+			<h2>オブジェクトの使用箇所を検索</h2>
+			<p>ビュー、ストアドプロシージャ、および関数内を検索</p>
+			<p>
+				<img data-src="img/screenshots/datagrip/FindUsages.png">
+			</p>
+		</section>
+
+		<section data-product="datagrip" data-autoslide="6500">
+			<h2>複数テーブルのフィールドを編集</h2>
+			<p>まとめて編集できます！</p>
+			<p>
+				<img data-src="img/screenshots/datagrip/SeveralCells.gif">
+			</p>
+		</section>
+
+		<section data-product="datagrip">
+			<h2>CSVファイルのインポート</h2>
+			<p>
+				<img data-src="img/screenshots/datagrip/ImportCSV.png">
+			</p>
+		</section>
+
+		<section data-product="datagrip" data-autoslide="18000">
+			<h2>生産性を大幅に向上させます</h2>
+			<p>複数のカーソルを使用して生産性を大幅に向上することができます。</p>
+			<p>
+				<img data-src="img/screenshots/datagrip/MultiCursors.gif">
+			</p>
+		</section>
+
+		<section data-product="datagrip">
+			<h2>コードを見失いましたか？</h2>
+			<p>クエリコンソールのローカル履歴をお使いください。</p>
+			<p>
+				<img data-src="img/screenshots/datagrip/DiffViwer.png">
+			</p>
+		</section>
+
+		<section data-product="datagrip" data-autoslide="6000">
+			<h2>テーブル用エイリアスを導入しました！</h2>
+			<p>最も重要なSQLリファクタリングの1つがDataGripで機能します。</p>
+			<p>
+				<img data-src="img/screenshots/datagrip/IntroduceAlias.gif">
+			</p>
+		</section>
+
+		<section data-product="datagrip" data-autoslide="13000">
+			<h2>変更内容の一括送信</h2>
+			<p>
+				<img data-src="img/screenshots/datagrip/Bulk.gif">
+			</p>
+		</section>
+
+		<section data-product="datagrip" data-autoslide="8000">
+			<h2>完全なカラムリストの取得</h2>
+			<p>ワイルドカードを展開して取得できます。</p>
+			<p>
+				<img data-src="img/screenshots/datagrip/ExpandWildCard.gif">
+			</p>
+		</section>
+
+		<section data-product="datagrip" data-autoslide="6000">
+			<h2>バージョン管理のサポートを活用</h2>
+			<p>主要なバージョン管理システム（Git、SVN、Mercurial、その他多数）にすべて対応しています。</p>
+			<p>
+				<img src="img/screenshots/datagrip/CommitMySQL.png"/>
+			</p>
+		</section>
+
+		<section data-product="datagrip" data-autoslide="7000">
+			<h2>コードからオブジェクト名を変更</h2>
+			<p>他の場所にある使用箇所をプレビューして変更できます。</p>
+			<p>
+				<img data-src="img/screenshots/datagrip/Rename.png">
+			</p>
+		</section>
+
+		<section data-product="datagrip">
+			<h2>実行動作の設定</h2>
+			<p>
+				<img data-src="img/screenshots/datagrip/SmartExecute.png">
+			</p>
+		</section>
+
+		<section data-product="datagrip">
+			<h2>危険なクエリを検出</h2>
+			<p><code>WHERE</code>句なしで使用されている<code>DELETE</code>ステートメントや<code>UPDATE</code>ステートメントを検出</p>
+			<p>
+				<img data-src="img/screenshots/datagrip/DeleteWarning.png">
+			</p>
+		</section>
+
+		<section data-product="datagrip">
+			<h2>データベースオブジェクトの変更</h2>
+			<p>DDLスクリプトの生成にも対応しています。</p>
+			<p>
+				<img data-src="img/screenshots/datagrip/ModifyTable.png">
+			</p>
+		</section>
+
+		<section data-product="datagrip">
+			<h2>結果セットの比較</h2>
+			<p>
+				<img data-src="img/screenshots/datagrip/DiffResults.png">
+			</p>
+		</section>
+
+		<section data-product="datagrip">
+			<h2>データの抽出</h2>
+			<p>一連のUPDATE/INSERTステートメントに抽出できます。</p>
+			<p>
+				<img data-src="img/screenshots/datagrip/UpdatesContext.png">
+			</p>
+		</section>
+
+		<section data-product="datagrip" data-autoslide="3500">
+			<h2>お待たせしました！</h2>
+			<p>
+				<img data-src="img/screenshots/datagrip/UpdateInsertResults.png">
+			</p>
+		</section>
+
+		<section data-product="datagrip" data-autoslide="3500">
+			<h2>JSONへの抽出</h2>
+			<p>
+				<img data-src="img/screenshots/datagrip/JsonResult.png">
+			</p>
+		</section>
+
+		<section data-product="datagrip" data-autoslide="5500">
+			<h2>適切なSQLダイアレクトを含むファイルをハイライト</h2>
+			<p>
+				<img data-src="img/screenshots/datagrip/OfferToConfigureDialect.png">
+			</p>
+		</section>
+
+		<section data-product="datagrip" data-autoslide="17000">
+			<h2>データ内の移動</h2>
+			<p>外部キーによって移動できます。</p>
+			<p>
+				<img data-src="img/screenshots/datagrip/DataNavigation.gif">
+			</p>
+		</section>
+
+		<section data-product="datagrip">
+			<h2>完全なSQLログを確認できます！</h2>
+			<p>文字通り、IDEからのクエリはすべてテキストファイルに記録されます。</p>
+			<p>
+				<img data-src="img/screenshots/datagrip/SQLLogFile.png">
+			</p>
+		</section>
+
+		<section data-product="datagrip">
+			<h2>巨大スクリプトの実行</h2>
+			<p>大きなファイルを開かずに実行できます。</p>
+			<p>
+				<img data-src="img/screenshots/datagrip/RunSсript.png">
+			</p>
+		</section>
+
+		<section data-product="datagrip">
+			<h2>実行計画の解析</h2>
+			<p>
+				<img data-src="img/screenshots/datagrip/ExplainPlan.png">
+			</p>
+		</section>
+
+		<section data-product="datagrip">
+			<h2>任意のオブジェクトに移動</h2>
+			<p>任意の場所からジャンプできます。</p>
+			<p>
+				<img data-src="img/screenshots/datagrip/SearchEverywhere.png">
+			</p>
+		</section>
+
+		<section data-product="datagrip">
+			<h2>ソースコードの編集</h2>
+			<p>また、お手元のバージョンをサーバー上のバージョンと比較できます。</p>
+			<p>
+				<img data-src="img/screenshots/datagrip/MigrationButtons.png">
+			</p>
+		</section>
+
+		<section data-product="datagrip">
+			<h2>テーブルとその関係を確認</h2>
+			<p>ダイアグラムで確認できます。</p>
+			<p>
+				<img data-src="img/screenshots/datagrip/Diagrams.png">
+			</p>
+		</section>
+
+		<section data-product="datagrip" data-autoslide="13000">
+			<h2>SQLコードの自動整形</h2>
+			<p>ユーザーが定義した柔軟なコードスタイルに応じて実行されます。</p>
+			<p>
+				<img data-src="img/screenshots/datagrip/Format.gif">
+			</p>
+		</section>
+
+		<section data-product="datagrip">
+			<h2>読み取り専用モードの有効化</h2>
+			<p>この機能を使用して、DataGripによるあらゆるデータベースの変更に制限をかけることができます。 </p>
+			<p>
+				<img data-src="img/screenshots/datagrip/ExecuteReadOnly.png">
+			</p>
+		</section>
+
+		<section data-product="datagrip">
+			<h2>外観のカスタマイズ</h2>
+			<p>
+				<img data-src="img/screenshots/datagrip/Darcula.png">
+			</p>
+		</section>
+
+		<section data-product="datagrip">
+			<h2>クエリ実行履歴の利用</h2>
+			<p>
+				<img data-src="img/screenshots/datagrip/HistoryOfQueries.png">
+			</p>
+		</section>
+
+		<section data-product="datagrip" data-autoslide="19000">
+			<h2>何かお探しですか？</h2>
+			<p>データ名やカラム名で検索できます</p>
+			<p>
+				<img data-src="img/screenshots/datagrip/Find.gif">
+			</p>
+		</section>
+
+		<section data-product="datagrip">
+			<h2>パラメータ付きクエリの実行</h2>
+			<p>
+				<img data-src="img/screenshots/datagrip/UsrParams.png">
+			</p>
+		</section>
+
+		<section data-product="datagrip">
+			<h2>詳細を確認して、無料日間体験版のダウンロード</h2>
+			<p>jetbrains.com/datagrip</p>
+			<div class="jetbrains-logo _logo-datagrip _size-5"></div>
+		</section>
+
+		<!--endregion-->
+
+		<!--region WebStorm-->
+
+		<section data-product="webstorm">
+			<h2>WebStorm</h2>
+			<p>最もスマートなJavaScript IDE</p>
+			<div class="jetbrains-logo _logo-webstorm _size-5"></div>
+		</section>
+
+		<section data-product="webstorm">
+			<h2>スマートなコード補完による生産性の向上</h2>
+			<video class="stretch" data-autoplay data-src="img/screenshots/webstorm/webstorm-completion.mov"/>
+		</section>
+
+		<section data-product="webstorm">
+			<h2>プロジェクト内を効率よく移動</h2>
+			<video class="stretch" data-autoplay
+				 data-src="img/screenshots/webstorm/webstorm-search-everywhere.mov"/>
+		</section>
+
+		<section data-product="webstorm">
+			<h2>ワンクリックで定義に移動</h2>
+			<video class="stretch" data-autoplay
+				 data-src="img/screenshots/webstorm/webstorm-navigation-to-the-definition.mov"/>
+		</section>
+
+		<section data-product="webstorm">
+			<h2>JavaScriptの新機能をコードに導入</h2>
+			<video class="stretch" data-autoplay
+				 data-src="img/screenshots/webstorm/migrating-to-es6.mov"/>
+		</section>
+
+		<section class="high-image-inside"
+				 data-product="webstorm">
+			<h2>エラーを回避してすばやく修正</h2>
+			<div class="image-col">
+				<img class="plain"
+					 data-src="img/screenshots/webstorm/webstorm-inspection-and-quick-fix.png">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="webstorm">
+			<h2>入力中にリンターのエラーを確認</h2>
+			<p>ESLint、TSLint、JSCS、JSHint、Stylelint</p>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/webstorm/webstorm-linter-error.png">
+			</div>
+		</section>
+
+		<section data-product="webstorm">
+			<h2>最大限の技術サポートを提供</h2>
+			<ul class="slide-block">
+				<li><img class="slide-logo-small" data-src="img/external_logos/javascript.svg"></li>
+				<li><img class="slide-logo-small" data-src="img/external_logos/css3.svg"></li>
+				<li><img class="slide-logo-small" data-src="img/external_logos/html5.svg"></li>
+				<li><img class="slide-logo-small" data-src="img/external_logos/typescript.svg"></li>
+				<li><img class="slide-logo-small" data-src="img/external_logos/dart.svg"></li>
+				<li><img class="slide-logo-small" data-src="img/external_logos/flow.svg"></li>
+				<li><img class="slide-logo-small" data-src="img/external_logos/ecmascript6.svg"></li>
+				<li><img class="slide-logo-small" data-src="img/external_logos/less.svg"></li>
+				<li><img class="slide-logo-small" data-src="img/external_logos/sass.svg"></li>
+				<li><img class="slide-logo-small" data-src="img/external_logos/react.svg"></li>
+				<li><img class="slide-logo-small" data-src="img/external_logos/angularjs-notext.svg"></li>
+				<li><img class="slide-logo-small" data-src="img/external_logos/vuejs.svg" alt=""></li>
+				<li><img class="slide-logo-small" data-src="img/external_logos/nodejs.svg"></li>
+				<li><img class="slide-logo-small" data-src="img/external_logos/jest.svg"></li>
+				<li><img class="slide-logo-small" data-src="img/external_logos/ionic.svg"></li>
+			</ul>
+		</section>
+
+		<section data-product="webstorm">
+			<h2>コードを壊す心配なくリファクタリングできます</h2>
+			<video class="stretch" data-autoplay
+				 data-src="img/screenshots/webstorm/refactor-rename.mov"/>
+		</section>
+
+		<section data-product="webstorm">
+			<h2>Reactコンポーネントとプロパティを補完できます</h2>
+			<video class="stretch" data-autoplay data-src="img/screenshots/webstorm/react-completion.mp4"/>
+		</section>
+
+		<section data-product="webstorm">
+			<h2>Angularアプリを簡単に開発できます</h2>
+			<video class="stretch" data-autoplay
+				 data-src="img/screenshots/webstorm/webstorm-angular-template.mov"/>
+		</section>
+
+		<section data-product="webstorm">
+			<h2>IDEの力でVue.jsを使ったアプリを開発できます</h2>
+			<video class="stretch" data-autoplay
+				 data-src="img/screenshots/webstorm/vue.mov"/>
+		</section>
+
+		<section class="high-image-inside" data-product="webstorm">
+			<h2>IDEでコミット、差分のレビュー、競合のマージを実行できます</h2>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/webstorm/webstorm-show-changes.png">
+			</div>
+		</section>
+
+		<section data-product="webstorm">
+			<h2>WebStormで直接Node.jsアプリをデバッグできます</h2>
+			<video class="stretch" data-autoplay
+				 data-src="img/screenshots/webstorm/webstorm-debug-node.mov"/>
+		</section>
+
+		<section data-product="webstorm">
+			<h2>WebStorm 2019.2 の新機能</h2>
+			<ul>
+				<li><strong>JavaScriptとTypeScriptに対するコード補完</strong>の大幅な強化</li>
+				<li><strong>Vue.js</strong>のサポート強化</li>
+				<li><strong>20言語以上のシンタックスハイライト</strong></li>
+				<li>デストラクチャリング用の<strong>新しいインテンション</strong></li>
+			</ul>
+			<p style="padding-top: 80px">詳細はこちらでご確認ください：jetbrains.com/webstorm/whatsnew</p>
+		</section>
+
+		<section data-product="webstorm">
+			<h2>ダウンロード</h2>
+			<p>無料30日間体験版</p>
+			<p>jetbrains.com/webstorm</p>
+			<div class="jetbrains-logo _logo-webstorm _size-5"></div>
+			<p>@WebStormIDE をTwitterでフォローしてください。</p>
+		</section>
+		<!--endregion-->
+
+		<!--region RubyMine-->
+
+		<section data-product="rubymine">
+			<h2>RubyMine</h2>
+			<p>最も先進的なRuby＆Rails IDE</p>
+			<div class="jetbrains-logo _logo-rubymine _size-5"></div>
+		</section>
+
+		<section data-product="rubymine">
+			<h2>コード補完機能で高速にコーディング</h2>
+			<p>
+				<img data-src="img/screenshots/rubymine/code_faster_with_code_completion.png"
+				>
+			</p>
+			<p>コード補完：<code style="background-color: lightgray">⌃Space/Ctrl+Space</code></p>
+			<p>クイックドキュメント：<code style="background-color: lightgray">⌃J/Ctrl+Q</code></p>
+		</section>
+
+		<section data-product="rubymine">
+			<h2>スマートなエディタによる生産性の向上</h2>
+			<p>コードスニペット、インラインでの正規表現チェック、同時タグ編集などに対応しています。</p>
+			<p>
+				<img data-src="img/screenshots/rubymine/boost_your_productivity_with_editor_1.png"
+				>
+				<img data-src="img/screenshots/rubymine/boost_your_productivity_with_editor_2.png"
+				>
+			</p>
+		</section>
+
+		<section data-product="rubymine">
+			<h2>さまざまな場所で同時にコードを編集可能</h2>
+			<p>
+				<img data-src="img/screenshots/rubymine/code_in_many_places_simultaneously_1.png"
+				>
+				<img data-src="img/screenshots/rubymine/code_in_many_places_simultaneously_2.png"
+				>
+			</p>
+		</section>
+
+		<section data-product="rubymine">
+			<h2>エディタを左右または上下に分割可能</h2>
+			<p>
+				<img data-src="img/screenshots/rubymine/split_editor_horizontally_vertically_cut.png"
+				>
+			</p>
+			<p><code>Context menu | Split Vertically</code></p>
+		</section>
+
+		<section data-product="rubymine">
+			<h2>コードに完全に集中できます</h2>
+			<p>
+				<img data-src="img/screenshots/rubymine/fully_focus_on_your_code.png"
+				>
+			</p>
+			<p><code>View | Enter Distraction Free Mode</code></p>
+
+		</section>
+
+		<section data-product="rubymine">
+			<h2>環境をカスタマイズ</h2>
+			<p>カラースキーム、Vimのエミュレーション、TextMateキーマップ</p>
+			<p>
+				<img data-src="img/screenshots/rubymine/customize_environment.png"
+				>
+			<p><code>Preferences | Keymap</code></p>
+		</section>
+
+		<section data-product="rubymine">
+			<h2>ネイティブでダークUIテーマを使用できます</h2>
+			<p>
+				<img data-src="img/screenshots/rubymine/enjoy_dark_native_ui_theme.png"
+					 style="box-shadow: none">
+			</p>
+			<p><code>Ctrl+Backquote | Look and Feel | Darcula</code></p>
+
+		</section>
+
+		<section data-product="rubymine">
+			<h2>スマートなRailsナビゲーションによる高速化</h2>
+			<p>便利なRailsプロジェクトビューを利用できます</p>
+			<p>
+				<img data-src="img/screenshots/rubymine/speed_up_with_smart_Rails_navigation.png"
+				>
+			</p>
+		</section>
+
+		<section data-product="rubymine">
+			<h2>モデル/クラス/gemの依存関係の表示と管理</h2>
+			<p>
+				<img data-src="img/screenshots/rubymine/view_manage_dependencies.png"
+				>
+			</p>
+			<p><code style="background-color: lightgray">⌥⌘U/Alt+Ctrl+U</code></p>
+		</section>
+
+		<section data-product="rubymine">
+			<h2>コード使用箇所の検索</h2>
+			<p>クラス、メソッド、変数などの使用箇所を検索できます。</p>
+			<p>
+				<img data-src="img/screenshots/rubymine/find_code_usages.png"
+				>
+			</p>
+			<p><code style="background-color: lightgray">⌥F7/Alt+F7</code></p>
+		</section>
+
+		<section data-product="rubymine">
+			<h2>クイックフィックスによるコードの改善</h2>
+			<p>Ruby、Rails、JS、CoffeeScript、HTML、HAML、CSS、SCSS、Less、Sass、YAML</p>
+			<p>
+				<img data-src="img/screenshots/rubymine/improve_code_with_quick_fixes.png"
+				>
+			</p>
+			<p><code style="background-color: lightgray">⌥↩/Alt+Enter</code></p>
+		</section>
+		<section data-product="rubymine">
+			<h2>安全にリファクタリング</h2>
+			<p>
+				<img data-src="img/screenshots/rubymine/refactor_safely.png"
+					 style="box-shadow: none">
+			</p>
+			<p><code style="background-color: lightgray">⌃T/Ctrl+Alt+Shift+T</code></p>
+		</section>
+
+		<section data-product="rubymine">
+			<h2>コードを検査</h2>
+			<p>Ruby Style Guide、Roodi、Reek、RoRコード品質チェックリストをヒントにしています。</p>
+			<p>
+				<img data-src="img/screenshots/rubymine/code_inspection.png"
+				>
+			</p>
+			<p><code>Code | Inspect Code</code></p>
+		</section>
+
+		<section data-product="rubymine">
+			<h2>Bundler、RVM、Rakeの使用</h2>
+			<p>
+				<img data-src="img/screenshots/rubymine/use_bundler_rvm_rake.png"
+				>
+
+			</p>
+			<p><code style="background-color: lightgray">⌥R/Ctrl+Alt+R</code></p>
+		</section>
+
+		<section data-product="rubymine">
+			<h2>IDEを離れずにスクリプトを実行 </h2>
+			<p>Rails、IRB、SSHコンソール、ローカルターミナル</p>
+			<p>
+				<img data-src="img/screenshots/rubymine/run_scripts.png"
+				>
+			</p>
+			<p><code style="background-color: lightgray">⌥F12/Alt+F12</code></p>
+		</section>
+
+		<section data-product="rubymine">
+			<h2>VCSの完全統合を活用してください</h2>
+			<p>Git、SVN、Mercurial、Perforce、CVS</p>
+			<p>
+				<img data-src="img/screenshots/rubymine/vcs.png"
+				>
+			</p>
+			<p><code style="background-color: lightgray">⌘9/Alt+9</code></p>
+		</section>
+
+		<section data-product="rubymine">
+			<h2>楽しくテスト</h2>
+			<p>RSpec、MiniTest、Test::Unit、Cucumber、Shoulda</p>
+			<p>
+				<img data-src="img/screenshots/rubymine/test_with_pleasure.png"
+				>
+			</p>
+			<p><code>Run | Run test / All tests in: ...</code></p>
+		</section>
+
+		<section data-product="rubymine">
+			<h2>デバッガを使用してコードの流れを捕捉可能</h2>
+			<p>Ruby、Rails、JavaScript、CoffeeScript、RubyMotion</p>
+			<p>
+				<img data-src="img/screenshots/rubymine/hunt_down_code_flaws_with_debugger.png"
+				>
+			</p>
+			<p><code style="background-color: lightgray">⌃D/Shift+F9</code></p>
+		</section>
+
+		<section data-product="rubymine">
+			<h2>ウェブ開発を楽しむ</h2>
+			<p>HTML、HAML、Less、SCSS、Sass、JavaScript、TypeScript、CoffeeScript、React、Angular</p>
+			<p>
+				<img data-src="img/screenshots/rubymine/enjoy_web_development.png"
+				>
+			</p>
+		</section>
+
+		<section data-product="rubymine">
+			<h2>インフラストラクチャの管理</h2>
+			<p>FTPやSFTP、Vagrant、Capistrano、Chef、Puppetを使って開発できます。</p>
+			<p>
+				<img data-src="img/screenshots/rubymine/manage_infrastructure_1.png"
+				>
+			</p>
+		</section>
+
+		<section data-product="rubymine">
+			<h2>すべての主要OSで実行可能</h2>
+			<p>
+				<img data-src="img/screenshots/rubymine/run_on_all_major_OSes_1.png"
+					 style="box-shadow: none">
+			</p>
+		</section>
+
+		<section data-product="rubymine">
+			<h2>詳細情報と無料体験版のダウンロードについては、こちらをご確認ください：<a href="https://jetbrains.com/ruby">www.jetbrains.com/ruby</a></h2>
+			<p>
+				<img data-src="img/screenshots/rubymine/learn_more_and_download_trial.png"
+					 style="box-shadow: none">
+			</p>
+		</section>
+		<!--endregion-->
+
+		<!--region PhpStorm-->
+		<section data-product="phpstorm">
+			<h2>PhpStorm</h2>
+			<p>超高速でスマートなPHP IDE</p>
+			<div class="jetbrains-logo _logo-phpstorm _size-5"></div>
+		</section>
+
+		<section data-product="phpstorm"
+				 data-autoslide="5000">
+			<h2>PHP 5.3～7.3のネイティブなサポートをご利用ください</h2>
+
+			<img class="plain stretch" data-src="img/screenshots/phpstorm/php7_2_3.png">
+
+		</section>
+
+		<section data-product="phpstorm">
+			<h2>スマートなコード補完でタイピング量を減らして生産性を向上させます</h2>
+
+			<video class="stretch" data-autoplay data-src="img/screenshots/phpstorm/code-completion.mp4"/>
+
+		</section>
+
+		<section data-product="phpstorm">
+			<h2>プロジェクト周辺を効率よく移動できます</h2>
+
+			<video class="stretch" data-autoplay data-src="img/screenshots/phpstorm/search-everywhere.mp4"/>
+		</section>
+
+		<section data-product="phpstorm">
+			<h2>組み込みのインスペクションでエラーを前もって検出</h2>
+
+			<video class="stretch" data-autoplay data-src="img/screenshots/phpstorm/detect-errors.mp4"/>
+		</section>
+
+		<section data-product="phpstorm">
+			<h2>さらにエラーをすぐに修正</h2>
+
+			<video class="stretch" data-autoplay data-src="img/screenshots/phpstorm/fix-errors.mp4"/>
+		</section>
+
+		<section class="high-image-inside" data-product="phpstorm">
+			<h2>組み込みのコードスタイルを使ったコードの整理</h2>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/phpstorm/codestyle.png"/>
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="phpstorm">
+			<h2>コードを簡単にリファクタリング</h2>
+
+			<div class="image-col">
+				<video class="stretch" data-autoplay data-src="img/screenshots/phpstorm/refactoring.mp4"/>
+			</div>
+		</section>
+
+		<section data-product="phpstorm">
+			<h2>呼び出し内で直接パラメータ名を確認</h2>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/phpstorm/params-names.png">
+			</div>
+		</section>
+
+		<!--        <section data-product="phpstorm">-->
+		<!--            <h2>Use Composer integration</h2>-->
+		<!--            <div class="image-col">-->
+		<!--                <img data-src="img/screenshots/phpstorm/composer.png"/>-->
+		<!--            </div>-->
+		<!--        </section>-->
+
+		<section data-product="phpstorm">
+			<h2>一般的なフレームワークでコードをテスト</h2>
+			<p>PHPUnit、PHPSpec、Behat、Codeception</p>
+
+			<video class="stretch" data-autoplay data-src="img/screenshots/phpstorm/testing.mp4"/>
+
+		</section>
+
+		<section data-product="phpstorm">
+			<h2>アプリケーションのデバッグ</h2>
+			<video class="stretch" data-autoplay data-src="img/screenshots/phpstorm/debug.mp4"/>
+		</section>
+
+		<section class="high-image-inside" data-product="phpstorm">
+			<h2>コードをどこでも実行可能</h2>
+			<p>SSH、Vagrant、Docker、Docker Compose</p>
+			<div class="image-col">
+				<img data-src="img/screenshots/phpstorm/docker.png"/>
+			</div>
+		</section>
+
+		<section data-product="phpstorm">
+			<h2>PHPフレームワークとCMSのサポートを提供</h2>
+			<ul class="slide-block">
+				<li><img class="slide-logo" data-src="img/screenshots/phpstorm/logos/symfony_black_03.svg"></li>
+				<li><img class="slide-logo" data-src="img/screenshots/phpstorm/logos/drupal.svg"></li>
+				<li><img class="slide-logo" data-src="img/screenshots/phpstorm/logos/wordpress.svg"></li>
+				<li><img class="slide-logo" data-src="img/screenshots/phpstorm/logos/laravel-new.svg"></li>
+				<li><img class="slide-logo" data-src="img/screenshots/phpstorm/logos/joomla.png"></li>
+				<li><img class="slide-logo" data-src="img/screenshots/phpstorm/logos/magento-logo.svg"></li>
+				<li><img class="slide-logo" data-src="img/screenshots/phpstorm/logos/cakephp.svg"></li>
+				<li><img class="slide-logo" data-src="img/screenshots/phpstorm/logos/zend-framework.svg"></li>
+				<li><img class="slide-logo" data-src="img/screenshots/phpstorm/logos/yii.png"></li>
+			</ul>
+		</section>
+
+		<section data-product="phpstorm">
+			<h2>エディタ内蔵のHTTPクライアントでAPIリクエストを作成可能</h2>
+			<p>環境変数、差分、コード補完、VCS統合をサポートしています。</p>
+			<video class="stretch" data-autoplay data-src="img/screenshots/phpstorm/http-client-typed.mp4"/>
+
+		</section>
+
+		<section class="high-image-inside" data-product="phpstorm">
+			<h2>VCS：コミット、差分のレビュー、競合の解消</h2>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/phpstorm/2019.1/vcs-partial-commit-uncheck-all.gif">
+			</div>
+		</section>
+
+		<section class="high-image-inside"
+				 data-product="phpstorm"
+				 data-autoslide="14000">
+			<h2>データベースおよびSQLエディタと連携</h2>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/datagrip/Completion.gif">
+			</div>
+		</section>
+		<section data-product="phpstorm">
+			<h3>一流のウェブテクノロジをサポート</h3>
+			<ul class="slide-block">
+				<li><img class="slide-logo-small" data-src="img/external_logos/javascript.svg"></li>
+				<li><img class="slide-logo-small" data-src="img/external_logos/css3.svg"></li>
+				<li><img class="slide-logo-small" data-src="img/external_logos/html5.svg"></li>
+				<li><img class="slide-logo-small" data-src="img/external_logos/typescript.svg"></li>
+				<li><img class="slide-logo-small" data-src="img/external_logos/dart.svg"></li>
+				<li><img class="slide-logo-small" data-src="img/external_logos/flow.svg"></li>
+				<li><img class="slide-logo-small" data-src="img/external_logos/ecmascript6.svg"></li>
+				<li><img class="slide-logo-small" data-src="img/external_logos/less.svg"></li>
+				<li><img class="slide-logo-small" data-src="img/external_logos/sass.svg"></li>
+				<li><img class="slide-logo-small" data-src="img/external_logos/react.svg"></li>
+				<li><img class="slide-logo-small" data-src="img/external_logos/angularjs-notext.svg"></li>
+				<li><img class="slide-logo-small" data-src="img/external_logos/vuejs.svg" alt=""></li>
+				<li><img class="slide-logo-small" data-src="img/external_logos/nodejs.svg"></li>
+				<li><img class="slide-logo-small" data-src="img/external_logos/jest.svg"></li>
+				<li><img class="slide-logo-small" data-src="img/external_logos/ionic.svg"></li>
+			</ul>
+		</section>
+
+		<section data-product="phpstorm">
+			<h2>PhpStorm 2019.2の新機能</h2>
+			<ul>
+				<li>PHP 7.4型付きプロパティ</li>
+				<li>オンザフライで重複検索</li>
+				<li>正規表現ハイライトと確認</li>
+				<li>Go、Ruby、Pythonおよびその他多数の言語に対応したシンタックスハイライト</li>
+			</ul>
+			<p style="padding-top: 80px"><a href="https://www.jetbrains.com/phpstorm/whatsnew">jetbrains.com/phpstorm/whatsnew</a> でご確認ください。
+			</p>
+		</section>
+
+		<section class="high-image-inside"
+				 data-product="phpstorm"
+				 data-autoslide="10000">
+			<h2>TwigとBladeテンプレートのデバッグ</h2>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/phpstorm/2019.1/twig-debug-2.gif">
+			</div>
+		</section>
+
+		<section class="high-image-inside"
+				 data-product="phpstorm"
+				 data-autoslide="5000">
+			<h2>デッドコードの特定</h2>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/phpstorm/2019.1/dead-code.png">
+			</div>
+		</section>
+
+		<section class="high-image-inside"
+				 data-product="phpstorm"
+				 data-autoslide="17000">
+			<h2>デッドコードの特定</h2>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/phpstorm/2019.1/dead-code-inspect.gif">
+			</div>
+		</section>
+
+		<section
+				data-product="phpstorm"
+				data-autoslide="13700">
+			<h2>新しいリファクタリングとクイックフィックスで時間を節約</h2>
+			<video class="stretch" data-autoplay data-src="img/screenshots/phpstorm/2019.1/string_juggling.mp4"/>
+		</section>
+
+		<section class="high-image-inside"
+				 data-product="phpstorm"
+				 data-autoslide="5000">
+			<h2>新しいUIテーマをお試しください</h2>
+			<div class="image-col">
+				<img class="plain" data-src="img/screenshots/phpstorm/2019.1/purple-theme.png">
+			</div>
+		</section>
+
+		<!--Drupal part - uncomment for Drupal Conferences
+                                <section data-product="phpstorm">
+                                    <h2>Why PhpStorm for Drupal Development?</h2>
+
+                                    <ul>
+                                        <li>Development environment auto-configuration (for new and existing projects)</li>
+                                        <li>Built-in <strong>Drupal coding style</strong></li>
+                                        <li><strong>Hooks</strong> support (completion, navigation, docs)</li>
+                                        <li>Search in <strong>Drupal API</strong></li>
+                                        <li><strong>Drush</strong> command line tool integration</li>
+                                        <li><strong>Coder integration</strong>, Drupal.org issue tracker</li>
+                                        <li>Full <strong>Drupal 8 support</strong></li>
+
+                                    </ul>
+
+                                </section>
+
+                                <section class="high-image-inside" data-product="phpstorm">
+                                    <h2>Enjoy completion for Hook declaration</h2>
+                                    <div class="image-col">
+                                        <img class="plain" data-src="img/screenshots/phpstorm/hookcompletion.png">
+                                    </div>
+                                </section>
+
+                                <section data-product="phpstorm">
+                                    <h2>Easily navigate to all hook implementations</h2>
+
+                                    <video class="stretch" data-autoplay data-src="img/screenshots/phpstorm/hooknav2.mp4"></video>
+
+                                </section>
+
+                                <section class="high-image-inside" data-product="phpstorm">
+                                    <h2>See quick documentation for Hook declaration</h2>
+                                    <div class="image-col">
+                                        <img class="plain" data-src="img/screenshots/phpstorm/hookQuickDoc.png">
+                                    </div>
+                                </section>
+
+                                <section class="high-image-inside" data-product="phpstorm">
+                                    <h2>Get full Symfony support</h2>
+                                    <div class="image-col">
+                                        <img class="plain" data-src="img/screenshots/phpstorm/drupalsymf.png">
+                                    </div>
+                                </section>
+
+                                <section class="high-image-inside" data-product="phpstorm">
+                                    <h2>Keep code neat with Drupal Coder integration</h2>
+                                    <div class="image-col">
+                                        <img class="plain" data-src="img/screenshots/phpstorm/drupalCoder.png">
+                                    </div>
+                                </section>
+
+                                <section class="high-image-inside" data-product="phpstorm">
+                                    <h2>Check out Drupal Symfony Bridge plugin (external)</h2>
+                                    <p>Integrates support for Symfony components in Drupal 8 with Symfony Plugin</p>
+                                    <div class="image-col">
+                                        <img class="plain" data-src="img/screenshots/phpstorm/bridge.png">
+                                    </div>
+                                </section>
+                                -->
+
+		<section data-product="phpstorm">
+			<h2>ダウンロード</h2>
+			<p>無料30日間体験版</p>
+			<p><a href="https://www.jetbrains.com/phpstorm">jetbrains.com/phpstorm</a></p>
+			<div class="jetbrains-logo _logo-phpstorm _size-5"></div>
+			<p>併せて <a href="https://twitter.com/phpstorm">@phpstorm</a> をTwitterでフォローしてください。</p>
+		</section>
+
+		<!--endregion-->
+
+		<!--region GameDev Intro: Team-->
+		<section data-product="gamedev_video_team_intro" data-autoslide="8000"
+				 data-background-video="img/screenshots/gamedev/teamtools_intro.mp4" class="no-background"
+				 data-background-size="cover">
+		</section>
+		<!--endregion-->
+
+		<!--region YouTrack-->
+
+		<section data-product="youtrack">
+			<h2>YouTrack</h2>
+			<p>ソフトウェアアジャイルチーム向け課題トラッカー</p>
+			<div class="jetbrains-logo _logo-youtrack _size-5"></div>
+		</section>
+
+		<section data-product="youtrack">
+			<h2>常にチームの活動を把握可能</h2>
+			<p>ライブダッシュボードを使って、チームの活動を把握できます。</p>
+			<p>
+				<img data-src="img/screenshots/youtrack/Dashboard_new.png">
+			</p>
+		</section>
+
+		<section data-product="youtrack">
+			<h2>必要なものがすぐに見つかります</h2>
+			<p>スマートな検索クエリ</p>
+			<p>
+				<img data-src="img/screenshots/youtrack/Smart_search.png">
+			</p>
+		</section>
+
+		<section data-product="youtrack">
+			<h2>一度に複数の課題を変更可能</h2>
+			<p>ギーク風のコマンドウィンドウを使って実行できます。</p>
+			<p>
+				<img data-src="img/screenshots/youtrack/Commands.png">
+			</p>
+		</section>
+
+		<section data-product="youtrack">
+			<h2>キーボードから手を離す必要はありません</h2>
+			<p>便利なショートカットを使って日常作業を高速化できます。</p>
+			<p>
+				<img data-src="img/screenshots/youtrack/Shortcuts2.png">
+			</p>
+		</section>
+
+		<section data-product="youtrack">
+			<h2>大胆にアジャイルを採り入れましょう</h2>
+			<p>スクラムやかんばんを採用してください。</p>
+			<p>
+				<img data-src="img/screenshots/youtrack/Kanban_new.png">
+			</p>
+		</section>
+
+		<section data-product="youtrack">
+			<h2>スプリントの計画とバックログの管理</h2>
+			<p>優れた製品を期限通りに納品するため、これらの機能を活用してください</p>
+			<p>
+				<img data-src="img/screenshots/youtrack/Agile_Board_new.png">
+			</p>
+		</section>
+
+		<section data-product="youtrack" data-autoslide="18000">
+			<h2>リアルタイムに更新を確認</h2>
+			<p>
+				<img data-src="img/screenshots/youtrack/Live_update_new.gif">
+			</p>
+		</section>
+
+		<section data-product="youtrack">
+			<h2>どんなチームにも適応可能</h2>
+			<p>課題フィールドとワークフローをカスタマイズできます。</p>
+			<p>
+				<img data-src="img/screenshots/youtrack/Workflows_featurepage.png">
+			</p>
+		</section>
+
+		<!--<section data-product="youtrack">-->
+		<!--<h2>Cloud or Standalone? YouTrack offers both options</h2>-->
+		<!--<p>and ready to grow with your company</p>-->
+		<!--<p>-->
+		<!--<img data-src="img/screenshots/youtrack/Payments.png">-->
+		<!--</p>-->
+		<!--</section>-->
+
+		<section data-product="youtrack">
+			<h2>詳細情報とYouTrackの無料版を入手：</h2>
+			<p><b>jetbrains.com/youtrack</b></p>
+			<p>@youtrack</p>
+			<div class="jetbrains-logo _logo-youtrack _size-5"></div>
+		</section>
+		<!--endregion-->
+
+		<!--region Upsource-->
+
+		<section data-product="upsource">
+			<h2>コードレビュー。 チームコラボレーション。<br/>プロジェクト解析
+			</h2>
+			<br/>
+			<p>コード、プロジェクト、プロセスを改善してください。</p>
+			<div class="jetbrains-logo _logo-upsource _size-5"></div>
+		</section>
+
+		<section class="high-image-inside" data-product="upsource">
+			<div class="content-col">
+				<h2>コードレビューワークフローの自動化</h2>
+				<p>
+					定型タスクはUpsourceにお任せください！
+				</p>
+			</div>
+			<div class="image-col">
+				<img data-src="img/screenshots/upsource/automated-workflow-2017.2.png">
+			</div>
+
+		</section>
+
+		<section class="high-image-inside" data-product="upsource">
+			<div class="content-col">
+				<h2>ブラウザ組み込みのコードインサイト</h2>
+				<p>
+					Java、PHP、Python、JavaScript、Kotlinで書かれたプロジェクトに対し、<br/>静的なコード解析とブラウザ内でのコード認識ナビゲーションを提供します。
+				</p>
+			</div>
+
+			<div class="image-col">
+				<img data-src="img/screenshots/upsource/2017-2-python.png">
+			</div>
+		</section>
+
+		<section data-product="upsource">
+			<div class="content-col">
+				<h2>Upsourceに進捗を追跡させましょう</h2>
+				<p>
+					Upsourceはあなたが既にレビューしたファイルとリビジョンを把握しています。
+					新しいリビジョンが追加された際に、既存のリビジョンをレビューする必要はありません。新しい変更のみをレビューしてください。
+				</p>
+			</div>
+			<div class="image-col">
+				<img data-src="img/screenshots/upsource/progress-tracking.png">
+			</div>
+
+		</section>
+
+		<section class="high-image-inside" data-product="upsource">
+			<div class="content-col">
+				<h2>IDEから変更をレビュー</h2>
+				<p>
+					JetBrains 開発環境 （IDE）製品およびAndroid Studio用に<br/>Upsource Integrationプラグインをご利用いただけます。
+				</p>
+			</div>
+			<div class="image-col">
+				<img data-src="img/screenshots/upsource/UP35-IDEA.png">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="upsource">
+			<div class="content-col">
+				<h2>潜在的な設計上の欠陥を発見</h2>
+				<p>
+					ホットスポットや放棄されたファイルなど、開発者の注意を要するプロジェクトの部分を見つけます。
+				</p>
+			</div>
+			<div class="image-col">
+				<img data-src="img/screenshots/upsource/project-treemap.png">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="upsource">
+			<div class="content-col">
+				<h2>コードレビュープロセスの微調整</h2>
+				<p>
+					コードレビューによるプロジェクトのカバー状況や、作業の分担状況を把握できます。
+				</p>
+			</div>
+			<div class="image-col">
+				<img data-src="img/screenshots/upsource/code-review-chart.png">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="upsource">
+			<div class="content-col">
+				<h2>新しいチームメンバーのオンボーディングを高速化</h2>
+				<p>
+					ローカルにチェックアウトすることなく新しいプロジェクトをすばやく調べることができます。
+				</p>
+			</div>
+			<div class="image-col">
+				<img data-src="img/screenshots/upsource/browseCode.png">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="upsource">
+			<div class="content-col">
+				<h2>アップデートを継続的に把握</h2>
+				<p>
+					必要なものがすぐに見つかります。
+				</p>
+			</div>
+			<div class="image-col">
+				<img data-src="img/screenshots/upsource/search-updates.png">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="upsource">
+			<div class="content-col">
+				<h2>Upsourceをご利用環境に簡単に統合可能</h2>
+				<p>
+					UpsourceはIDE、一般的な課題トラッカー、CIサーバー、GitHub、GitLabを統合し、Webフックを提供します。
+				</p>
+			</div>
+			<div class="image-col">
+				<img data-src="img/screenshots/upsource/connect-to-github.png">
+			</div>
+		</section>
+
+		<section class="high-image-inside" data-product="upsource">
+			<div class="content-col">
+				<h2>ぜひお試しください！</h2>
+				<p>
+
+				</p>
+			</div>
+			<div class="image-col">
+				<img data-src="img/screenshots/upsource/scalable_scheme-2.png">
+			</div>
+		</section>
+
+
+		<section data-product="upsource">
+			<h2>Upsourceの詳細</h2>
+			<p><strong>jetbrains.com/upsource</strong></p>
+			<p>@upsource_jb</p>
+			<div class="jetbrains-logo _logo-upsource _size-5"></div>
+		</section>
+		<!--endregion-->
+
+		<!--region TeamCity -->
+
+		<section data-product="teamcity">
+			<h2>TeamCity</h2>
+			<p>すぐに使えるパワフルな継続的インテグレーション</p>
+			<div class="jetbrains-logo _logo-teamcity _size-5"></div>
+		</section>
+
+		<section data-product="teamcity">
+			<h2>便利なウェブインターフェース</h2>
+			<p>Project Overview（プロジェクト概要）ページでのビルドとビルド構成</p>
+			<p>
+				<img data-src="img/screenshots/teamcity/overview.png">
+			</p>
+		</section>
+
+		<section data-product="teamcity">
+			<h2>オンザフライのビルドプロセスレポート</h2>
+			<p>
+				<img data-src="img/screenshots/teamcity/build-progress.png">
+			</p>
+		</section>
+
+		<section data-product="teamcity">
+			<h2>プロジェクト階層</h2>
+			<video data-autoplay src="img/screenshots/teamcity/video_hierarchy.mp4"/>
+		</section>
+
+		<section data-product="teamcity">
+			<h2>IDEからのリモート実行と事前テストされたコミット</h2>
+			<p>
+				<img src="img/screenshots/teamcity/remote-run.png">
+			</p>
+		</section>
+
+		<section data-product="teamcity">
+			<h2>フィーチャーブランチのサポート</h2>
+			<p>
+				<img src="img/screenshots/teamcity/feature-branches.png">
+			</p>
+		</section>
+
+		<section data-product="teamcity">
+			<h2>個人用のVCSの変更ページ</h2>
+			<video data-autoplay src="img/screenshots/teamcity/video_my-changes-hd.mp4"/>
+		</section>
+
+		<section data-product="teamcity">
+			<h2>URLからプロジェクトを作成</h2>
+			<p>ビルドステップの自動検出</p>
+			<video data-autoplay src="img/screenshots/teamcity/video_create-project.mp4"/>
+		</section>
+
+		<section data-product="teamcity">
+			<h2>GitHub、Bitbucket、VSTSからのプロジェクト作成</h2>
+			<p>
+				<img src="img/screenshots/teamcity/create-project-from.png">
+			</p>
+		</section>
+
+		<section data-product="teamcity">
+			<h2>ビルド構成テンプレート</h2>
+			<p>
+				<img src="img/screenshots/teamcity/templates.png">
+			</p>
+		</section>
+
+		<section data-product="teamcity">
+			<h2>デプロイパイプラインに最適</h2>
+			<p>
+				<img data-src="img/screenshots/teamcity/build_chains.png">
+			</p>
+		</section>
+
+		<section data-product="teamcity">
+			<h2>並行するステージを持つ複雑なパイプライン</h2>
+			<p>
+				<img data-src="img/screenshots/teamcity/parallel_stages_chain.png">
+			</p>
+		</section>
+
+		<section data-product="teamcity">
+			<h2>Configuration as code （コードとして構成を記述）</h2>
+			<p>Kotlin DSLを使用してプロジェクトとビルド構成をコードで作成</p>
+			<p>
+				<img data-src="img/screenshots/teamcity/kotlin-preview.png">
+			</p>
+		</section>
+
+		<section data-product="teamcity">
+			<h2>スケールアウト</h2>
+			<p>2ノード構成をセットアップしてメインサーバーの負荷を下げることができます。</p>
+			<p>
+				<img data-src="img/screenshots/teamcity/two-node-config.jpeg">
+			</p>
+		</section>
+
+		<section data-product="teamcity">
+			<h2>High-Availability 設定</h2>
+			<p>メインサーバーがダウンした際の負荷を処理するため、セカンダリノードをセットアップできます。</p>
+			<p>
+				<img data-src="img/screenshots/teamcity/ha.png">
+			</p>
+		</section>
+
+		<section data-product="teamcity">
+			<h2>柔軟な価格設定</h2>
+			<p>
+				<img data-src="img/screenshots/teamcity/pricing.png">
+			</p>
+		</section>
+
+		<section data-product="teamcity">
+			<h2>35,000以上のお客様に信頼されています</h2>
+			<ul class="slide-block">
+				<li><img class="slide-logo-customers" data-src="img/external_logos/schlumberger.svg"></li>
+				<li><img class="slide-logo-customers" data-src="img/external_logos/airbnb.svg"></li>
+				<li><img class="slide-logo-customers" data-src="img/external_logos/boeing.svg"></li>
+				<li><img class="slide-logo-customers" data-src="img/external_logos/spacex.svg"></li>
+				<li><img class="slide-logo-customers" data-src="img/external_logos/teradata.svg"></li>
+				<li><img class="slide-logo-customers" data-src="img/external_logos/citibank.svg"></li>
+				<li><img class="slide-logo-customers" data-src="img/external_logos/siemens.svg"></li>
+				<li><img class="slide-logo-customers" data-src="img/external_logos/wargaming.svg"></li>
+				<li><img class="slide-logo-customers-round" data-src="img/external_logos/hp.svg"></li>
+			</ul>
+		</section>
+
+		<section data-product="teamcity">
+			<h2>詳細を確認して、ダウンロード</h2>
+			<p>jetbrains.com/teamcity</p>
+			<p>@teamcity</p>
+			<div class="jetbrains-logo _logo-teamcity _size-5"></div>
+		</section>
+
+		<!--endregion-->
+
+		<!--region PyCharm -->
+
+		<section data-product="pycharm">
+			<h2>ビューでの自動補完</h2>
+			<p>
+				<img src="img/screenshots/pycharm/django_forms_autocomplete.png">
+			</p>
+		</section>
+
+		<section data-product="pycharm">
+			<h2>テンプレートのデバッグ</h2>
+			<p>
+				<img src="img/screenshots/pycharm/django_forms.png">
+			</p>
+		</section>
+
+		<section data-product="pycharm">
+			<h2>manage.pyの統合</h2>
+			<p>
+				<img src="img/screenshots/pycharm/django_managepy.png">
+			</p>
+		</section>
+
+		<section data-product="pycharm">
+			<h2>コードスタイル</h2>
+			<p>
+				<img src="img/screenshots/pycharm/django_pep8.png">
+			</p>
+			<p>PyCharmは定義済みのコードスタイルに従ったコーディングを支援し、PEP8コーディング規約にデフォルトで準拠しています。</p>
+		</section>
+
+		<section data-product="pycharm">
+			<h2>簡単なリファクタリング</h2>
+			<p>
+				<img src="img/screenshots/pycharm/django_refactor.png">
+			</p>
+		</section>
+
+		<section data-product="pycharm">
+			<h2>Search Everywhere（どこでも検索）</h2>
+			<p>
+				<img src="img/screenshots/pycharm/django_search_everywhere.png">
+			</p>
+			<p>どこでも検索を実行するにはShiftを2回押してください。</p>
+		</section>
+
+		<section data-product="pycharm">
+			<h2>Djangoテストのサポート</h2>
+			<p>
+				<img src="img/screenshots/pycharm/django_tests.png">
+			</p>
+		</section>
+
+		<section data-product="pycharm" data-autoslide="10000">
+			<h2>PyCharmのエディション</h2>
+			<p>
+				<img src="img/screenshots/pycharm/pycharm_editions.png">
+			</p>
+		</section>
+
+		<section data-product="pycharm">
+			<h2>SSH、Docker、Vagrantのサポート</h2>
+			<p>
+				<img src="img/screenshots/pycharm/remote_development.png">
+			</p>
+		</section>
+
+		<section data-product="pycharm" data-autoslide="10000">
+			<h2>Dockerコンテナ内でのコードデバッグ</h2>
+			<p>
+				<img src="img/screenshots/pycharm/docker_debug.png">
+			</p>
+		</section>
+
+		<section data-product="pycharm" data-autoslide="10000">
+			<h2>科学計算モード</h2>
+			<p>
+				<img src="img/screenshots/pycharm/scientific_mode.png">
+			</p>
+			<p>データサイエンス業務に必要なものすべてを一目で把握できます。</p>
+		</section>
+
+		<section data-product="pycharm">
+			<h2>バージョン管理のサポート</h2>
+			<p>
+				<img src="img/screenshots/pycharm/vcs.png">
+			</p>
+			<p>Git、SVN、Mercurial、Perforceなどに対応しています。</p>
+		</section>
+
+		<!--endregion-->
+
+	</div>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+<script type="text/javascript">
+	handleActiveProducts();
+</script>
+
+<script>
+
+	// Full list of configuration options available at:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: false,
+		progress: false,
+		history: true,
+		center: true,
+		autoSlide: 5000,
+		loop: true,
+		showNotes: false,
+
+		transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+		// Optional reveal.js plugins
+		dependencies: [
+			{
+				src: 'lib/js/classList.js', condition: function () {
+					return !document.body.classList;
+				}
+			},
+			{
+				src: 'plugin/markdown/marked.js', condition: function () {
+					return !!document.querySelector('[data-markdown]');
+				}
+			},
+			{
+				src: 'plugin/markdown/markdown.js', condition: function () {
+					return !!document.querySelector('[data-markdown]');
+				}
+			},
+			{
+				src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+					hljs.initHighlightingOnLoad();
+				}
+			},
+			{src: 'plugin/zoom-js/zoom.js', async: true},
+			{src: 'plugin/notes/notes.js', async: true}
+		]
+	});
+
+</script>
+
+</body>
+</html>
