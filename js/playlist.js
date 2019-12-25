@@ -39,6 +39,7 @@ var conferenceType = {
     team: [
         allProducts.upsource,
         allProducts.youtrack,
+        allProducts.space,
         allProducts.teamcity
     ],
 

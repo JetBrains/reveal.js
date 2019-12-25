@@ -19,6 +19,7 @@ function getAllProducts() {
         teamcity: 'teamcity',
         upsource: 'upsource',
         youtrack: 'youtrack',
+        space: 'space',
         kotlin: 'kotlin',
         datagrip: 'datagrip',
         hub: 'hub',
