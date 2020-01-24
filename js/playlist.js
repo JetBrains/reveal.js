@@ -47,7 +47,8 @@ var conferenceType = {
         allProducts.teamcity,
         allProducts.webstorm,
         allProducts.upsource,
-        allProducts.youtrack
+        allProducts.youtrack,
+        allProducts.space
     ],
 
     database: [
@@ -56,6 +57,7 @@ var conferenceType = {
 
     web: [
         allProducts.teamcity,
+        allProducts.space,
         allProducts.upsource,
         allProducts.youtrack,
         allProducts.webstorm,
@@ -101,6 +103,7 @@ var conferenceType = {
         allProducts.riderCppPreview,
         allProducts.GameDevTeamIntro,
         allProducts.teamcity,
+        allProducts.space,
         allProducts.youtrack
     ]
 };
