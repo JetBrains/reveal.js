@@ -1,5 +1,5 @@
 # What this repository is for
-[![JetBrains team project](http://jb.gg/badges/team.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
+[![JetBrains team project](https://jb.gg/badges/team.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
 
 This repository contains a collection of HTML-based slides about JetBrains tools that is used to play back at expo booths whenever JetBrains makes a booth appearance at a sponsored conference.
 
@@ -38,7 +38,6 @@ To select a playlist:
 
 3. Save changes to `js/playlist.js`.
 
-
 ## How to add or edit presentation slides
 
 Here's the general procedure for editing slides:
@@ -51,6 +50,7 @@ Here's the general procedure for editing slides:
 
 4. Commit and push your changes to the `master` branch (unless agreed otherwise).
 
+You will need push permissions for the `https://github.com/jetbrains/reveal.js` repository, you can request them in the [ADM YouTrack project](https://youtrack.jetbrains.com/issues/ADM).
 
 ### How slides are organized
 
@@ -97,7 +97,15 @@ Slides for all products are stored in a single file, `jetbrains-tools.html`. Her
 </html>
 ```
 
-As seen in this sample, each slide is represented with a `<section>` tag that has a `data-product="yourProductName"` attribute. The attribute is necessary to make sure that a slide contains product-specific logo and beam, and (if a playlist is defined) to select which slides to play back and which to omit.
+There are a few alternative files used for some other conferences, and you can generally understand from the name what conference is it for, e.g.:
+* `jetbrains-general.html` is for general conferences (includes more JetBrains-branded slides and corporate videos)
+* `jetbrains-alibaba.html` is for Alibaba Cloud specific content
+* `jetbrains-google-cloud.html` is for Google Cloud specific content
+* `jetbrains-tools-japanese.html` is a `jetbrains-tools.html` localized to Japanese language
+* `jetbrains-websummit.html` is for WebSummit conference
+
+
+As seen in the sample above, each slide is represented with a `<section>` tag that has a `data-product="yourProductName"` attribute. The attribute is necessary to make sure that a slide contains product-specific logo and beam, and (if a playlist is defined) to select which slides to play back and which to omit.
 
 Typically, you will use the following types of slides:
 
@@ -195,4 +203,6 @@ Right now we have a "tracking" the following files with `git-lfs`:
 * /img/screenshots/jetbrains/wearejb_v4.2.mp4
 * /img/screenshots/jetbrains/DSGN-5489AnnualReport_d10.mp4
 
-If you would like to track more files, add them with `git-lfs track FILE_NAME`
+If you would like to track more files, add them with `git-lfs track FILE_NAME`.
+
+You don't need to download GIT-LFS if you need to download the videos, just clone the repository as described above.
