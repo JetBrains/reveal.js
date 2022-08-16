@@ -1,5 +1,6 @@
 function getAllProducts() {
     return {
+        appcode: 'appcode',
         resharper: 'resharper',
         dottrace: 'dottrace',
         dotcover: 'dotcover',
@@ -10,7 +11,6 @@ function getAllProducts() {
         riderUnity: 'rider-unity',
         riderCppPreview: 'rider-cpp-preview',
         webstorm: 'webstorm',
-        appcode: 'appcode',
         clion: 'clion',
         intellijIdea: 'intellij',
         phpstorm: 'phpstorm',

@@ -29,9 +29,9 @@ var conferenceType = {
 
     go: [
         allProducts.goland,
-        allProducts.teamcity,
-        allProducts.upsource,
-        allProducts.youtrack,
+        // allProducts.teamcity,
+        // allProducts.upsource,
+        // allProducts.youtrack,
         allProducts.webstorm,
         allProducts.datagrip
     ],
