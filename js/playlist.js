@@ -111,4 +111,4 @@ var conferenceType = {
 // to switch on a playlist for a specific conference type,ª
 // assign it to the currentPlaylist variable, i.e.:
 // var currentPlaylist = conferenceType.dotnet;
-var currentPlaylist = conferenceType.go;
+var currentPlaylist = conferenceType.gaming;
