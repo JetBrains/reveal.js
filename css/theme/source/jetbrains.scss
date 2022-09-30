@@ -109,7 +109,7 @@ section.has-dark-background {
       @include logo-template($height: 5vh, $width: 6vh);
     }
   }
-}
+}a
 
 .reveal section ul.slide-block {
   @include slide-block-template()
@@ -240,6 +240,7 @@ body.mps-background {
 body.goland-background {
   @include slide-background-template($productName: 'goland', $beamPosition: -20px -40px, $logoSize: auto 42px);
 }
+
 
 body.general-background {
   padding: 0;

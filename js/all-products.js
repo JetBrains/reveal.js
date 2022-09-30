@@ -1,5 +1,7 @@
 function getAllProducts() {
     return {
+        eduTools: 'edu-tools',
+        academy: 'academy',
         appcode: 'appcode',
         resharper: 'resharper',
         dottrace: 'dottrace',

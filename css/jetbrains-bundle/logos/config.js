@@ -1,5 +1,6 @@
 module.exports = {
   logos: [
+    {'academy': 'academy/academy.svg'},
     {'jetbrains': 'jetbrains/jetbrains.svg'},
     {'jetbrains-square': 'jetbrains/jetbrains-simple.svg'},
     {'appcode': 'appcode/appcode.svg'},

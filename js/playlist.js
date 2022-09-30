@@ -93,6 +93,7 @@ var conferenceType = {
     ],
 
     gaming: [
+        allProducts.academy,
         allProducts.general,
         allProducts.GameDevIntro,
         allProducts.GameDevUnityIntro,
