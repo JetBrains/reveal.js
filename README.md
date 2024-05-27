@@ -1,3 +1,14 @@
+# This repository is outdated
+Please find the new repository at the following link 
+
+[JetBrains web-presentations updated repository](https://jetbrains.team/p/webteam-public/repositories/webteam-js-presentations/files/README.md)
+
+
+You can find the documentation for the new repository at the following link
+
+[JetBrains web-presentations updated repository documentation](https://helpserver.labs.jb.gg/help/presentations/setup-guide.html#Clone_a_Repository)
+
+
 # What this repository is for
 [![JetBrains team project](https://jb.gg/badges/team.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
 
